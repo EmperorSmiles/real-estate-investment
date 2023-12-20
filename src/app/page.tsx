@@ -1,7 +1,12 @@
-import Image from 'next/image'
+import NavBar from './components/NavBar/layout'
+import Hero from './components/Hero/layout'
 
 export default function Home() {
   return (
-    <div className='bg-purple-400 p-5'>Welcome Home</div>
+    <div className=' '>
+      <NavBar />
+      <Hero />
+    </div>
+    
   )
 }
