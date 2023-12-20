@@ -2,7 +2,7 @@ import Link  from "next/link";
 
 export default function NavBar() {
     return (
-      <nav className="bg-gray-400 text-gray-900 font-playfair font-bold">
+      <nav className="bg-transparent text-gray-200 font-playfair font-bold absolute inset-x-0 top-0 z-30">
         <div className="flex justify-between p-3">
                   <h1 className="">IntelliVest</h1>
                   <ul className="flex space-x-7">
@@ -10,7 +10,7 @@ export default function NavBar() {
                       <Link href="/">Home</Link>
                       </li>
                       <li>
-                      <Link href="#">How it Works</Link>
+                      <Link href="header">How it Works</Link>
                       </li>
                       <li>
                       <Link href="#">Smart Property Investing</Link>
