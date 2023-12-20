@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black to-black opacity-60"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           {/* Your content goes here */}
-          <h1 className="text-gray-200 text-4xl font-bold">Smart Homes, Smarter Investing</h1>
+          <h1 className="text-gray-200 text-4xl font-bold">Smart Homes, Smarter Investing!</h1>
         </div>
       </div>
     </>
