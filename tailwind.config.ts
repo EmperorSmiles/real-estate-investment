@@ -17,6 +17,8 @@ const config: Config = {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
+        open_sans: ['Open Sans', 'sans serif'],
+        roboto: ['Roboto', 'sans serif'],
       },
     },
   },
