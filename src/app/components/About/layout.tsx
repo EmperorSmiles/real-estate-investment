@@ -25,9 +25,6 @@ export default function About() {
                     alt='Partners'
                     quality={100}
                     className='bg-slate-800 object-cover w-1/6 h-16 mx-4'
-                 // width={100}
-                 // height={10}
-            
                     />
                     <Image
                     src={PropInvest}
@@ -42,18 +39,16 @@ export default function About() {
                     quality={100}
                     className="object-cover w-1/6 h-16 mx-4"
             
-                 />
-                 <Image
-                 src={SvG1}
-                 alt='Partners'
-                 quality={100}
-                 // width={200}
-                 // height={10}
-                 className="object-cover w-1/6 h-16"
+                    />
+                    <Image
+                    src={SvG1}
+                    alt='Partners'
+                    quality={100}
+                    className="object-cover w-1/6 h-16"
             
-                 />
-             </div>
-                 </div>
+                    />
+                </div>
+            </div>
         </>
     )
 }
