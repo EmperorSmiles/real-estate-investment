@@ -62,7 +62,7 @@ export default function Hero() {
           <GoGraph className=" text-4xl mr-4"/> <p>Invest in full or fractional property ownership and earn real-time rental income from multiple listings</p>
         </div>
         <div className="w-1/3 flex">
-          <MdAttachMoney className="text-lg lg:text-4xl mr-4"/> <p>Receive your portion of rental income from your properties hassle-free with no property management worries </p>
+          <MdAttachMoney className="text-sm lg:text-4xl mr-4"/> <p>Receive your portion of rental income from your properties hassle-free with no property management worries </p>
         </div>
         <button className="bg-transparent rounded-full border-gray-900 border-2 px-2 my-6 hover:border-white hover:text-white ">Free Strategy Session</button>
       </div>
