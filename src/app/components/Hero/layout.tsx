@@ -3,6 +3,8 @@ import Image from 'next/image'
 import background from '../../../../public/BGimage.png'
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+import { GoGraph } from "react-icons/go";
+import { MdAttachMoney } from "react-icons/md";
 
 const social = [
   {
@@ -22,7 +24,7 @@ const social = [
   },
   {
     icon: <FaYoutube />,
-    url: "https://medium.com"
+    url: "https://youtube.com"
   },
 ]
 
@@ -54,7 +56,15 @@ export default function Hero() {
           At IntelliVest, we are your trusted partner on the path to property investment success
           </p>
         </div>
-        
+      </div>
+      <div className="bg-gray-500 p-6 flex justify-between">
+        <div className="flex w-1/3 ">
+          <GoGraph className=" text-4xl mr-4"/> <p>Invest in full or fractional property ownership and earn real-time rental income from multiple listings</p>
+        </div>
+        <div className="w-1/3 flex">
+          <MdAttachMoney className="text-lg lg:text-4xl mr-4"/> <p>Receive your portion of rental income from your properties hassle-free with no property management worries </p>
+        </div>
+        <button className="bg-transparent rounded-full border-gray-900 border-2 px-2 my-6 hover:border-white hover:text-white ">Free Strategy Session</button>
       </div>
     </>
   )
