@@ -35,14 +35,12 @@ export default function About() {
                     quality={100}
                     className="object-cover w-1/6 h-16 mx-4"
             
-                 />
-                 <Image
-                 src={SvG2}
-                 alt='Partners'
-                 quality={100}
-                 // width={200}
-                 // height={10}
-                 className="object-cover w-1/6 h-16 mx-4"
+                    />
+                    <Image
+                    src={SvG2}
+                    alt='Partners'
+                    quality={100}
+                    className="object-cover w-1/6 h-16 mx-4"
             
                  />
                  <Image
