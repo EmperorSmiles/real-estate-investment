@@ -1,53 +1,53 @@
 import Image from 'next/image'
 import Investe from '../../../../public/Investe-Group.png'
-import LionStone from '../../../../public/Picture 1.webp'
-import PropInvest from '../../../../public/PropertyInvest_DE_Logo_CMYK_Black_Orange.png'
-import SvG1 from '../../../../public/logo-bk.svg'
-import SvG2 from '../../../../public/page-logoInner.svg'
+import Meta from '../../../../public/Meta.png'
+import Glovo from '../../../../public/Glovo_logo.png'
+import Apple from '../../../../public/Apple.png'
+import Sujimoto from '../../../../public/Sujimoto.png'
 export default function About() {
     return (
         <>
-            <div className="bg-slate-200 min-h-0h-56 flex items-center justify-between space-x-6">
-                <h1 className="text-5xl m-5 font-bold text-slate-900">Why Us</h1>
-            </div>
+            <div className="bg-slate-200 min-h-56 flex items-center justify-between">
+                <h1 className="sm:text-sm lg:text-5xl mx-5 font-bold text-slate-900">Why Us</h1>
                 <div className='flex flex-col'>
-                <p className="mt-6">We are your trusted partner in the world of property investment. With years of expertise and a deep understanding of the real estate market, we help you make informed investment decisions that aligns with your goals</p>
-                <div className='flex items-center'>
+                <p className="mt-6 text-sm lg:text-3xl pr-2">We are your trusted partner in the world of property investment. With years of expertise and a deep understanding of the real estate market, we help you make informed investment decisions that aligns with your goals</p>
+                <div className='flex items-center justify-around pt-4'>
                     <Image
                     src={Investe}
                     alt='Partners'
                     quality={100}
-                    className="object-cover w-1/6 h-full px-5"
+                    className="object-center w-10 h-full lg:w-36 lg:h-full grayscale"
             
                     />
                     <Image
-                    src={LionStone}
+                    src={Meta}
                     alt='Partners'
                     quality={100}
-                    className='bg-slate-800 object-cover w-1/6 h-16 mx-4'
+                    className='object-center w-10 h-full lg:w-24 lg:h-full grayscale '
                     />
                     <Image
-                    src={PropInvest}
+                    src={Glovo}
                     alt='Partners'
                     quality={100}
-                    className="object-cover w-1/6 h-16 mx-4"
+                    className="object-center w-10 h-full lg:w-24 lg:h-full grayscale "
             
                     />
                     <Image
-                    src={SvG2}
+                    src={Apple}
                     alt='Partners'
                     quality={100}
-                    className="object-cover w-1/6 h-16 mx-4"
+                    className="object-center w-10 h-full lg:w-24 lg:h-full grayscale "
             
                     />
                     <Image
-                    src={SvG1}
+                    src={Sujimoto}
                     alt='Partners'
                     quality={100}
-                    className="object-cover w-1/6 h-16"
+                    className="object-center w-10 h-full lg:w-24 lg:h-full grayscale "
             
                     />
                 </div>
+            </div>
             </div>
         </>
     )
