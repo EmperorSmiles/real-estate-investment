@@ -58,14 +58,12 @@ export default function Hero() {
         </div>
       </div>
       <div className="bg-gray-500 p-6 lg:flex justify-between">
-        <div className="flex sm:justify-around">
         <div className="flex w-1/3 ">
-          <GoGraph className="sm:text-lg lg:text-4xl mr-4"/> <p className="text-sm lg:text-lg">Invest in full or fractional property ownership and earn real-time rental income from multiple listings</p>
+          <GoGraph className=" text-4xl mr-4"/> <p>Invest in full or fractional property ownership and earn real-time rental income from multiple listings</p>
         </div>
-        <div className="lg:w-1/3 flex">
-          <MdAttachMoney className="text-sm lg:text-4xl mr-4"/> <p className="text-sm lg:text-lg">Receive your portion of rental income from your properties hassle-free with no property management worries </p>
-          </div>
-          </div>
+        <div className="w-1/3 flex">
+          <MdAttachMoney className="text-sm lg:text-4xl mr-4"/> <p>Receive your portion of rental income from your properties hassle-free with no property management worries </p>
+        </div>
         <button className="bg-transparent rounded-full border-gray-900 border-2 px-2 my-6 hover:border-white hover:text-white ">Free Strategy Session</button>
       </div>
     </>
