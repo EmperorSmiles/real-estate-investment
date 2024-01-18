@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Investe from '../../../../public/Investe-Group.png'
 import Blackrock from '../../../../public/BlackRock-logo.png'
 import Glovo from '../../../../public/Glovo_logo.png'
-import Apple from '../../../../public/Apple.png'
+import Berkshire from '../../../../public/Berkshire-Hathaway-Logo.png'
 import Sujimoto from '../../../../public/Sujimoto.png'
 export default function About() {
     return (
@@ -16,34 +16,34 @@ export default function About() {
                     src={Investe}
                     alt='Partners'
                     quality={100}
-                    className="object-center w-10 h-full lg:w-36 lg:h-full grayscale"
+                    className="object-contain w-10 h-full lg:w-36 lg:h-full grayscale pr-2"
             
                     />
                     <Image
                     src={Blackrock}
                     alt='Partners'
                     quality={100}
-                    className='object-center w-10 h-full lg:w-24 lg:h-full grayscale '
+                    className='object-contain w-10 h-full lg:w-24 lg:h-full grayscale pr-2'
                     />
                     <Image
                     src={Glovo}
                     alt='Partners'
                     quality={100}
-                    className="object-center w-10 h-full lg:w-24 lg:h-full grayscale "
+                    className="object-contain w-10 h-full lg:w-24 lg:h-full grayscale pr-2"
             
                     />
                     <Image
-                    src={Apple}
+                    src={Berkshire}
                     alt='Partners'
                     quality={100}
-                    className="object-center w-10 h-full lg:w-24 lg:h-full grayscale "
+                    className="object-contain w-10 h-full lg:w-28 lg:h-full grayscale pr-2"
             
                     />
                     <Image
                     src={Sujimoto}
                     alt='Partners'
                     quality={100}
-                    className="object-center w-10 h-full lg:w-24 lg:h-full grayscale "
+                    className="object-center w-10 h-full lg:w-24 lg:h-full grayscale pr-2"
             
                     />
                 </div>
