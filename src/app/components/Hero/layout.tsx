@@ -46,7 +46,7 @@ export default function Hero() {
             <h1 className="text-gray-300 text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold flex flex-col"><span className='px-14'>SMART </span> <span className='px-8'>HOMES, </span><span className='px-20'>SMARTER</span> <span className='px-12'>INVESTMENTS</span></h1>
             <div className="relative inset-0 flex flex-col py-10 text-gray-300 ">
               {social.map((social, idx) => (
-              <a href={social.url} target="_blank" key={idx} className={`${social.spacing} border-2 p-2 rounded-full border-gray-300 hover:bg-white hover:text-black hover:border-black`}>
+              <a href={social.url} target="_blank" key={idx} className={`${social.spacing} border-2 p-2 rounded-full border-gray-300 hover:bg-gray-300 hover:text-black hover:border-black`}>
               {social.icon}
             </a>
             ))}
