@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Investe from '../../../../public/Investe-Group.png'
-import Meta from '../../../../public/Meta.png'
+import Blackrock from '../../../../public/BlackRock-logo.png'
 import Glovo from '../../../../public/Glovo_logo.png'
 import Apple from '../../../../public/Apple.png'
 import Sujimoto from '../../../../public/Sujimoto.png'
@@ -20,7 +20,7 @@ export default function About() {
             
                     />
                     <Image
-                    src={Meta}
+                    src={Blackrock}
                     alt='Partners'
                     quality={100}
                     className='object-center w-10 h-full lg:w-24 lg:h-full grayscale '
