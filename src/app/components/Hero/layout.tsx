@@ -62,7 +62,7 @@ export default function Hero() {
           <div className="pr-6">
             <GoGraph className="text-xl lg:text-4xl mr-4"/> <p className="text-sm lg:text-lg">Invest in full or fractional property ownership and earn real-time rental income from multiple listings</p>
           </div>
-          <div>
+          <div className="pr-6">
             <MdAttachMoney className="text-xl lg:text-4xl mr-4"/> <p className="text-sm lg:text-lg">Receive your portion of rental income from your properties hassle-free with no property management worries </p>
           </div>
         </div>
