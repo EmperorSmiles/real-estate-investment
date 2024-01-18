@@ -52,7 +52,7 @@ export default function Hero() {
             ))}
           </div>
           </div>
-          <p className='text-gray-300 absolute inset-0 flex items-center justify-center top-80 font-roboto'>
+          <p className='text-gray-300 absolute inset-0 flex items-center justify-center top-80 font-roboto p-2'>
           At IntelliVest, we are your trusted partner on the path to property investment success
           </p>
         </div>
