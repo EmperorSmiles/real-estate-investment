@@ -16,34 +16,34 @@ export default function About() {
                     src={Investe}
                     alt='Partners'
                     quality={100}
-                    className="object-contain w-10 h-full lg:w-36 lg:h-full grayscale pr-2"
+                    className="object-center w-14 h-full lg:w-28 lg:h-full grayscale pr-2"
             
                     />
                     <Image
                     src={Blackrock}
                     alt='Partners'
                     quality={100}
-                    className='object-contain w-10 h-full lg:w-24 lg:h-full grayscale pr-2'
+                    className='object-center w-14 h-full lg:w-28 lg:h-full grayscale pr-2'
                     />
                     <Image
                     src={Glovo}
                     alt='Partners'
                     quality={100}
-                    className="object-contain w-10 h-full lg:w-24 lg:h-full grayscale pr-2"
+                    className="object-center w-14 h-full lg:w-28 lg:h-full grayscale pr-2"
             
                     />
                     <Image
                     src={Berkshire}
                     alt='Partners'
                     quality={100}
-                    className="object-contain w-10 h-full lg:w-28 lg:h-full grayscale pr-2"
+                    className="object-center w-14 h-full lg:w-28 lg:h-full grayscale pr-2"
             
                     />
                     <Image
                     src={Sujimoto}
                     alt='Partners'
                     quality={100}
-                    className="object-center w-10 h-full lg:w-24 lg:h-full grayscale pr-2"
+                    className="object-center w-14 h-full lg:w-28 lg:h-full grayscale pr-2"
             
                     />
                 </div>
