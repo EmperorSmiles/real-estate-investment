@@ -3,12 +3,12 @@ import Realtor from "../../../../public/Realtor+Client.jpg";
 
 export default function Body() {
     return (
-        <div className="w-full h-64 flex p-8">
-            <div className="w-2/3 ">
-                <h2 className="text-2xl font-bold w-96">
-                    Affordable Property Investment in Singapore
+        <div className="w-full h-full flex p-8 bg-gray-100">
+            <div className="w-2/3 h-96 flex flex-col justify-between px-12 font-sans">
+                <h2 className="text-4xl font-bold text-gray-700">
+                    Affordable Property Investment in the US
                 </h2>
-                <p className="font-open_sans italic font-extralight">
+                <p className="italic text-gray-500">
                     With US property prices and mortgage rates at all time in
                     nearly 23 years *, the dream of owning a home continues to
                     be a dream for many. That&apos;s why we created IntelliVest.
@@ -16,12 +16,20 @@ export default function Body() {
                     little as $250 in as fast as a few minutes from signup to
                     purchase
                 </p>
-                <small className="font-open_sans italic font-extralight">
+                <small className="italic font-extralight text-gray-500">
                     *US Census Bureau, January, 2024
                 </small>
+                <button className="bg-gray-900 w-44 rounded-lg text-white hover:bg-gray-700">
+                    Find out more
+                </button>
             </div>
-            <div>
-                <Image src={Realtor} alt="Hero" width={200} height={500} />
+            <div className="w-1/3 px-12">
+                <Image
+                    src={Realtor}
+                    alt="Realtor"
+                    quality={100}
+                    className="h-96 "
+                />
             </div>
         </div>
     );
