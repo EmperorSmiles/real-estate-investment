@@ -69,7 +69,7 @@ export default function Hero() {
                     </p>
                 </div>
             </div>
-            <div className="bg-gray-500 p-6 lg:flex justify-between">
+            <div className="bg-slate-200 p-6 lg:flex justify-between">
                 <div className="flex justify-between mb-6">
                     <div className="pr-6">
                         <GoGraph className="text-xl lg:text-4xl mr-4" />{" "}
@@ -87,7 +87,7 @@ export default function Hero() {
                         </p>
                     </div>
                 </div>
-                <button className="bg-transparent rounded-full border-gray-900 border-2 px-2 lg:my-12 hover:border-white hover:text-white w-full lg:w-72">
+                <button className="bg-transparent rounded-xl bg-gray-900 text-white h-8 lg:m hover:bg-gray-700 hover:text-white w-full lg:w-96 my-8">
                     Free Strategy Session
                 </button>
             </div>
