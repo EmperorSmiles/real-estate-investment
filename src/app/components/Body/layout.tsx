@@ -1,5 +1,5 @@
 import Image from "next/image";
-import background from "../../../../public/BGimage.png";
+import Realtor from "../../../../public/Realtor+Client.jpg";
 
 export default function Body() {
     return (
@@ -18,7 +18,7 @@ export default function Body() {
             <small className="font-open_sans italic font-extralight">
                 *US Census Bureau, January, 2024
             </small>
-            <Image src={background} alt="Hero" width={200} height={500} />
+            <Image src={Realtor} alt="Hero" width={200} height={500} />
         </div>
     );
 }
