@@ -1,3 +1,3 @@
 export default function LatestProperty() {
-    return {};
+    return <div></div>;
 }
