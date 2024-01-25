@@ -9,12 +9,11 @@ export default function Body() {
                     Affordable Property Investment in Singapore
                 </h2>
                 <p className="italic text-gray-500">
-                    With US property prices and mortgage rates at all time in
-                    nearly 23 years *, the dream of owning a home continues to
-                    be a dream for many. That&apos;s why we created IntelliVest.
-                    We enable you to invest in the property market with as
-                    little as $250 in as fast as a few minutes from signup to
-                    purchase
+                    With Singapore property prices growing over 60% within the
+                    last 10 years*, the dream of owning a home continues to be a
+                    dream for many. That&apos;s why we created IntelliVest. We
+                    enable you to invest in the property market with as little
+                    as $250 in as fast as a few minutes from signup to purchase
                 </p>
                 <small className="italic font-extralight text-gray-500">
                     *US Census Bureau, January, 2024
