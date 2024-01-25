@@ -17,7 +17,7 @@ export default function Body() {
                 </p>
                 <small className="italic font-extralight text-gray-500 capitalize">
                     corelogic hedonic index singapore, sept 2023, October 2013 -
-                    October 2023
+                    October 2023Updated
                 </small>
                 <button className="bg-gray-900 w-44 rounded-lg text-white hover:bg-gray-700">
                     Find out more
