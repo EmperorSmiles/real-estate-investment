@@ -3,6 +3,7 @@ import Hero from "./components/Hero/layout";
 import About from "./components/About/layout";
 import Body from "./components/Body/layout";
 import Property from "./components/LatestProperty/layout";
+import Example from "./components/Example/layout";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <About />
             <Body />
             <Property />
+            <Example />
         </div>
     );
 }
