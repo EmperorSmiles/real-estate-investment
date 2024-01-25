@@ -6,7 +6,7 @@ export default function Body() {
         <div className="w-full h-full flex p-8 bg-gray-100">
             <div className="w-2/3 h-96 flex flex-col justify-between px-12 font-sans">
                 <h2 className="text-4xl font-bold text-gray-700">
-                    Affordable Property Investment in the US
+                    Affordable Property Investment in Singapore
                 </h2>
                 <p className="italic text-gray-500">
                     With US property prices and mortgage rates at all time in
