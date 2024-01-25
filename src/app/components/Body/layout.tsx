@@ -15,8 +15,8 @@ export default function Body() {
                     enable you to invest in the property market with as little
                     as $250 in as fast as a few minutes from signup to purchase
                 </p>
-                <small className="italic font-extralight text-gray-500">
-                    *US Census Bureau, January, 2024
+                <small className="italic font-extralight text-gray-500 capitalize">
+                    corelogic hedonic index singapore
                 </small>
                 <button className="bg-gray-900 w-44 rounded-lg text-white hover:bg-gray-700">
                     Find out more
