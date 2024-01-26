@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Realtor from "../../../../public/Realtor+Client.jpg";
+import CallToAction from "../CallToAction/layout";
 
 export default function Body() {
     return (
@@ -19,9 +20,7 @@ export default function Body() {
                     corelogic hedonic index singapore, sept 2023, October 2013 -
                     October 2023
                 </small>
-                <button className="bg-transparent border-gray-700 text-gray-700 border-2 w-44 rounded-xl hover:bg-gray-800 hover:text-white">
-                    Find out more
-                </button>
+                <CallToAction text="Find Out More" />
             </div>
             <div className="w-1/3 px-12">
                 <Image
