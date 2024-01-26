@@ -87,7 +87,7 @@ export default function Hero() {
                         </p>
                     </div>
                 </div>
-                <button className="bg-transparent rounded-xl bg-gray-900 text-white h-8 lg:m hover:bg-gray-700 hover:text-white w-full lg:w-96 my-8">
+                <button className="bg-transparent rounded-xl border-2 border-gray-700 text-gray-700 h-8 lg:m hover:bg-gray-800 hover:text-white w-full lg:w-96 my-8">
                     Free Strategy Session
                 </button>
             </div>
