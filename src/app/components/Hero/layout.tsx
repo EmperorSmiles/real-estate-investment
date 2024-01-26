@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import background from "../../../../public/BGimage.png";
+import CallToAction from "../CallToAction/layout";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import { GoGraph } from "react-icons/go";
@@ -87,9 +88,7 @@ export default function Hero() {
                         </p>
                     </div>
                 </div>
-                <button className="bg-transparent rounded-xl border-2 border-gray-700 text-gray-700 h-8 lg:m hover:bg-gray-800 hover:text-white w-full lg:w-96 my-8">
-                    Free Strategy Session
-                </button>
+                <CallToAction text="Free Training Session" />
             </div>
         </>
     );
