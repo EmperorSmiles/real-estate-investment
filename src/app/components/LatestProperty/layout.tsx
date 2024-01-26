@@ -3,7 +3,12 @@
 import { useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import DarkGray from "../../../../public/DarkGray.jpg";
+import Lovely from "../../../../public/Lovely Archi.jpg";
+import Gray from "../../../../public/Gray .jpg";
+import WithFlowers from "../../../../public/With flowers.jpg";
 
 export default function LatestProperty() {
     // Corrected: Use the Carousel component directly
@@ -18,7 +23,6 @@ export default function LatestProperty() {
             (prevIndex) => (prevIndex - 1 + items.length) % items.length
         );
     };
-
     // const items = [
     //     {
     //         content: <FaInstagram />,
@@ -46,26 +50,43 @@ export default function LatestProperty() {
     // ];
     const items = [
         {
-            content: <FaInstagram />,
-            spacing: "mb-4",
-            url: "https://www.instagram.com",
+            image: { DarkGray },
+            city: "North Melborune",
+            areaCode: "NMLO1",
+            desc1: "Net Income",
+            netIncome: "$360,000",
+            desc2: "Net Yield",
+            netTield: "6.4%",
             id: 1,
         },
         {
-            content: <FaXTwitter />,
-            spacing: "mb-4",
-            url: "https://www.twitter.com",
+            image: { Lovely },
+            city: "Frankston Orca",
+            areaCode: "ARNO1",
+            desc1: "Net Income",
+            netIncome: "$240,000",
+            desc2: "Net Yield",
+            netTield: "5.3%",
             id: 2,
         },
         {
-            content: <FaFacebookF />,
-            spacing: "mb-4",
-            url: "https://www.facebook.com",
+            image: { Gray },
+            city: "Potts Points Carnige",
+            areaCode: "CNG01",
+            desc1: "Net Income",
+            netIncome: "$320,000",
+            desc2: "Net Yield",
+            netTield: "6.4%",
             id: 3,
         },
         {
-            content: <FaYoutube />,
-            url: "https://youtube.com",
+            image: { WithFlowers },
+            city: "Kreuzberg, Berlin",
+            areaCode: "BLN01",
+            desc1: "Net Income",
+            netIncome: "$240,000",
+            desc2: "Net Yield",
+            netTield: "5.3%",
             id: 4,
         },
     ];
@@ -90,6 +111,20 @@ export default function LatestProperty() {
                     </button>
                 </div>
             </div>
+            {items.map((item) => (
+                <div key={item.id}>
+                    {Object.values(item.image).map((img, index) => (
+                        <div key={index} className="relative h-64 w-64 flex">
+                            <Image
+                                alt={item.city}
+                                src={img.src}
+                                layout="fill"
+                                objectFit="cover"
+                            />
+                        </div>
+                    ))}
+                </div>
+            ))}
         </div>
     );
 }
