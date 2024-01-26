@@ -19,6 +19,31 @@ export default function LatestProperty() {
         );
     };
 
+    // const items = [
+    //     {
+    //         content: <FaInstagram />,
+    //         spacing: "mb-4",
+    //         url: "https://www.instagram.com",
+    //         id: 1,
+    //     },
+    //     {
+    //         content: <FaXTwitter />,
+    //         spacing: "mb-4",
+    //         url: "https://www.twitter.com",
+    //         id: 2,
+    //     },
+    //     {
+    //         content: <FaFacebookF />,
+    //         spacing: "mb-4",
+    //         url: "https://www.facebook.com",
+    //         id: 3,
+    //     },
+    //     {
+    //         content: <FaYoutube />,
+    //         url: "https://youtube.com",
+    //         id: 4,
+    //     },
+    // ];
     const items = [
         {
             content: <FaInstagram />,
@@ -57,40 +82,14 @@ export default function LatestProperty() {
                     catering to various tastes and budgets
                 </p>
                 <div className="flex h-full align-middle">
-                    <button className="rounded-full border-2 border-black p-2 hover:bg-black hover:text-white">
+                    <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
                         <FaArrowLeft />
                     </button>
-                    <button className="rounded-full border-2 border-black p-2 hover:bg-black hover:text-white">
+                    <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
                         <FaArrowRight />
                     </button>
                 </div>
             </div>
-            {/* <div
-                className="carousel-items w-full"
-                style={{ transform: `translateX(${-currentIndex * 100}%)` }}
-            >
-                {items.map((item) => (
-                    <div key={item.id} className="carousel-item bg-green-500">
-                        {item.content}
-                    </div>
-                ))}
-
-                {items.map((item, id) => (
-                    <a
-                        target="_blank"
-                        key={id}
-                        className={`${item.spacing} border-2 p-2 rounded-full border-gray-300 hover:bg-indigo-500 w-full
-                                    hover:text-black hover:border-black`}
-                    >
-                        {item.content}
-                    </a>
-                ))}
-            </div>
-
-            <div className="navigation">
-                <button onClick={prevSlide}>Previous</button>
-                <button onClick={nextSlide}>Next</button>
-            </div> */}
         </div>
     );
 }
