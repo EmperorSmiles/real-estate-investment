@@ -5,24 +5,24 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import DarkGray from "../../../../public/DarkGray.jpg";
-import Lovely from "../../../../public/Lovely Archi.jpg";
-import Gray from "../../../../public/Gray .jpg";
-import WithFlowers from "../../../../public/With flowers.jpg";
+// import DarkGray from "../../../../public/DarkGray.jpg";
+// import Lovely from "../../../../public/Lovely Archi.jpg";
+// import Gray from "../../../../public/Gray .jpg";
+// import WithFlowers from "../../../../public/With flowers.jpg";
 
 export default function LatestProperty() {
     // Corrected: Use the Carousel component directly
-    const [currentIndex, setCurrentIndex] = useState(0);
+    // const [currentIndex, setCurrentIndex] = useState(0);
 
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    };
+    // const nextSlide = () => {
+    //     setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+    // };
 
-    const prevSlide = () => {
-        setCurrentIndex(
-            (prevIndex) => (prevIndex - 1 + items.length) % items.length
-        );
-    };
+    // const prevSlide = () => {
+    //     setCurrentIndex(
+    //         (prevIndex) => (prevIndex - 1 + items.length) % items.length
+    //     );
+    // };
     // const items = [
     //     {
     //         content: <FaInstagram />,
@@ -48,48 +48,6 @@ export default function LatestProperty() {
     //         id: 4,
     //     },
     // ];
-    const items = [
-        {
-            src: "public/DarkGray.jpg",
-            city: "North Melborune",
-            areaCode: "NMLO1",
-            desc1: "Net Income",
-            netIncome: "$360,000",
-            desc2: "Net Yield",
-            netTield: "6.4%",
-            id: 1,
-        },
-        {
-            src: "public/Lovely Archi.jpg",
-            city: "Frankston Orca",
-            areaCode: "ARNO1",
-            desc1: "Net Income",
-            netIncome: "$240,000",
-            desc2: "Net Yield",
-            netTield: "5.3%",
-            id: 2,
-        },
-        {
-            src: "public/Gray .jpg",
-            city: "Potts Points Carnige",
-            areaCode: "CNG01",
-            desc1: "Net Income",
-            netIncome: "$320,000",
-            desc2: "Net Yield",
-            netTield: "6.4%",
-            id: 3,
-        },
-        {
-            src: "public/With flowers.jpg",
-            city: "Kreuzberg, Berlin",
-            areaCode: "BLN01",
-            desc1: "Net Income",
-            netIncome: "$240,000",
-            desc2: "Net Yield",
-            netTield: "5.3%",
-            id: 4,
-        },
-    ];
 
     return (
         <div className="bg-slate-200 h-full p-8">
