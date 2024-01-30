@@ -1,6 +1,6 @@
 export const items = [
         {
-            src: "public/DarkGray.jpg",
+            src: "/DarkGray.jpg",
             city: "North Melborune",
             areaCode: "NMLO1",
             desc1: "Net Income",
@@ -10,7 +10,7 @@ export const items = [
             id: 1,
         },
         {
-            src: "public/Lovely Archi.jpg",
+            src: "/Lovely Archi.jpg",
             city: "Frankston Orca",
             areaCode: "ARNO1",
             desc1: "Net Income",
@@ -20,7 +20,7 @@ export const items = [
             id: 2,
         },
         {
-            src: "public/Gray .jpg",
+            src: "/Gray .jpg",
             city: "Potts Points Carnige",
             areaCode: "CNG01",
             desc1: "Net Income",
@@ -30,7 +30,7 @@ export const items = [
             id: 3,
         },
         {
-            src: "public/With flowers.jpg",
+            src: "/With flowers.jpg",
             city: "Kreuzberg, Berlin",
             areaCode: "BLN01",
             desc1: "Net Income",
