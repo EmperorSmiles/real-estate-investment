@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Slider() {
     return (
-        <div className="p-4 h-full">
-            <div className="flex gap-4 mb-4 relative">
+        <div className="p-4 flex-col">
+            <div className="flex gap-4 mb-4 relative justify-center items-center transition-transform ease-in-out duration-500">
                 {items.map((img, idx) => (
                     <div key={idx}>
                         <Image
@@ -13,6 +13,7 @@ export default function Slider() {
                             width={500}
                             height={100}
                             priority
+                            className="w-full h-full object-cover"
                         />
                     </div>
                 ))}
