@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import Slider from "../Slider/layout";
 // import DarkGray from "../../../../public/DarkGray.jpg";
 // import Lovely from "../../../../public/Lovely Archi.jpg";
 // import Gray from "../../../../public/Gray .jpg";
@@ -69,7 +70,7 @@ export default function LatestProperty() {
                     </button>
                 </div>
             </div>
-            <div>{}</div>
+            <Slider />
         </div>
     );
 }
