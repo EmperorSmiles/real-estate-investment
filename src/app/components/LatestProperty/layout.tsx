@@ -50,7 +50,7 @@ export default function LatestProperty() {
     // ];
     const items = [
         {
-            image: { DarkGray },
+            src: "public/DarkGray.jpg",
             city: "North Melborune",
             areaCode: "NMLO1",
             desc1: "Net Income",
@@ -60,7 +60,7 @@ export default function LatestProperty() {
             id: 1,
         },
         {
-            image: { Lovely },
+            src: "public/Lovely Archi.jpg",
             city: "Frankston Orca",
             areaCode: "ARNO1",
             desc1: "Net Income",
@@ -70,7 +70,7 @@ export default function LatestProperty() {
             id: 2,
         },
         {
-            image: { Gray },
+            src: "public/Gray .jpg",
             city: "Potts Points Carnige",
             areaCode: "CNG01",
             desc1: "Net Income",
@@ -80,7 +80,7 @@ export default function LatestProperty() {
             id: 3,
         },
         {
-            image: { WithFlowers },
+            src: "public/With flowers.jpg",
             city: "Kreuzberg, Berlin",
             areaCode: "BLN01",
             desc1: "Net Income",
@@ -111,20 +111,7 @@ export default function LatestProperty() {
                     </button>
                 </div>
             </div>
-            {items.map((item) => (
-                <div key={item.id}>
-                    {Object.values(item.image).map((img, index) => (
-                        <div key={index} className="relative h-64 w-64 flex">
-                            <Image
-                                alt={item.city}
-                                src={img.src}
-                                layout="fill"
-                                objectFit="cover"
-                            />
-                        </div>
-                    ))}
-                </div>
-            ))}
+            <div>{}</div>
         </div>
     );
 }
