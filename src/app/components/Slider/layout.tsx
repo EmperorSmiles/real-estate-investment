@@ -11,7 +11,7 @@ export default function Slider() {
                             src={img.src}
                             alt=""
                             width={500}
-                            height={500}
+                            height={100}
                             priority
                         />
                     </div>
