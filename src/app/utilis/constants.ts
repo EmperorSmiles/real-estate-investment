@@ -1,6 +1,6 @@
-const items = [
+export const items = [
         {
-            src: "",
+            src: "public/DarkGray.jpg",
             city: "North Melborune",
             areaCode: "NMLO1",
             desc1: "Net Income",
@@ -30,7 +30,7 @@ const items = [
             id: 3,
         },
         {
-            image: "public/With flowers.jpg",
+            src: "public/With flowers.jpg",
             city: "Kreuzberg, Berlin",
             areaCode: "BLN01",
             desc1: "Net Income",
