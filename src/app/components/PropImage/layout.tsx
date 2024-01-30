@@ -6,7 +6,7 @@ export default function PropImage() {
         <div className="w-full h-full overflow-hidden p-2">
             <div className="flex gap-6">
                 {items.map((img, idx) => (
-                    <div key={idx} className="w-64 flex-shrink-0">
+                    <div key={idx} className="w-64 flex-shrink-0 relative">
                         <Image
                             src={img.src}
                             alt=""
@@ -14,6 +14,7 @@ export default function PropImage() {
                             width={400}
                             className="w-full h-full object-cover"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-b from-gray-600 to-gray-600 opacity-70"></div>
                     </div>
                 ))}
             </div>
