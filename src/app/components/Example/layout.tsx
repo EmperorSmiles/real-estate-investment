@@ -38,6 +38,8 @@ const Carousel = () => {
                 ))}
             </div>
 
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-600 to-gray-600 opacity-70"></div>
+
             <div className="absolute top-1/2 transform -translate-y-1/2 w-full flex justify-between z-10">
                 <button
                     onClick={prevSlide}
