@@ -3,12 +3,20 @@ import Image from "next/image";
 
 export default function Slider() {
     return (
-        <div>
-            {items.map((img, idx) => (
-                <div key={idx}>
-                    <Image src={img.src} alt="" width={600} height={400} />
-                </div>
-            ))}
+        <div className="p-4">
+            <div className="flex">
+                {items.map((img, idx) => (
+                    <div key={idx}>
+                        <Image
+                            src={img.src}
+                            alt=""
+                            width={600}
+                            height={500}
+                            priority
+                        />
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
