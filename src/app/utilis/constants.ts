@@ -40,14 +40,14 @@ export const items = [
             id: 4,
         },
         {
-            src: "/newWhite.jpg",
+            src: "/Gated.jpg",
             city: "Keong Saik, Singapore",
             areaCode: "BLN01",
             desc1: "Net Income",
             netIncome: "$240,000",
             desc2: "Net Yield",
             netTield: "5.3%",
-            id: 4,
+            id: 5,
         },
         {
             src: "/newWhite.jpg",
@@ -57,6 +57,6 @@ export const items = [
             netIncome: "$240,000",
             desc2: "Net Yield",
             netTield: "5.3%",
-            id: 4,
+            id: 6,
         },
     ];
