@@ -30,7 +30,7 @@ export const items = [
             id: 3,
         },
         {
-            src: "/With flowers.jpg",
+            src: "/White House",
             city: "Kreuzberg, Berlin",
             areaCode: "BLN01",
             desc1: "Net Income",
