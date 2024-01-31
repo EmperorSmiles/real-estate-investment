@@ -12,7 +12,7 @@ export default function PropImage() {
                             src={item.src}
                             alt=""
                             height={700}
-                            width={400}
+                            width={500}
                             className="w-full h-full object-cover"
                         />
 
