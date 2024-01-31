@@ -31,13 +31,17 @@ export default function PropImage() {
                                         <p className="pr-1 flex-nowrap">
                                             {item.desc1}
                                         </p>
-                                        <p>{item.netIncome}</p>
+                                        <p className="font-bold">
+                                            {item.netIncome}
+                                        </p>
                                     </span>
                                     <span className="flex ">
                                         <p className="pr-1 flex-nowrap">
                                             {item.desc2}
                                         </p>
-                                        <p>{item.netTield}</p>
+                                        <p className="font-bold">
+                                            {item.netTield}
+                                        </p>
                                     </span>
                                 </div>
                             </div>
