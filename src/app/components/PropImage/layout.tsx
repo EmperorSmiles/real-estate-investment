@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PropImage() {
     return (
-        <div className="w-full h-full overflow-hidden p-2 grid">
+        <div className="w-full h-full overflow-hidden p-2 grid my-4">
             <div className="flex gap-6">
                 {items.map((item, idx) => (
                     <div key={idx} className="w-64 flex-shrink-0 relative">
