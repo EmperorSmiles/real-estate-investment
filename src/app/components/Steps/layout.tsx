@@ -33,24 +33,26 @@ export default function Steps() {
     ];
 
     return (
-        <div className="w-full h-full  p-8 bg-gray-100">
-            <h1 className="font-bold text-xl">
+        <div className="w-full h-full px-4 py-6 bg-gray-100">
+            <h1 className="text-2xl font-bold text-gray-700 font-sans mb-4">
                 5 Steps to the First Investment
             </h1>
-            <p>
+            <p className="w-[70vw] text-gray-500 text-sm">
                 Embarking on your investment journey can be a thrilling and
                 rewarding experience. Let&apos;s walk you through the
                 fundamentals steps to kickstart your investment portfolio with
                 confidence
             </p>
-            {steps.map((text, idx) => (
-                <div key={idx}>
-                    <h1>{text.title}</h1>
-                    <h1>{text.desc}</h1>
-                    <h1>{text.note}</h1>
-                    <h1>{text.note2}</h1>
-                </div>
-            ))}
+            <div className="flex">
+                {steps.map((text, idx) => (
+                    <div key={idx} className="w-64 p-4">
+                        <h1>{text.title}</h1>
+                        <h1>{text.desc}</h1>
+                        <h1>{text.note}</h1>
+                        <h1>{text.note2}</h1>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
