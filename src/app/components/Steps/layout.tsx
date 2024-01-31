@@ -33,8 +33,10 @@ export default function Steps() {
     ];
 
     return (
-        <div>
-            <h1>5 Steps to the First Investment</h1>
+        <div className="w-full h-full  p-8 bg-gray-100">
+            <h1 className="font-bold text-xl">
+                5 Steps to the First Investment
+            </h1>
             <p>
                 Embarking on your investment journey can be a thrilling and
                 rewarding experience. Let&apos;s walk you through the
