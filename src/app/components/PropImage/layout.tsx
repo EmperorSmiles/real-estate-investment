@@ -1,6 +1,5 @@
 import { items } from "@/app/utilis/constants";
 import Image from "next/image";
-import Description from "../Description/layout";
 
 export default function PropImage() {
     return (
