@@ -4,7 +4,7 @@ import Description from "../Description/layout";
 
 export default function PropImage() {
     return (
-        <div className="w-full h-full overflow-auto p-2 grid">
+        <div className="w-full h-full overflow-hidden p-2 grid">
             <div className="flex gap-6">
                 {items.map((item, idx) => (
                     <div key={idx} className="w-64 flex-shrink-0 relative">
@@ -20,14 +20,26 @@ export default function PropImage() {
 
                         {item && (
                             <div className="p-2 w-full">
-                                <h1 className="text-xl font-bold">
-                                    {item.city}
-                                </h1>
-                                <p>{item.areaCode}</p>
-                                <p>{item.desc1}</p>
-                                <p>{item.netIncome}</p>
-                                <p>{item.desc2}</p>
-                                <p>{item.netTield}</p>
+                                <div className="flex">
+                                    <h1 className=" font-bold pr-3">
+                                        {item.city}
+                                    </h1>
+                                    <p>{item.areaCode}</p>
+                                </div>
+                                <div className="flex justify-between text-sm">
+                                    <span className="flex pr-3">
+                                        <p className="pr-1 flex-nowrap">
+                                            {item.desc1}
+                                        </p>
+                                        <p>{item.netIncome}</p>
+                                    </span>
+                                    <span className="flex ">
+                                        <p className="pr-1 flex-nowrap">
+                                            {item.desc2}
+                                        </p>
+                                        <p>{item.netTield}</p>
+                                    </span>
+                                </div>
                             </div>
                         )}
                     </div>
