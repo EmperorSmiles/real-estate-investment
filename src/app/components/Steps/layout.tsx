@@ -43,13 +43,19 @@ export default function Steps() {
                 fundamentals steps to kickstart your investment portfolio with
                 confidence
             </p>
-            <div className="flex">
+            <div className="flex overflow-clip">
                 {steps.map((text, idx) => (
-                    <div key={idx} className="w-64 p-4">
-                        <h1>{text.title}</h1>
-                        <h1>{text.desc}</h1>
-                        <h1>{text.note}</h1>
-                        <h1>{text.note2}</h1>
+                    <div key={idx} className=" p-2 text-sm">
+                        <div className="flex-col w-72 h-72 p-4 bg-gray-200 shadow-md shadow-black">
+                            <h1 className="font-bold text-lg font-sans pb-3">
+                                {text.title}
+                            </h1>
+                            <h1 className="font-bold text-lg font-sans capitalize pb-2">
+                                {text.desc}
+                            </h1>
+                            <p className="text-gray-500 pb-4">{text.note}</p>
+                            <p className="text-gray-500">{text.note2}</p>
+                        </div>
                     </div>
                 ))}
             </div>
