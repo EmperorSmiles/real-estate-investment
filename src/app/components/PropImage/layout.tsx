@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PropImage() {
     return (
-        <div className="w-full h-full overflow-auto p-2 grid my-4">
+        <div className="w-full h-full overflow-y-hidden p-4 grid my-4 ">
             <div className="flex gap-6">
                 {items.map((item, idx) => (
                     <div key={idx} className="w-64 flex-shrink-0 relative">
@@ -15,9 +15,6 @@ export default function PropImage() {
                             width={500}
                             className="w-full h-full object-cover"
                         />
-
-                        <div className="absolute inset-0 bg-gradient-to-b from-gray-600 to-gray-600 opacity-70"></div>
-
                         {item && (
                             <div className="p-2 w-full">
                                 <div className="flex">
@@ -46,6 +43,8 @@ export default function PropImage() {
                                 </div>
                             </div>
                         )}
+
+                        <div className="absolute inset-0 bg-gradient-to-b from-gray-600 to-gray-600 opacity-70"></div>
                     </div>
                 ))}
             </div>
