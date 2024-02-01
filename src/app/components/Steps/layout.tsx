@@ -37,7 +37,7 @@ export default function Steps() {
             <h1 className="text-2xl font-bold text-gray-700 font-sans mb-4">
                 5 Steps to the First Investment
             </h1>
-            <p className="w-[70vw] text-gray-500 text-sm">
+            <p className="w-[70vw] text-gray-500 text-sm ">
                 Embarking on your investment journey can be a thrilling and
                 rewarding experience. Let&apos;s walk you through the
                 fundamentals steps to kickstart your investment portfolio with
