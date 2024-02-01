@@ -19,6 +19,7 @@ const config: Config = {
         playfair: ['Playfair Display', 'serif'],
         open_sans: ['Open Sans', 'sans serif'],
         roboto: ['Roboto', 'sans serif'],
+        montserrat: ['Lato', 'sans-serif'],
       },
     },
   },
