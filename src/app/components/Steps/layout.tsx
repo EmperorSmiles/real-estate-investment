@@ -46,7 +46,7 @@ export default function Steps() {
             <div className="flex overflow-clip">
                 {steps.map((text, idx) => (
                     <div key={idx} className=" p-2 text-sm">
-                        <div className="flex-col w-72 h-72 p-4 bg-gray-200 shadow-md shadow-black">
+                        <div className="flex-col w-72 h-72 p-4 bg-gray-200 shadow-md">
                             <h1 className="font-bold text-lg font-sans pb-3">
                                 {text.title}
                             </h1>
