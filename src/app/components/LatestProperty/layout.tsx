@@ -1,9 +1,4 @@
 "use client";
-
-import { useState } from "react";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
-import Image from "next/image";
 import ArrowButton from "@/app/components/ArrowButtons/layout";
 import Slider from "../Slider/layout";
 // import DarkGray from "../../../../public/DarkGray.jpg";
@@ -61,7 +56,6 @@ export default function LatestProperty() {
                     proud to offer a diverse selection of quality properties,
                     catering to various tastes and budgets
                 </p>
-
                 <ArrowButton />
             </div>
             <Slider />
