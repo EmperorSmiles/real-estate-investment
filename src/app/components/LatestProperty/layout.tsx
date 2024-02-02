@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import ArrowButton from "@/app/components/ArrowButtons/layout";
 import Slider from "../Slider/layout";
 // import DarkGray from "../../../../public/DarkGray.jpg";
 // import Lovely from "../../../../public/Lovely Archi.jpg";
@@ -61,14 +61,8 @@ export default function LatestProperty() {
                     proud to offer a diverse selection of quality properties,
                     catering to various tastes and budgets
                 </p>
-                <div className="flex h-full align-middle">
-                    <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
-                        <FaArrowLeft />
-                    </button>
-                    <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
-                        <FaArrowRight />
-                    </button>
-                </div>
+
+                <ArrowButton />
             </div>
             <Slider />
         </div>
