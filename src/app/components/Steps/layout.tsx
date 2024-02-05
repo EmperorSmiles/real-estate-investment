@@ -36,7 +36,7 @@ export default function Steps() {
 
     return (
         <div className="w-full h-full px-4 py-6 bg-gray-100">
-            <h1 className="text-2xl font-bold text-gray-700 font-montserrat mb-4">
+            <h1 className="text-2xl font-bold text-gray-700 font-roboto mb-4">
                 5 Steps to the First Investment
             </h1>
             <div className="flex justify-between p-2">
