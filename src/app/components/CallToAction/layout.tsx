@@ -1,3 +1,5 @@
+// CallToAction.tsx
+
 import React, { FC } from "react";
 
 interface CallToActionProps {
@@ -12,4 +14,4 @@ const CallToAction: FC<CallToActionProps> = ({ text }) => {
     );
 };
 
-export default CallToAction;
+export const CallToActionComponent = CallToAction;
