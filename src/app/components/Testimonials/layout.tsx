@@ -1,4 +1,5 @@
 import { testimonials } from "@/app/utilis/constants";
+import Image from "next/image";
 
 export default async function layout() {
     return (
@@ -8,7 +9,12 @@ export default async function layout() {
                 {testimonials.map((instance, idx) => (
                     <div key={idx}>
                         <h1>{instance.text}</h1>
-                        <div>{instance.picture}</div>
+                        <Image
+                            alt="profile"
+                            src={instance.picture}
+                            width={500}
+                            height={500}
+                        />
                         <div>{instance.name}</div>
                         <div>{instance.location}</div>
                         <div>{instance.rating}</div>
