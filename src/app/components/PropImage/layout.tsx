@@ -23,7 +23,7 @@ export default function PropImage() {
                         </div>
                         {item && (
                             <div className="p-2 w-full h-14">
-                                <div className="flex">
+                                <div className="flex ">
                                     <h1 className=" font-bold pr-3">
                                         {item.city}
                                     </h1>
