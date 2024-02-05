@@ -61,11 +61,24 @@ export const items = [
         },
 ];
     
-export const testimonial = [
+export const testimonials = [
     {
-        name: "",
-        location: "",
-        rating: "",
-        text: "",
-    }
-]
+        name: "Patrick Mahomes",
+        location: "New York, USA",
+        picture: "",
+        rating: "5/5",
+        text: "I had a fantastic experience working with IntelliVest. Their expertise and guidance helped me make informed decisions, and I'm extremely satisfied with the results.",
+    },
+    {
+        name: "Alice Smith",
+        location: "London, UK",
+        rating: "4.5/5",
+        text: "As someone new to property investment, I appreciate the personalized advice and transparent communication provided by Intellivest. It made the entire process smooth and hassle-free.",
+    },
+    {
+        name: "Robert Murdoch",
+        location: "Sydney, Australia",
+        rating: "4/5",
+        text: "The team at this property investment company demonstrated a deep understanding of market trends. Their strategies proved to be effective, and I've seen significant returns on my investments.",
+    },
+];
