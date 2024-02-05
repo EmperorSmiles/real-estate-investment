@@ -15,7 +15,7 @@ export default function Home() {
             <About />
             <Body />
             <Property />
-            {/* <Example /> */}
+            <Example />
             <Steps />
             <Testimonials />
         </div>
