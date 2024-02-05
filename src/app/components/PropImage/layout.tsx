@@ -22,7 +22,7 @@ export default function PropImage() {
                             <div className="absolute inset-0 bg-gradient-to-b from-gray-600 to-gray-600 opacity-70"></div>
                         </div>
                         {item && (
-                            <div className="p-2 w-full h-14">
+                            <div className="p-2 w-full h-14 text-gray-600">
                                 <div className="flex">
                                     <h1 className=" font-bold pr-3">
                                         {item.city}
