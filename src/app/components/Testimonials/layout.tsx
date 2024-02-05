@@ -10,7 +10,9 @@ export default async function layout() {
                 </h1>
                 {testimonials.map((instance, idx) => (
                     <div key={idx}>
-                        <h1>{instance.text}</h1>
+                        <h1 className="font-roboto text-2xl">
+                            {instance.text}
+                        </h1>
                         <Image
                             alt="profile"
                             src={instance.picture}
