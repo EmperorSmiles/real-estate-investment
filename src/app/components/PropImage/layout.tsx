@@ -8,16 +8,19 @@ export default function PropImage() {
                 {items.map((item, idx) => (
                     <div
                         key={idx}
-                        className="w-64 flex-shrink-0 relative h-full shadow-md rounded-md py-2"
+                        className="w-64 flex-shrink-0 h-full shadow-md rounded-md py-2"
                     >
-                        <Image
-                            src={item.src}
-                            alt=""
-                            priority
-                            height={700}
-                            width={500}
-                            className="w-full h-72 object-cover"
-                        />
+                        <div className="relative">
+                            <Image
+                                src={item.src}
+                                alt=""
+                                priority
+                                height={700}
+                                width={500}
+                                className="w-full h-72 object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-b from-gray-600 to-gray-600 opacity-70"></div>
+                        </div>
                         {item && (
                             <div className="p-2 w-full h-14">
                                 <div className="flex">
