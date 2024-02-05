@@ -46,7 +46,9 @@ export default function Steps() {
                     fundamentals steps to kickstart your investment portfolio
                     with confidence
                 </p>
-                <ArrowButton />
+                <div className="flex h-full align-middle">
+                    <ArrowButton />
+                </div>
             </div>
             <div className="flex overflow-clip">
                 {steps.map((text, idx) => (
