@@ -59,4 +59,13 @@ export const items = [
             netTield: "5.3%",
             id: 6,
         },
-    ];
+];
+    
+export const testimonial = [
+    {
+        name: "",
+        location: "",
+        rating: "",
+        text: "",
+    }
+]
