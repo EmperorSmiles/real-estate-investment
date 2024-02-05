@@ -17,7 +17,7 @@ export default function PropImage() {
                                 priority
                                 height={700}
                                 width={500}
-                                className="w-full h-72 object-cover"
+                                className="w-full h-80 object-cover"
                             />
                             <div className="absolute inset-0 bg-gradient-to-b from-gray-600 to-gray-600 opacity-70"></div>
                         </div>
