@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default async function layout() {
     return (
-        <div>
+        <div className="bg-slate-200 h-full p-8">
             <div>
-                <h1 className="capitalize font-open_sans font-extrabold text-3xl">
+                <h1 className="capitalize font-roboto font-bold text-3xl">
                     Our testimony
                 </h1>
                 {testimonials.map((instance, idx) => (
