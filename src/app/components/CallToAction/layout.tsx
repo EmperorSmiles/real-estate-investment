@@ -12,4 +12,4 @@ function CallToAction({ text }: CallToActionProps) {
     );
 }
 
-export const CallToActionComponent = CallToAction;
+export default CallToAction;
