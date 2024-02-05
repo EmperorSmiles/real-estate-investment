@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import background from "../../../../public/BGimage.png";
-import CallToAction from "../CallToAction/layout";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import { GoGraph } from "react-icons/go";
 import { MdAttachMoney } from "react-icons/md";
+import { CallToActionComponent } from "../CallToAction/layout";
 
 const social = [
     {
@@ -89,7 +89,7 @@ export default function Hero() {
                         </p>
                     </div>
                 </div>
-                <CallToAction text="Free Training Session" />
+                <CallToActionComponent text="Free Training Session" />
             </div>
         </>
     );
