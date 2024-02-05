@@ -3,20 +3,23 @@ import Image from "next/image";
 
 export default function PropImage() {
     return (
-        <div className="w-full h-full overflow-y-hidden p-4 grid my-4 ">
-            <div className="flex gap-6">
+        <div className="w-full h-full overflow-auto p-4 grid my-4 ">
+            <div className="flex gap-6 h-full">
                 {items.map((item, idx) => (
-                    <div key={idx} className="w-64 flex-shrink-0 relative">
+                    <div
+                        key={idx}
+                        className="w-64 flex-shrink-0 relative h-full shadow-md rounded-md py-2"
+                    >
                         <Image
                             src={item.src}
                             alt=""
                             priority
                             height={700}
                             width={500}
-                            className="w-full h-full object-cover"
+                            className="w-full h-72 object-cover"
                         />
                         {item && (
-                            <div className="p-2 w-full">
+                            <div className="p-2 w-full h-14">
                                 <div className="flex">
                                     <h1 className=" font-bold pr-3">
                                         {item.city}
@@ -43,8 +46,6 @@ export default function PropImage() {
                                 </div>
                             </div>
                         )}
-
-                        <div className="absolute inset-0 bg-gradient-to-b from-gray-600 to-gray-600 opacity-70"></div>
                     </div>
                 ))}
             </div>
