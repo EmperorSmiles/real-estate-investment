@@ -56,7 +56,9 @@ export default function LatestProperty() {
                     proud to offer a diverse selection of quality properties,
                     catering to various tastes and budgets
                 </p>
-                <ArrowButton />
+                <div className="flex h-full align-middle">
+                    <ArrowButton />
+                </div>
             </div>
             <Slider />
         </div>
