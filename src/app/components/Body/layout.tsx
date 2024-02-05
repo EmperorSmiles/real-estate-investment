@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Realtor from "../../../../public/Realtor+Client.jpg";
 import { CallToActionComponent } from "../CallToAction/layout";
-("../CallToAction/layout");
 
 export default function Body() {
     return (
