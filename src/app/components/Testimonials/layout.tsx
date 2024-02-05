@@ -5,7 +5,9 @@ export default async function layout() {
     return (
         <div>
             <div>
-                <h1>Our testimony</h1>
+                <h1 className="capitalize font-open_sans font-extrabold text-3xl">
+                    Our testimony
+                </h1>
                 {testimonials.map((instance, idx) => (
                     <div key={idx}>
                         <h1>{instance.text}</h1>
@@ -14,6 +16,7 @@ export default async function layout() {
                             src={instance.picture}
                             width={500}
                             height={500}
+                            className="rounded-full w-10 h-10"
                         />
                         <div>{instance.name}</div>
                         <div>{instance.location}</div>
