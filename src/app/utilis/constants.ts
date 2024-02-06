@@ -24,9 +24,9 @@ export const items = [
             city: "Potts Points Carnige",
             areaCode: "CNG01",
             desc1: "Net Income",
-            netIncome: "$320,000",
+            netIncome: "$280,000",
+            netYield: "6.1%",
             desc2: "Net Yield",
-            netTield: "6.4%",
             id: 3,
         },
         {
