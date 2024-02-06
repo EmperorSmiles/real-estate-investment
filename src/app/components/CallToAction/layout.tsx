@@ -1,8 +1,8 @@
 import React from "react";
 
-interface CallToActionProps {
+type CallToActionProps = {
     text: string;
-}
+};
 
 export default function CallToAction({ text }: CallToActionProps) {
     return (
