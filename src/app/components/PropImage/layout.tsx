@@ -27,11 +27,11 @@ export default function PropImage() {
                                     <h1 className=" font-bold pr-3">
                                         {item.city}
                                     </h1>
-                                    <p>{item.areaCode}</p>
+                                    <p className="italic">{item.areaCode}</p>
                                 </div>
-                                <div className="flex justify-between text-sm">
-                                    <span className="flex pr-3">
-                                        <p className="pr-1 flex-nowrap">
+                                <div className="flex justify-between text-xs">
+                                    <span className="flex pr-1">
+                                        <p className="pr-2 flex-nowrap">
                                             {item.desc1}
                                         </p>
                                         <p className="font-bold">
@@ -39,7 +39,7 @@ export default function PropImage() {
                                         </p>
                                     </span>
                                     <span className="flex ">
-                                        <p className="pr-1 flex-nowrap">
+                                        <p className="pr-1 flex-nowrap text-xs">
                                             {item.desc2}
                                         </p>
                                         <p className="font-bold">
