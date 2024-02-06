@@ -43,7 +43,7 @@ export default function PropImage() {
                                             {item.desc2}
                                         </p>
                                         <p className="font-bold">
-                                            {item.netTield}
+                                            {item.netYield}
                                         </p>
                                     </span>
                                 </div>
