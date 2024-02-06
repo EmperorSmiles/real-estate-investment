@@ -5,7 +5,6 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import { GoGraph } from "react-icons/go";
 import { MdAttachMoney } from "react-icons/md";
-import CallToAction from "../CallToAction/layout";
 
 const social = [
     {
@@ -89,7 +88,9 @@ export default function Hero() {
                         </p>
                     </div>
                 </div>
-                <CallToAction text="Free Training Session" />
+                <button className="bg-transparent rounded-xl border-2 border-gray-700 text-gray-700 h-8 lg:m hover:bg-gray-800 hover:text-white w-full lg:w-96 my-8">
+                    Free Training Session
+                </button>
             </div>
         </>
     );
