@@ -10,7 +10,7 @@ export default async function layout() {
                 </h1>
                 {testimonials.map((instance, idx) => (
                     <div key={idx} className="flex-col p-4">
-                        <h1 className="font-roboto text-4xl pb-4 w-60">
+                        <h1 className="font-roboto text-3xl pb-4 mx-8">
                             {instance.text}
                         </h1>
                         <div className="flex justify-between">
