@@ -14,7 +14,7 @@ export default async function layout() {
                             {instance.text}
                         </h1>
                         <div className="flex">
-                            <div className="grid grid-cols-2">
+                            <div className="">
                                 <Image
                                     alt="profile"
                                     src={instance.picture}
