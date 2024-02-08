@@ -5,14 +5,16 @@ export default async function layout() {
     return (
         <div className="bg-slate-200 h-full p-8">
             <div>
-                <h1 className="capitalize font-roboto font-bold text-3xl">
-                    Our testimony
-                </h1>
                 {testimonials.map((instance, idx) => (
-                    <div key={idx} className="flex-col p-4">
-                        <h1 className="font-roboto text-3xl pb-4 mx-8">
-                            {instance.text}
-                        </h1>
+                    <div key={idx} className="p-4">
+                        <span className="grid grid-cols-2">
+                            <h1 className="capitalize font-roboto font-bold text-3xl">
+                                Our testimony
+                            </h1>
+                            <h1 className="font-roboto text-3xl pb-4 mx-8">
+                                {instance.text}
+                            </h1>
+                        </span>
                         <div className="flex justify-between">
                             <div className="flex gap-2">
                                 <Image
