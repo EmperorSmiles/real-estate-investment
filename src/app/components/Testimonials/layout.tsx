@@ -4,11 +4,14 @@ import Image from "next/image";
 export default async function layout() {
     return (
         <div className="bg-slate-200 h-full p-8">
-            <div>
+            <div className="flex">
                 {testimonials.map((instance, idx) => (
-                    <div key={idx} className="p-4">
+                    <div
+                        key={idx}
+                        className="px-14 w-full pb-8 bg-gray-300 mb-4"
+                    >
                         <span className="grid grid-cols-3">
-                            <h1 className="capitalize font-roboto font-bold text-3xl col-span-1 ml-14">
+                            <h1 className="capitalize font-roboto font-bold text-3xl col-span-1 p-2">
                                 Our testimony
                             </h1>
                             <h1 className="font-roboto text-3xl mr-16 my-8 col-span-2">
