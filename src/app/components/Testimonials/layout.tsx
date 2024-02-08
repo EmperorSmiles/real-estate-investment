@@ -9,7 +9,7 @@ export default async function layout() {
                     Our testimony
                 </h1>
                 {testimonials.map((instance, idx) => (
-                    <div key={idx}>
+                    <div key={idx} className="grid">
                         <h1 className="font-roboto text-2xl">
                             {instance.text}
                         </h1>
