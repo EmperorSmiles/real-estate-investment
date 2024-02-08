@@ -10,11 +10,11 @@ export default async function layout() {
                 </h1>
                 {testimonials.map((instance, idx) => (
                     <div key={idx} className="flex-col p-4">
-                        <h1 className="font-roboto text-2xl pb-4">
+                        <h1 className="font-roboto text-4xl pb-4 w-60">
                             {instance.text}
                         </h1>
                         <div className="flex justify-between">
-                            <div className="flex">
+                            <div className="flex gap-2">
                                 <Image
                                     alt="profile"
                                     src={instance.picture}
@@ -23,8 +23,12 @@ export default async function layout() {
                                     className="rounded-full w-10 h-10 row-span-2"
                                 />
                                 <div>
-                                    <p>{instance.name}</p>
-                                    <p>{instance.location}</p>
+                                    <p className="font-bold text-gray-800">
+                                        {instance.name}
+                                    </p>
+                                    <p className="text-gray-600">
+                                        {instance.location}
+                                    </p>
                                 </div>
                             </div>
                             <div>{instance.rating}</div>
