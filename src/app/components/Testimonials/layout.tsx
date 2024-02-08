@@ -14,7 +14,7 @@ export default async function layout() {
                             {instance.text}
                         </h1>
                         <div className="flex justify-between">
-                            <div className="">
+                            <div className="flex">
                                 <Image
                                     alt="profile"
                                     src={instance.picture}
@@ -22,8 +22,10 @@ export default async function layout() {
                                     height={500}
                                     className="rounded-full w-10 h-10 row-span-2"
                                 />
-                                <p>{instance.name}</p>
-                                <p>{instance.location}</p>
+                                <div>
+                                    <p>{instance.name}</p>
+                                    <p>{instance.location}</p>
+                                </div>
                             </div>
                             <div>{instance.rating}</div>
                         </div>
