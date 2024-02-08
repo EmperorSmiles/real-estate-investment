@@ -8,7 +8,7 @@ export default async function layout() {
                 {testimonials.map((instance, idx) => (
                     <div key={idx} className="p-4">
                         <span className="grid grid-cols-3">
-                            <h1 className="capitalize font-roboto font-bold text-3xl col-span-1 justify-center">
+                            <h1 className="capitalize font-roboto font-bold text-3xl col-span-1">
                                 Our testimony
                             </h1>
                             <h1 className="font-roboto text-3xl mr-16 my-8 col-span-2">
