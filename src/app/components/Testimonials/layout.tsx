@@ -4,7 +4,7 @@ import Image from "next/image";
 export default async function layout() {
     return (
         <div className="bg-slate-200 h-full p-8">
-            <div className="flex">
+            <div className="">
                 {testimonials.map((instance, idx) => (
                     <div
                         key={idx}
