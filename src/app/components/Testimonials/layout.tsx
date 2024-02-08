@@ -22,8 +22,8 @@ export default async function layout() {
                                     height={500}
                                     className="rounded-full w-10 h-10 row-span-2"
                                 />
-                                <div>{instance.name}</div>
-                                <div>{instance.location}</div>
+                                <p>{instance.name}</p>
+                                <p>{instance.location}</p>
                             </div>
                             <div>{instance.rating}</div>
                         </div>
