@@ -13,7 +13,7 @@ export default async function layout() {
                         <h1 className="font-roboto text-2xl pb-4">
                             {instance.text}
                         </h1>
-                        <div className="flex">
+                        <div className="flex justify-between">
                             <div className="">
                                 <Image
                                     alt="profile"
