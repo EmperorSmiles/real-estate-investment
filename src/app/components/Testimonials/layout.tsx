@@ -14,13 +14,13 @@ export default async function layout() {
                             {instance.text}
                         </h1>
                         <div className="flex">
-                            <div>
+                            <div className="grid grid-cols-2">
                                 <Image
                                     alt="profile"
                                     src={instance.picture}
                                     width={500}
                                     height={500}
-                                    className="rounded-full w-10 h-10"
+                                    className="rounded-full w-10 h-10 row-span-2"
                                 />
                                 <div>{instance.name}</div>
                                 <div>{instance.location}</div>
