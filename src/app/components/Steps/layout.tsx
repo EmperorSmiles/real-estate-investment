@@ -18,22 +18,20 @@ export default function Steps() {
                     <ArrowButton />
                 </div>
             </div>
-            <div className="flex overflow-clip">
+            <div className="flex overflow-auto">
                 {steps.map((text, idx) => (
-                    <div key={idx} className=" p-2 text-sm">
-                        <div className="flex-col w-72 h-72 p-4 bg-gray-200 shadow-md justify-between">
+                    <div key={idx} className="p-2 text-sm">
+                        <div className="flex-col h-64 p-4 bg-gray-200 shadow-md justify-between w-80 flex-shrink-0">
                             <h1 className="font-bold text-lg font-montserrat pb-3">
                                 {text.title}
                             </h1>
                             <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
                                 {text.desc}
                             </h1>
-                            <div className="flex-col justify-around">
-                                <p className="text-gray-500 pb-4">
-                                    {text.note}
-                                </p>
-                                <p className="text-gray-500">{text.note2}</p>
+                            <div className="flex-grow flex flex-col justify-center pb-4">
+                                <p className="text-gray-500">{text.note}</p>
                             </div>
+                            <p className="text-gray-500">{text.note2}</p>
                         </div>
                     </div>
                 ))}
