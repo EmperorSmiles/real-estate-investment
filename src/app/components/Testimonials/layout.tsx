@@ -14,7 +14,7 @@ export default async function layout() {
                             <h1 className="capitalize font-roboto font-bold text-3xl col-span-1">
                                 Our testimony
                             </h1>
-                            <h1 className="p-2 font-roboto italic text-lg col-span-2">
+                            <h1 className="p-2 font-roboto italic text-xl col-span-2">
                                 {instance.text}
                             </h1>
                         </span>
