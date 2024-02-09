@@ -1,10 +1,6 @@
 "use client";
 import ArrowButton from "@/app/components/ArrowButtons/layout";
 import Slider from "../Slider/layout";
-// import DarkGray from "../../../../public/DarkGray.jpg";
-// import Lovely from "../../../../public/Lovely Archi.jpg";
-// import Gray from "../../../../public/Gray .jpg";
-// import WithFlowers from "../../../../public/With flowers.jpg";
 
 export default function LatestProperty() {
     // Corrected: Use the Carousel component directly
