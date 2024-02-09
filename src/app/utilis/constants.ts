@@ -98,3 +98,36 @@ export const testimonials = [
         text: `"The team at this property investment company demonstrated a deep understanding of market trends. Their strategies proved to be effective, and I've seen significant returns on my investments."`,
     },
 ];
+
+export const steps = [
+        {
+            title: "Step 01",
+            desc: "Buy IntelliVest in your currency",
+            note: "We divide properties into unique assets called IntelliVest, Each IntelliVest represents a fraction of the current value of the property.",
+            note2: "IntelliVest are purchased in your currency so there's no need for expensive exchanges.",
+        },
+        {
+            title: "Step 02",
+            desc: "Earn Rental Income",
+            note: "Your IntelliVest generates the quoted rental yield per month in proportion to how many IntelliVest of the property you own ",
+            note2: "Watch your income grow in real-time and withdraw earned funds at any time",
+        },
+        {
+            title: "Step 03",
+            desc: "Grow Capital Gains",
+            note: "The value of your IntelliVest are adjusted in line with annual valuations",
+            note2: "This means your assets's potential growth is directly in line with the property's market value.",
+        },
+        {
+            title: "Step 04",
+            desc: "Sell Your IntelliVest",
+            note: "Cash out at any moment by selling your IntelliVest at the click of a button",
+            note2: "Capture capital gains with confidence on the only liquidity focused Property Platform",
+        },
+        {
+            title: "Step 05",
+            desc: "Diversify Your Portfolio",
+            note: "Explore new investment opportunities and further diversify your portfolio.",
+            note2: "Discover a range of properties and start building a well-balanced investment portfolio.",
+        },
+    ];
