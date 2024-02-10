@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { faqs } from "@/app/utilis/constants";
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 interface FAQ {
     topic: string;
@@ -30,6 +31,8 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
                             onClick={() => handleToggle(idx)}
                         >
                             <div className="font-bold">{content.topic}</div>
+                            <FaPlus />
+                            <FaMinus />
                         </div>
                         {expandedIndex === idx && (
                             <div className="py-8 transition-all">
