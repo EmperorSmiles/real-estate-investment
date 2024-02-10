@@ -31,8 +31,12 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
                             onClick={() => handleToggle(idx)}
                         >
                             <div className="font-bold">{content.topic}</div>
-                            <FaPlus />
-                            <FaMinus />
+                            <button>
+                                <FaPlus />
+                            </button>
+                            <button>
+                                <FaMinus />
+                            </button>
                         </div>
                         {expandedIndex === idx && (
                             <div className="py-8 transition-all">
