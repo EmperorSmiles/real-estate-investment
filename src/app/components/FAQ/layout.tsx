@@ -50,7 +50,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
                         {isExpanded(idx) && (
                             <div className="py-8 transition-all duration-1000 ease-in-out text-gray-700">
                                 <p className="mb-4">{content.answer}</p>
-                                <p className="">{content.p2}</p>
+                                <p className="+">{content.p2}</p>
                             </div>
                         )}
                     </div>
