@@ -40,7 +40,7 @@ export default function LatestProperty() {
         if (activeImage) {
             interval = setInterval(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-            }, 1000);
+            }, 3000);
         }
 
         return () => {
@@ -71,7 +71,7 @@ export default function LatestProperty() {
                     />
                 </div>
             </div>
-            <div className="w-full h-full overflow-auto p-4 my-4 ">
+            <div className="w-full h-full overflow-hidden p-4 my-4 ">
                 <div
                     className="flex gap-6 h-full transition-transform"
                     style={{
