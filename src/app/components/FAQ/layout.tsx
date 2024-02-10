@@ -4,6 +4,11 @@ export default function layout() {
             <div>Top Questions Answered</div>
             <div className="col-span-2">
                 <div>Buy Sell & Diversify</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quibusdam necessitatibus quam accusamus eligendi, recusandae
+                    soluta. Vero, blanditiis?
+                </p>
                 <div>Buy Sell & Diversify</div>
                 <div>Buy Sell & Diversify</div>
                 <div>Buy Sell & Diversify</div>
