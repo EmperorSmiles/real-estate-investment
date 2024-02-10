@@ -28,15 +28,15 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
             <div className="col-span-2">
                 {faqs.map((content, idx) => (
                     <div key={idx} className="">
-                        <div className="cursor-pointer">
+                        <div>
                             <div className="flex items-center justify-between py-4 align-middle border-b-4">
                                 <div className="font-bold">{content.topic}</div>
                                 <button
                                     onClick={() => handleToggle(idx)}
                                     className={`ml-2 p-2 rounded-full ${
                                         isExpanded(idx)
-                                            ? "bg-black text-white"
-                                            : "bg-gray-300 text-black"
+                                            ? "bg-gray-800 text-white"
+                                            : "border-2 border-gray-700 hover:bg-gray-800 text-gray-700 hover:text-white"
                                     }`}
                                 >
                                     {isExpanded(idx) ? <FaMinus /> : <FaPlus />}
@@ -44,7 +44,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
                             </div>
                         </div>
                         {isExpanded(idx) && (
-                            <div className="py-8 transition-all duration-5000 ease-linear">
+                            <div className="py-8 transition-all duration-1000 ease-in-out">
                                 <p className="mb-4 opacity-100">
                                     {content.answer}
                                 </p>
