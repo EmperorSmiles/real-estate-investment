@@ -24,13 +24,17 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
 
     return (
         <div className="bg-gray-100 h-full p-8 grid grid-cols-3">
-            <div>Top Questions Answered</div>
+            <h1 className="capitalize font-roboto font-bold text-3xl">
+                Top Questions Answered
+            </h1>
             <div className="col-span-2">
                 {faqs.map((content, idx) => (
-                    <div key={idx} className="">
+                    <div key={idx}>
                         <div>
                             <div className="flex items-center justify-between py-4 align-middle border-b-4">
-                                <div className="font-bold">{content.topic}</div>
+                                <div className="font-bold font-roboto">
+                                    {content.topic}
+                                </div>
                                 <button
                                     onClick={() => handleToggle(idx)}
                                     className={`ml-2 p-2 rounded-full ${
