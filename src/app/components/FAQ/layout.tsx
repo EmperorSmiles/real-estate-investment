@@ -1,3 +1,5 @@
+import { faqs } from "@/app/utilis/constants";
+
 export default function layout() {
     return (
         <div className="bg-gray-100 h-full p-8 grid grid-cols-3">
