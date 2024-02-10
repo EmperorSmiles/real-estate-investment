@@ -130,4 +130,11 @@ export const steps = [
             note: "Explore new investment opportunities and further diversify your portfolio.",
             note2: "Discover a range of properties and start building a well-balanced investment portfolio.",
         },
-    ];
+];
+    
+export const faqs = [
+    {
+        topic: "Buy Sell & Diversify",
+        answer: ""
+    }
+]
