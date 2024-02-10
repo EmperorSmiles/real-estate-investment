@@ -19,7 +19,7 @@ export default function Home() {
             <Property />
             {/* <Example /> */}
             <Steps />
-            <Testimonials testimonials={testimonials} />
+            <Testimonials />
             <FAQSection faqs={faqs} />
         </div>
     );
