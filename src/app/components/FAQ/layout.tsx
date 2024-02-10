@@ -24,7 +24,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
             <div>Top Questions Answered</div>
             <div className="col-span-2">
                 {faqs.map((content, idx) => (
-                    <div key={idx}>
+                    <div key={idx} className="">
                         <div
                             className="cursor-pointer"
                             onClick={() => handleToggle(idx)}
