@@ -6,7 +6,15 @@ export default function layout() {
             <div>Top Questions Answered</div>
             <div className="col-span-2">
                 {faqs.map((content, idx) => (
-                    <div key={idx}></div>
+                    <div key={idx}>
+                        <div>
+                            <div>{content.topic}</div>
+                            <div>
+                                <p>{content.answer}</p>
+                                <p>{content.p2}</p>
+                            </div>
+                        </div>
+                    </div>
                 ))}
             </div>
         </div>
