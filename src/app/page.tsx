@@ -7,7 +7,7 @@ import Example from "./components/Example/layout";
 import Steps from "./components/Steps/layout";
 import Testimonials from "./components/Testimonials/layout";
 import FAQSection from "./components/FAQ/layout";
-import { faqs } from "./utilis/constants";
+import { faqs, testimonials } from "./utilis/constants";
 
 export default function Home() {
     return (
@@ -19,7 +19,7 @@ export default function Home() {
             <Property />
             {/* <Example /> */}
             <Steps />
-            <Testimonials />
+            <Testimonials testimonials={testimonials} />
             <FAQSection faqs={faqs} />
         </div>
     );
