@@ -134,7 +134,8 @@ export const steps = [
     
 export const faqs = [
     {
-        topic: "Buy Sell & Diversify",
-        answer: ""
+        topic: "Buy, Sell & Diversify",
+        answer: "Fractional Property investing is the process of dividing am asset into smaller pieces to allow a number of investors mutually own a percentage of an asset.",
+        
     }
 ]
