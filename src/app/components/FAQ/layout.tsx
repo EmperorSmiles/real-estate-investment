@@ -4,8 +4,8 @@ export default function layout() {
             <div>Top Questions Answered</div>
             <div className="col-span-2">
                 <div>
-                    <div>Buy Sell & Diversify</div>
-                    <p>
+                    <div className="font-bold">Buy Sell & Diversify</div>
+                    <p className="py-8">
                         Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Quibusdam necessitatibus quam accusamus eligendi,
                         recusandae soluta. Vero, blanditiis?
