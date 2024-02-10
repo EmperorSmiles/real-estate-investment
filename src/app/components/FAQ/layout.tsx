@@ -8,8 +8,8 @@ export default function layout() {
                 {faqs.map((content, idx) => (
                     <div key={idx}>
                         <div>
-                            <div>{content.topic}</div>
-                            <div>
+                            <div className="font-bold">{content.topic}</div>
+                            <div className="py-8">
                                 <p>{content.answer}</p>
                                 <p>{content.p2}</p>
                             </div>
