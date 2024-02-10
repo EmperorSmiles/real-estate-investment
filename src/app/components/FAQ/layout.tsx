@@ -4,7 +4,11 @@ export default function layout() {
     return (
         <div className="bg-gray-100 h-full p-8 grid grid-cols-3">
             <div>Top Questions Answered</div>
-            <div className="col-span-2"></div>
+            <div className="col-span-2">
+                {faqs.map((content, idx) => (
+                    <div key={idx}></div>
+                ))}
+            </div>
         </div>
     );
 }
