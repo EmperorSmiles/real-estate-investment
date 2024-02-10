@@ -137,5 +137,25 @@ export const faqs = [
         topic: "Buy, Sell & Diversify",
         answer: "Fractional Property investing is the process of dividing am asset into smaller pieces to allow a number of investors mutually own a percentage of an asset.",
         p2: "This enables shared benefits of ownership for each investor of the property. Each Investor can earn rental income and make capital gains iin proportion to the percentage of the asset owned.",
-    }
+    },
+    {
+        topic: "Buy, Sell & Diversify",
+        answer: "Fractional Property investing is the process of dividing am asset into smaller pieces to allow a number of investors mutually own a percentage of an asset.",
+        p2: "This enables shared benefits of ownership for each investor of the property. Each Investor can earn rental income and make capital gains iin proportion to the percentage of the asset owned.",
+    },
+    {
+        topic: "Buy, Sell & Diversify",
+        answer: "Fractional Property investing is the process of dividing am asset into smaller pieces to allow a number of investors mutually own a percentage of an asset.",
+        p2: "This enables shared benefits of ownership for each investor of the property. Each Investor can earn rental income and make capital gains iin proportion to the percentage of the asset owned.",
+    },
+    {
+        topic: "Buy, Sell & Diversify",
+        answer: "Fractional Property investing is the process of dividing am asset into smaller pieces to allow a number of investors mutually own a percentage of an asset.",
+        p2: "This enables shared benefits of ownership for each investor of the property. Each Investor can earn rental income and make capital gains iin proportion to the percentage of the asset owned.",
+    },
+    {
+        topic: "Buy, Sell & Diversify",
+        answer: "Fractional Property investing is the process of dividing am asset into smaller pieces to allow a number of investors mutually own a percentage of an asset.",
+        p2: "This enables shared benefits of ownership for each investor of the property. Each Investor can earn rental income and make capital gains iin proportion to the percentage of the asset owned.",
+    },
 ]
