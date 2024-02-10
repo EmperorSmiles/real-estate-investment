@@ -3,9 +3,14 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 interface Props {
     prevCard: any;
     nextCard: any;
+    activeImage: any;
 }
 
-export default function ArrowButtons({ prevCard, nextCard }: Props) {
+export default function ArrowButtons({
+    prevCard,
+    nextCard,
+    activeImage,
+}: Props) {
     return (
         <div>
             <div className="flex h-full align-middle">
