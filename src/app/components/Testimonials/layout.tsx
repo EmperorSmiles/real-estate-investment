@@ -25,7 +25,7 @@ export default function TestimonialsSlider() {
                         key={idx}
                         className="w-full flex-shrink-0 h-full shadow-md rounded-md p-4 mx-4 transform transition-transform"
                         style={{
-                            transform: `translateX(${-currentIndex * 105}%)`,
+                            transform: `translateX(${-currentIndex * 107}%)`,
                         }}
                     >
                         <h1 className="capitalize font-roboto font-bold text-3xl">
