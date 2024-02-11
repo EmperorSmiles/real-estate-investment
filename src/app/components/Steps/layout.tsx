@@ -1,7 +1,13 @@
+"use client";
+
 import ArrowButton from "@/app/components/ArrowButtons/layout";
 import { steps } from "@/app/utilis/constants";
+import { useLatestProperty } from "@/app/context/Context";
 
 export default function Steps() {
+    const { currentIndex, activeImage, nextCard, prevCard } =
+        useLatestProperty();
+
     return (
         <div className="w-full h-full px-4 py-6 bg-gray-100">
             <h1 className="text-2xl font-bold text-gray-700 font-roboto mb-4">
@@ -15,10 +21,19 @@ export default function Steps() {
                     with confidence
                 </p>
                 <div className="flex h-full align-middle">
-                    <ArrowButton />
+                    <ArrowButton
+                        nextCard={nextCard}
+                        prevCard={prevCard}
+                        activeImage={activeImage}
+                    />
                 </div>
             </div>
-            <div className="flex overflow-auto">
+            <div
+                className="flex overflow-"
+                style={{
+                    transform: `translateX(${-currentIndex * 20}%)`,
+                }}
+            >
                 {steps.map((text, idx) => (
                     <div key={idx} className="p-2 text-sm">
                         <div className="flex-col h-64 p-4 bg-gray-200 shadow-md justify-between w-80 flex-shrink-0">
