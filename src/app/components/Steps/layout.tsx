@@ -5,14 +5,8 @@ import { steps } from "@/app/utilis/constants";
 import { useLatestProperty } from "@/app/context/Context";
 
 export default function Steps() {
-    const {
-        currentIndex,
-        activeImage,
-
-        currentStepIndex,
-        nextStep,
-        prevStep,
-    } = useLatestProperty();
+    const { activeImage, currentStepIndex, nextStep, prevStep } =
+        useLatestProperty();
 
     return (
         <div className="w-full h-full px-4 py-6 bg-gray-100">
@@ -42,7 +36,7 @@ export default function Steps() {
                     <div key={idx} className="p-2 text-sm">
                         <div
                             className={`flex-col h-64 p-4 ${
-                                currentIndex !== idx
+                                currentStepIndex !== idx
                                     ? "bg-gray-200"
                                     : "bg-gray-800 text-white"
                             } shadow-md justify-between w-80 flex-shrink-0`}
