@@ -1,14 +1,32 @@
+"use client";
+
 import { testimonials } from "@/app/utilis/constants";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
-export default async function layout() {
+export default function TestimonialsSlider() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex(
+                (prevIndex) => (prevIndex + 1) % testimonials.length
+            );
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="bg-slate-200 h-full p-8">
             <div className="flex gap-6 h-full shrink-0 overflow-auto p-4">
                 {testimonials.map((instance, idx) => (
                     <div
                         key={idx}
-                        className="w-full flex-shrink-0 h-full shadow-md rounded-md p-4 mx-4"
+                        className="w-full flex-shrink-0 h-full shadow-md rounded-md p-4 mx-4 transform transition-transform"
+                        style={{
+                            transform: `translateX(${-currentIndex * 105}%)`,
+                        }}
                     >
                         <h1 className="capitalize font-roboto font-bold text-3xl">
                             Our testimony
