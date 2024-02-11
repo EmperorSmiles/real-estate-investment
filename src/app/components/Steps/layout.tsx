@@ -42,7 +42,7 @@ export default function Steps() {
                     <div key={idx} className="p-2 text-sm">
                         <div
                             className={`flex-col h-64 p-4 ${
-                                currentStepIndex !== idx
+                                currentIndex !== idx
                                     ? "bg-gray-200"
                                     : "bg-gray-800 text-white"
                             } shadow-md justify-between w-80 flex-shrink-0`}
