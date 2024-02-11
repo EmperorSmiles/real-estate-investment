@@ -15,7 +15,7 @@ export default function Steps() {
         if (activeImage) {
             interval = setInterval(() => {
                 nextStep();
-            }, 3000);
+            }, 2000);
         }
 
         return () => {
