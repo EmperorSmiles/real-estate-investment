@@ -8,19 +8,22 @@ import Steps from "./components/Steps/layout";
 import Testimonials from "./components/Testimonials/layout";
 import FAQSection from "./components/FAQ/layout";
 import { faqs, testimonials } from "./utilis/constants";
+import { ContextProvider } from "@/app/context/Context";
 
 export default function Home() {
     return (
         <div className=" ">
-            <NavBar />
-            <Hero />
-            <About />
-            <Body />
-            <Property />
-            {/* <Example /> */}
-            <Steps />
-            <Testimonials />
-            <FAQSection faqs={faqs} />
+            <ContextProvider>
+                <NavBar />
+                <Hero />
+                <About />
+                <Body />
+                <Property />
+                {/* <Example /> */}
+                <Steps />
+                <Testimonials />
+                <FAQSection faqs={faqs} />
+            </ContextProvider>
         </div>
     );
 }
