@@ -7,13 +7,17 @@ import React, {
     useEffect,
     ReactNode,
 } from "react";
-import { items } from "@/app/utilis/constants";
+import { items, steps } from "@/app/utilis/constants";
 
 interface ContextProps {
     currentIndex: number;
     activeImage: boolean;
     nextCard: () => void;
     prevCard: () => void;
+    // Additional properties for the Steps component
+    currentStepIndex: number;
+    nextStep: () => void;
+    prevStep: () => void;
 }
 
 const Context = createContext<ContextProps | undefined>(undefined);
@@ -27,6 +31,8 @@ export const ContextProvider: React.FC<ContextProviderProps> = ({
 }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [activeImage, setActiveImage] = useState(true);
+
+    const [currentStepIndex, setCurrentStepIndex] = useState(0);
 
     let autoPlayTimeoutRef: NodeJS.Timeout | undefined;
 
@@ -44,8 +50,17 @@ export const ContextProvider: React.FC<ContextProviderProps> = ({
         startAutoPlay();
     };
 
+    const nextStep = () => {
+        setCurrentStepIndex((prevIndex) => (prevIndex + 1) % steps.length);
+    };
+
+    const prevStep = () => {
+        setCurrentStepIndex(
+            (prevIndex) => (prevIndex - 1 + steps.length) % steps.length
+        );
+    };
+
     const startAutoPlay = () => {
-        // Implement your logic here
         if (autoPlayTimeoutRef) {
             clearTimeout(autoPlayTimeoutRef);
         }
@@ -56,7 +71,6 @@ export const ContextProvider: React.FC<ContextProviderProps> = ({
     };
 
     useEffect(() => {
-        // Implement your logic here
         let interval: NodeJS.Timeout;
 
         if (activeImage) {
@@ -79,12 +93,12 @@ export const ContextProvider: React.FC<ContextProviderProps> = ({
         activeImage,
         nextCard,
         prevCard,
+        currentStepIndex,
+        nextStep,
+        prevStep,
     };
 
-    return (
-        // Provide the context value to the children
-        <Context.Provider value={contextValue}>{children}</Context.Provider>
-    );
+    return <Context.Provider value={contextValue}>{children}</Context.Provider>;
 };
 
 export const useLatestProperty = () => {
