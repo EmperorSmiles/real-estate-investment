@@ -3,13 +3,28 @@
 import ArrowButton from "@/app/components/ArrowButtons/layout";
 import { steps } from "@/app/utilis/constants";
 import { useLatestProperty } from "@/app/context/Context";
+import { useEffect } from "react";
 
 export default function Steps() {
     const { activeImage, currentStepIndex, nextStep, prevStep } =
         useLatestProperty();
 
+    useEffect(() => {
+        let interval: NodeJS.Timeout;
+
+        if (activeImage) {
+            interval = setInterval(() => {
+                nextStep();
+            }, 3000);
+        }
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [activeImage, nextStep]);
+
     return (
-        <div className="w-full h-full px-4 py-6 bg-gray-100">
+        <div className="w-full h-full px-4 py-6 bg-gray-100 overflow-hidden">
             <h1 className="text-2xl font-bold text-gray-700 font-roboto mb-4">
                 5 Steps to the First Investment
             </h1>
@@ -29,7 +44,7 @@ export default function Steps() {
                 </div>
             </div>
             <div
-                className="flex"
+                className="flex w-full h-full"
                 style={{ transform: `translateX(${-currentStepIndex * 20}%)` }}
             >
                 {steps.map((text, idx) => (
