@@ -83,20 +83,6 @@ export const testimonials = [
         rating: "5/5 ⭐⭐⭐⭐⭐",
         text: `"The team at this property investment company demonstrated a deep understanding of market trends. Their strategies proved to be effective, and I've seen significant returns on my investments."`,
     },
-    {
-        name: "Robert Murdoch",
-        location: "Sydney, Australia",
-        picture: "/Robert.jpg",
-        rating: "5/5 ⭐⭐⭐⭐⭐",
-        text: `"The team at this property investment company demonstrated a deep understanding of market trends. Their strategies proved to be effective, and I've seen significant returns on my investments."`,
-    },
-    {
-        name: "Robert Murdoch",
-        location: "Sydney, Australia",
-        picture: "/Robert.jpg",
-        rating: "5/5 ⭐⭐⭐⭐⭐",
-        text: `"The team at this property investment company demonstrated a deep understanding of market trends. Their strategies proved to be effective, and I've seen significant returns on my investments."`,
-    },
 ];
 
 export const steps = [
