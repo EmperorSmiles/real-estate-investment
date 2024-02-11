@@ -29,14 +29,20 @@ export default function Steps() {
                 </div>
             </div>
             <div
-                className="flex overflow-"
+                className="flex"
                 style={{
                     transform: `translateX(${-currentIndex * 20}%)`,
                 }}
             >
                 {steps.map((text, idx) => (
                     <div key={idx} className="p-2 text-sm">
-                        <div className="flex-col h-64 p-4 bg-gray-200 shadow-md justify-between w-80 flex-shrink-0">
+                        <div
+                            className={`flex-col h-64 p-4 ${
+                                currentIndex !== idx
+                                    ? "bg-gray-200"
+                                    : "bg-gray-800 text-white"
+                            } shadow-md justify-between w-80 flex-shrink-0`}
+                        >
                             <h1 className="font-bold text-lg font-montserrat pb-3">
                                 {text.title}
                             </h1>
