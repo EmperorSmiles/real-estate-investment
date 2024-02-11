@@ -81,9 +81,7 @@ export default function LatestProperty() {
                     {items.map((item, idx) => (
                         <div
                             key={idx}
-                            className={`w-64 flex-shrink-0 h-full shadow-md rounded-md py-2 ${
-                                currentIndex === idx ? "active" : ""
-                            }`}
+                            className="w-64 flex-shrink-0 h-full shadow-md rounded-md py-2"
                         >
                             <div className="relative">
                                 <Image
