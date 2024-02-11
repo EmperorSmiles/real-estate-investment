@@ -19,7 +19,7 @@ export default function TestimonialsSlider() {
 
     return (
         <div className="bg-slate-200 h-full p-8">
-            <div className="flex gap-6 h-full shrink-0 p-4">
+            <div className="flex gap-6 h-full overflow-hidden shrink-0 p-4">
                 {testimonials.map((instance, idx) => (
                     <div
                         key={idx}
