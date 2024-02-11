@@ -1,57 +1,14 @@
 "use client";
 import ArrowButton from "@/app/components/ArrowButtons/layout";
+import { useLatestProperty } from "@/app/context/Context";
+import { useEffect } from "react";
 import { items } from "@/app/utilis/constants";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export default function LatestProperty() {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [activeImage, setActiveImage] = useState(true);
 
-    let autoPlayTimeoutRef: NodeJS.Timeout | undefined;
-
-    const nextCard = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-        setActiveImage(false);
-        startAutoPlay();
-    };
-
-    const prevCard = () => {
-        setCurrentIndex(
-            (prevIndex) => (prevIndex - 1 + items.length) % items.length
-        );
-        setActiveImage(false);
-        startAutoPlay();
-    };
-
-    const startAutoPlay = () => {
-        if (autoPlayTimeoutRef) {
-            clearTimeout(autoPlayTimeoutRef);
-        }
-
-        autoPlayTimeoutRef = setTimeout(() => {
-            setActiveImage(true);
-        }, 3000);
-    };
-
-    useEffect(() => {
-        let interval: NodeJS.Timeout;
-
-        if (activeImage) {
-            interval = setInterval(() => {
-                setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-            }, 3000);
-        }
-
-        return () => {
-            clearInterval(interval);
-
-            if (autoPlayTimeoutRef) {
-                clearTimeout(autoPlayTimeoutRef);
-            }
-        };
-    }, [activeImage, autoPlayTimeoutRef]);
-
+    const { currentIndex, activeImage, nextCard, prevCard } =
+        useLatestProperty();
     return (
         <div className="bg-slate-200 h-full p-8">
             <h1 className="text-3xl font-bold font-roboto">Latest Property</h1>
