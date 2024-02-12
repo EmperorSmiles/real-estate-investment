@@ -4,9 +4,9 @@ import { faqs } from "@/app/utilis/constants";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
 interface FAQ {
-    topic: string;
-    answer: string;
-    p2: string;
+    topic?: string;
+    answer?: string;
+    p2?: string;
 }
 
 interface FAQSectionProps {
