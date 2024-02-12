@@ -55,19 +55,39 @@ export default function NavBar() {
                         />
                     </div>
                     <div className="flex flex-col items-center p-4">
-                        <Link href="/" onClick={toggleDrawer}>
+                        <Link
+                            href="/"
+                            onClick={toggleDrawer}
+                            className="hover:text-indigo-500"
+                        >
                             Home
                         </Link>
-                        <Link href="#" onClick={toggleDrawer}>
+                        <Link
+                            href="#"
+                            onClick={toggleDrawer}
+                            className="hover:text-indigo-500"
+                        >
                             How it Works
                         </Link>
-                        <Link href="#" onClick={toggleDrawer}>
+                        <Link
+                            href="#"
+                            onClick={toggleDrawer}
+                            className="hover:text-indigo-500"
+                        >
                             Smart Property Investing
                         </Link>
-                        <Link href="#" onClick={toggleDrawer}>
+                        <Link
+                            href="#"
+                            onClick={toggleDrawer}
+                            className="hover:text-indigo-500"
+                        >
                             Market Insights
                         </Link>
-                        <Link href="#" onClick={toggleDrawer}>
+                        <Link
+                            href="#"
+                            onClick={toggleDrawer}
+                            className="hover:text-indigo-500"
+                        >
                             FAQs
                         </Link>
                         <button
