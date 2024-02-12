@@ -58,7 +58,7 @@ export default function NavBar() {
                         <Link href="/" onClick={toggleDrawer}>
                             Home
                         </Link>
-                        <Link href="/" as="#home" onClick={toggleDrawer}>
+                        <Link href="#" onClick={toggleDrawer}>
                             How it Works
                         </Link>
                         <Link href="#" onClick={toggleDrawer}>
@@ -70,7 +70,10 @@ export default function NavBar() {
                         <Link href="#" onClick={toggleDrawer}>
                             FAQs
                         </Link>
-                        <button className="bg-transparent rounded-3xl border-gray-300 border-2 px-2 mt-4 hover:border-indigo-500 hover:text-indigo-500">
+                        <button
+                            className="bg-transparent rounded-3xl border-gray-300 border-2 px-2 mt-4 hover:border-indigo-500 hover:text-indigo-500"
+                            onClick={toggleDrawer}
+                        >
                             Get Started
                         </button>
                     </div>
