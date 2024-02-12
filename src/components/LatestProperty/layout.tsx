@@ -10,9 +10,11 @@ export default function LatestProperty() {
         useLatestProperty();
     return (
         <div className="bg-slate-200 h-full p-8">
-            <h1 className="text-3xl font-bold font-roboto">Latest Property</h1>
+            <h1 className="text-2xl lg:text-3xl font-bold font-roboto">
+                Latest Property
+            </h1>
             <div className="flex mt-8">
-                <p className="mr-8 text-sm">
+                <p className="mr-8  text-xs lg:text-sm">
                     Explore our high-end projects tailored for both investors
                     and individuals. With a deep understanding of the Luxembourg
                     market, our real estate agency has expanded its reach and is
