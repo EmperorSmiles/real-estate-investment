@@ -10,7 +10,12 @@ import FAQSection from "./components/FAQ/layout";
 import { faqs, testimonials } from "./utilis/constants";
 import { ContextProvider } from "@/app/context/Context";
 
-export default function Home() {
+interface PageProps {
+    params: { slug: string };
+    searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export default function Home({ params, searchParams }: PageProps) {
     return (
         <div className=" ">
             <ContextProvider>
