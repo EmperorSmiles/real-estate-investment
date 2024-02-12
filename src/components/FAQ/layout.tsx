@@ -23,11 +23,11 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
     const isExpanded = (index: number) => expandedIndex === index;
 
     return (
-        <div className="bg-gray-100 h-full p-8 grid grid-cols-3">
-            <h1 className="capitalize font-roboto font-bold text-3xl">
+        <div className="bg-gray-100 h-full p-8 grid grid-col lg:grid-cols-3">
+            <h1 className="capitalize font-roboto font-bold text-2xl mb-2 w-full">
                 Top Questions Answered
             </h1>
-            <div className="col-span-2">
+            <div className="lg:col-span-2">
                 {faqs.map((content, idx) => (
                     <div key={idx}>
                         <div>
