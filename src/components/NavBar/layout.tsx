@@ -1,14 +1,28 @@
+"use client";
+
+import PropTypes from "prop-types";
 import Link from "next/link";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function NavBar() {
+    const [drawerOpen, setDrawerOpen] = useState(false);
+    const toggleDrawer = () => {
+        setDrawerOpen(!drawerOpen);
+    };
+
     return (
         <nav className="bg-transparent text-gray-300 font-open_sans absolute inset-x-0 top-0 z-30">
-            <div className="flex justify-around p-3 items-center ">
+            <div className="flex justify-between lg:justify-around p-3 items-center ">
                 <h1 className="text-lg font-bold">
                     Intelli
                     <span className="text-indigo-500 font-extrabold">V</span>est
                 </h1>
-                <ul className="flex space-x-3 text-sm ">
+                <div className="lg:hidden text-lg">
+                    <FaBars onClick={toggleDrawer} />
+                </div>
+
+                <ul className="hidden lg:flex space-x-3 text-sm">
                     <li className="hover:text-indigo-500">
                         <Link href="/">Home</Link>
                     </li>
@@ -28,10 +42,34 @@ export default function NavBar() {
                         <Link href="#">FAQs</Link>
                     </li>
                 </ul>
-                <button className="bg-transparent rounded-3xl border-gray-300 border-2 px-2 hover:border-indigo-500 hover:text-indigo-500">
+                <button className="bg-transparent rounded-3xl border-gray-300 border-2 px-2 hover:border-indigo-500 hover:text-indigo-500 hidden lg:block">
                     Get Started
                 </button>
             </div>
+            {drawerOpen && (
+                <div className="lg:hidden fixed inset-0 bg-gray-800 z-40">
+                    <div className="flex justify-end p-4">
+                        <FaTimes
+                            onClick={toggleDrawer}
+                            className="text-white cursor-pointer"
+                        />
+                    </div>
+                    <div className="flex flex-col items-center p-4">
+                        <Link href="/">Home</Link>
+                        <Link href="#steps">How it Works</Link>
+                        <Link href="#">Smart Property Investing</Link>
+                        <Link href="/market-insights">Market Insights</Link>
+                        <Link href="/faqs">FAQs</Link>
+                        <button className="bg-transparent rounded-3xl border-gray-300 border-2 px-2 mt-4 hover:border-indigo-500 hover:text-indigo-500">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            )}
         </nav>
     );
 }
+
+NavBar.propTypes = {
+    toggleDrawer: PropTypes.func,
+};
