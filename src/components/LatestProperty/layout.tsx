@@ -1,6 +1,6 @@
 "use client";
 import ArrowButton from "../ArrowButtons/layout";
-import { useLatestProperty } from "@/app/context/Context";
+import { useLatestProperty } from "../../app/context/Context";
 import { useEffect } from "react";
 import { items } from "@/app/utilis/constants";
 import Image from "next/image";
