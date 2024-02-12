@@ -11,6 +11,11 @@ export default function NavBar() {
         setDrawerOpen(!drawerOpen);
     };
 
+    const onClick = () => {
+        // Close the drawer when a link is clicked
+        setDrawerOpen(false);
+    };
+
     return (
         <nav className="bg-transparent text-gray-300 font-open_sans absolute inset-x-0 top-0 z-30">
             <div className="flex justify-between lg:justify-around p-3 items-center ">
@@ -50,12 +55,14 @@ export default function NavBar() {
                 <div className="lg:hidden fixed inset-0 bg-gray-800 z-40">
                     <div className="flex justify-end p-4">
                         <FaTimes
-                            onClick={toggleDrawer}
+                            onClick={onClick}
                             className="text-white cursor-pointer"
                         />
                     </div>
                     <div className="flex flex-col items-center p-4">
-                        <Link href="/">Home</Link>
+                        <Link href="/" onClick={}>
+                            Home
+                        </Link>
                         <Link href="#steps">How it Works</Link>
                         <Link href="#">Smart Property Investing</Link>
                         <Link href="/market-insights">Market Insights</Link>
