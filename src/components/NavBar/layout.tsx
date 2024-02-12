@@ -11,11 +11,6 @@ export default function NavBar() {
         setDrawerOpen(!drawerOpen);
     };
 
-    const onClick = () => {
-        // Close the drawer when a link is clicked
-        setDrawerOpen(false);
-    };
-
     return (
         <nav className="bg-transparent text-gray-300 font-open_sans absolute inset-x-0 top-0 z-30">
             <div className="flex justify-between lg:justify-around p-3 items-center ">
@@ -55,18 +50,26 @@ export default function NavBar() {
                 <div className="lg:hidden fixed inset-0 bg-gray-800 z-40">
                     <div className="flex justify-end p-4">
                         <FaTimes
-                            onClick={onClick}
+                            onClick={toggleDrawer}
                             className="text-white cursor-pointer"
                         />
                     </div>
                     <div className="flex flex-col items-center p-4">
-                        <Link href="/" onClick={}>
+                        <Link href="/" onClick={toggleDrawer}>
                             Home
                         </Link>
-                        <Link href="#steps">How it Works</Link>
-                        <Link href="#">Smart Property Investing</Link>
-                        <Link href="/market-insights">Market Insights</Link>
-                        <Link href="/faqs">FAQs</Link>
+                        <Link href="/" as="#home" onClick={toggleDrawer}>
+                            How it Works
+                        </Link>
+                        <Link href="#" onClick={toggleDrawer}>
+                            Smart Property Investing
+                        </Link>
+                        <Link href="#" onClick={toggleDrawer}>
+                            Market Insights
+                        </Link>
+                        <Link href="#" onClick={toggleDrawer}>
+                            FAQs
+                        </Link>
                         <button className="bg-transparent rounded-3xl border-gray-300 border-2 px-2 mt-4 hover:border-indigo-500 hover:text-indigo-500">
                             Get Started
                         </button>
