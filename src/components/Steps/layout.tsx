@@ -1,6 +1,6 @@
 "use client";
 
-import ArrowButton from "@/components/ArrowButtons/layout";
+import ArrowButton from "../../components/ArrowButtons/layout";
 import { steps } from "@/app/utilis/constants";
 import { useLatestProperty } from "@/app/context/Context";
 import { useEffect } from "react";
