@@ -8,14 +8,14 @@ export default function Body() {
                 <h2 className=" text-sm lg:text-4xl font-bold text-gray-700">
                     Affordable Property Investment in Singapore
                 </h2>
-                <p className="italic text-gray-500 text-xs lg:text-sm h-44 overflow-clip  text-ellipsis lg:h-full py-4 ">
+                <p className="italic text-gray-500 text-xs lg:text-sm h-44 overflow-clip text-ellipsis lg:h-full lg:w-full w-64 py-4 ">
                     With Singapore property prices growing over 60% within the
                     last 10 years*, the dream of owning a home continues to be a
                     dream for many. That&apos;s why we created IntelliVest. We
                     enable you to invest in the property market with as little
                     as $250 in as fast as a few minutes from signup to purchase
                 </p>
-                <small className="italic font-extralight text-gray-500 capitalize text-xs lg:text-base pt-4">
+                <small className="italic font-extralight text-gray-500 capitalize lg:w-full w-52 text-xs lg:text-base pt-4">
                     corelogic hedonic index singapore, sept 2023, October 2013 -
                     October 2023
                 </small>
@@ -29,7 +29,8 @@ export default function Body() {
                     src={Realtor}
                     alt="Realtor"
                     quality={100}
-                    className="lh-96 "
+                    className="lg:h-96 "
+                    priority
                 />
             </div>
         </div>
