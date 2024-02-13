@@ -10,9 +10,9 @@ export default function TestimonialsSlider() {
     const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
     // const isLarger = typeof window !== "undefined" && window.innerWidth >= 2560;
 
-    const forLargerScreens = {
-        transform: `translateX(${-currentIndex * 140}%)`,
-    };
+    // const forLargerScreens = {
+    //     transform: `translateX(${-currentIndex * 140}%)`,
+    // };
 
     const forLargeScreens = {
         transform: `translateX(${-currentIndex * 106}%)`,
