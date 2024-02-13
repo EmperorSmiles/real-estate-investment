@@ -19,7 +19,7 @@ export default function TestimonialsSlider() {
 
     return (
         <div className="bg-slate-200 h-full p-8">
-            <div className="flex gap-6 h-full overflow-hidden shrink-0 p-4">
+            <div className="flex gap-6 h-full overflow-hidden shrink-0 p-2 lg:p-4">
                 {testimonials.map((instance, idx) => (
                     <div
                         key={idx}
@@ -28,16 +28,16 @@ export default function TestimonialsSlider() {
                             transform: `translateX(${-currentIndex * 107}%)`,
                         }}
                     >
-                        <h1 className="capitalize font-roboto font-bold text-3xl">
+                        <h1 className="capitalize font-roboto font-bold text-lg lg:text-3xl">
                             Our testimony
                         </h1>
 
-                        <h1 className="p-2 font-roboto italic font-bold text-2xl w-full pl-64 pb-4">
+                        <h1 className="p-2 font-roboto italic font-bold text-sm lg:text-2xl w-full lg:pl-64 pb-4">
                             {instance.text}
                         </h1>
 
                         <div className="flex justify-between">
-                            <div className="flex gap-2">
+                            <div className="flex gap-2 text-sm">
                                 <Image
                                     alt="profile"
                                     src={instance.picture}
