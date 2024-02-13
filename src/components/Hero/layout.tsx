@@ -50,7 +50,7 @@ export default function Hero() {
                             <span className="px-20">SMARTER</span>{" "}
                             <span className="px-12">INVESTMENTS</span>
                         </h1>
-                        <div className="relative inset-0 flex flex-col py-10 text-gray-300 ">
+                        <div className="relative inset-0 flex flex-col py-10 text-gray-300 pr-4">
                             {social.map((social, idx) => (
                                 <a
                                     href={social.url}
@@ -64,7 +64,7 @@ export default function Hero() {
                             ))}
                         </div>
                     </div>
-                    <p className="text-gray-300 absolute inset-0 flex items-center justify-center top-80  p-2 text-sm">
+                    <p className="text-gray-300 absolute inset-0 flex items-center justify-center top-80 text-center p-2 text-xs lg:text-sm">
                         At IntelliVest, we are your trusted partner on the path
                         to property investment success
                     </p>
