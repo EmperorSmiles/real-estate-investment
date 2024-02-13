@@ -40,7 +40,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
                                     className={`ml-2 p-2 rounded-full ${
                                         isExpanded(idx)
                                             ? "bg-gray-800 text-white"
-                                            : "border-2 border-gray-700 hover:bg-gray-800 text-gray-700 hover:text-white"
+                                            : "border-2 border-gray-700 hover:lg:bg-gray-800 text-gray-700 hover:text-white"
                                     }`}
                                 >
                                     {isExpanded(idx) ? <FaMinus /> : <FaPlus />}
