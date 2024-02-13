@@ -7,6 +7,16 @@ import { useEffect, useState } from "react";
 export default function TestimonialsSlider() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    const isLarge = window.innerWidth >= 760; // Adjust the threshold as needed
+
+    const forLargeScreens = {
+        transform: `translateX(${-currentIndex * 107}%)`,
+    };
+
+    const forSmallScreens = {
+        transform: `translateX(${-currentIndex * 115}%)`,
+    };
+
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex(
@@ -24,9 +34,7 @@ export default function TestimonialsSlider() {
                     <div
                         key={idx}
                         className="w-full flex-shrink-0 h-full shadow-md rounded-md p-4 mx-4 transform transition-transform"
-                        style={{
-                            transform: `translateX(${-currentIndex * 107}%)`,
-                        }}
+                        style={isLarge ? forLargeScreens : forSmallScreens}
                     >
                         <h1 className="capitalize font-roboto font-bold text-lg lg:text-3xl">
                             Our testimony
