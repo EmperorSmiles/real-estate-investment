@@ -12,11 +12,11 @@ export default function LatestProperty() {
     const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
 
     const forLargeScreens = {
-        transform: `translateX(${-currentIndex * 16.7}%)`,
+        transform: `translateX(${-currentIndex * 20}%)`,
     };
 
     const forSmallScreens = {
-        transform: `translateX(${-currentIndex * 80}%)`,
+        transform: `translateX(${-currentIndex * 85}%)`,
     };
     // style={{
     //                     transform: `translateX(${-currentIndex * 16.7}%)`,
