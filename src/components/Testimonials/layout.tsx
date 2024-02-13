@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export default function TestimonialsSlider() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const isLarge = screen.availWidth >= 760; // Adjust the threshold as needed
+    const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
 
     const forLargeScreens = {
         transform: `translateX(${-currentIndex * 107}%)`,
