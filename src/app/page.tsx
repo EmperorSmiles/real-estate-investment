@@ -12,7 +12,7 @@ import { ContextProvider } from "@/app/context/Context";
 
 export default function Home() {
     return (
-        <div className=" ">
+        <div className="scroll-smooth">
             <ContextProvider>
                 <NavBar />
                 <Hero />
