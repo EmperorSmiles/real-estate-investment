@@ -33,7 +33,7 @@ export default function TestimonialsSlider() {
                 {testimonials.map((instance, idx) => (
                     <div
                         key={idx}
-                        className="w-full flex-shrink-0 h-full shadow-md rounded-md p-4 mx-4 transform transition-transform"
+                        className="w-full flex-shrink-0 h-full shadow-md rounded-md p-4 mx-3 transform transition-transform"
                         style={isLarge ? forLargeScreens : forSmallScreens}
                     >
                         <h1 className="capitalize font-roboto font-bold text-lg lg:text-3xl">
