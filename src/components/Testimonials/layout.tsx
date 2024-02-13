@@ -14,7 +14,7 @@ export default function TestimonialsSlider() {
     };
 
     const forSmallScreens = {
-        transform: `translateX(${-currentIndex * 120}%)`,
+        transform: `translateX(${-currentIndex * 105}%)`,
     };
 
     useEffect(() => {
@@ -28,12 +28,12 @@ export default function TestimonialsSlider() {
     }, []);
 
     return (
-        <div className="bg-slate-200 h-full p-8">
-            <div className="flex gap-6 h-full overflow-hidden shrink-0 p-2 lg:p-4">
+        <div className="bg-slate-200 h-full p-4 lg:p-8">
+            <div className="flex gap-4 h-full overflow-hidden shrink-0 p-2 lg:p-4">
                 {testimonials.map((instance, idx) => (
                     <div
                         key={idx}
-                        className="w-full flex-shrink-0 h-full shadow-md rounded-md p-4 mx-3 transform transition-transform"
+                        className="w-full flex-shrink-0 h-full shadow-md rounded-md p-4 transform transition-transform"
                         style={isLarge ? forLargeScreens : forSmallScreens}
                     >
                         <h1 className="capitalize font-roboto font-bold text-lg lg:text-3xl">
