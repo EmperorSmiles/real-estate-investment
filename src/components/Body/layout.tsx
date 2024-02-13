@@ -24,7 +24,7 @@ export default function Body() {
                     Find Out More
                 </button>
             </div>
-            <div className="w-1/3 px-6 lg:px-12">
+            <div className="w-1/3 px-2 lg:px-12">
                 <Image
                     src={Realtor}
                     alt="Realtor"
