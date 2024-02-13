@@ -12,12 +12,15 @@ export default function LatestProperty() {
     const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
 
     const forLargeScreens = {
-        transform: `translateX(${-currentIndex * 106}%)`,
+        transform: `translateX(${-currentIndex * 16.7}%)`,
     };
 
     const forSmallScreens = {
-        transform: `translateX(${-currentIndex * 120}%)`,
+        transform: `translateX(${-currentIndex * 80}%)`,
     };
+    // style={{
+    //                     transform: `translateX(${-currentIndex * 16.7}%)`,
+    //                 }}
     return (
         <div className="bg-slate-200 h-full p-8">
             <h1 className="text-2xl lg:text-3xl font-bold font-roboto">
@@ -42,9 +45,7 @@ export default function LatestProperty() {
             <div className="w-full h-full overflow-hidden p-4 my-4 ">
                 <div
                     className="flex gap-6 h-full transition-transform"
-                    style={{
-                        transform: `translateX(${-currentIndex * 16.7}%)`,
-                    }}
+                    style={isLarge ? forLargeScreens : forSmallScreens}
                 >
                     {items.map((item, idx) => (
                         <div
