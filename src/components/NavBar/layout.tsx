@@ -18,7 +18,7 @@ export default function NavBar() {
                     Intelli
                     <span className="text-indigo-500 font-extrabold">V</span>est
                 </h1>
-                <div className="lg:hidden text-lg">
+                <div className="lg:hidden text-2xl">
                     <FaBars onClick={toggleDrawer} />
                 </div>
 
@@ -51,7 +51,7 @@ export default function NavBar() {
                     <div className="flex justify-end p-4">
                         <FaTimes
                             onClick={toggleDrawer}
-                            className="text-white cursor-pointer"
+                            className="text-white text-2xl cursor-pointer"
                         />
                     </div>
                     <div className="flex flex-col items-center p-4">
