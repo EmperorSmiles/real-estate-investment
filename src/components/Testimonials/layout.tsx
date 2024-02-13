@@ -14,7 +14,7 @@ export default function TestimonialsSlider() {
     };
 
     const forSmallScreens = {
-        transform: `translateX(${-currentIndex * 115}%)`,
+        transform: `translateX(${-currentIndex * 120}%)`,
     };
 
     useEffect(() => {
