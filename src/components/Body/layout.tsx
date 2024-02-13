@@ -5,7 +5,7 @@ export default function Body() {
     return (
         <div className="w-full h-full flex p-4 lg:p-8 bg-gray-100">
             <div className="w-2/3 h-full lg:h-96 flex flex-col justify-between px-4 lg:px-12 font-sans">
-                <h2 className=" text-xs lg:text-4xl font-bold text-gray-700 ">
+                <h2 className=" text-sm lg:text-4xl font-bold text-gray-700 ">
                     Affordable Property Investment in Singapore
                 </h2>
                 <p className="italic text-gray-500 text-xs lg:text-sm h-24 overflow-clip text-ellipsis  lg:h-full lg:w-full py-4 ">
