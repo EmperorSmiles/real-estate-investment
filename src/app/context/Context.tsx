@@ -14,7 +14,6 @@ interface ContextProps {
     activeImage: boolean;
     nextCard: () => void;
     prevCard: () => void;
-    // Additional properties for the Steps component
     currentStepIndex: number;
     nextStep: () => void;
     prevStep: () => void;
