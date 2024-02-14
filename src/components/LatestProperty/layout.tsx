@@ -1,13 +1,27 @@
 "use client";
 import ArrowButton from "../../components/ArrowButtons/layout";
 import { useLatestProperty } from "../../app/context/Context";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { items } from "@/app/utilis/constants";
 import Image from "next/image";
 
 export default function LatestProperty() {
     const { currentIndex, activeImage, nextCard, prevCard } =
         useLatestProperty();
+
+    const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
+
+    const forLargeScreens = {
+        transform: `translateX(${-currentIndex * 0}%)`,
+    };
+
+    const forSmallScreens = {
+        transform: `translateX(${-currentIndex * 120}%)`,
+    };
+
+    // style={{
+    //                     transform: `translateX(${-currentIndex * 16.7}%)`,
+    //                 }}
 
     return (
         <div className="bg-slate-200 h-full p-8">
@@ -30,12 +44,10 @@ export default function LatestProperty() {
                     />
                 </div>
             </div>
-            <div className="w-full h-full overflow-hidden p-4 my-4 ">
+            <div className="w-full h-full overflow-auto p-4 my-4 ">
                 <div
-                    className="flex gap-6 h-full transition-transform"
-                    style={{
-                        transform: `translateX(${-currentIndex * 16.7}%)`,
-                    }}
+                    className="flex gap-6 h-full transition-transform justify-center"
+                    style={isLarge ? forLargeScreens : forSmallScreens}
                 >
                     {items.map((item, idx) => (
                         <div
