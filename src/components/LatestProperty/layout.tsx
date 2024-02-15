@@ -1,7 +1,7 @@
 "use client";
 import ArrowButton from "../../components/ArrowButtons/layout";
 import { useLatestProperty } from "../../app/context/Context";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import { items } from "@/app/utilis/constants";
 import Image from "next/image";
 
@@ -12,17 +12,12 @@ export default function LatestProperty() {
     const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
 
     const forLargeScreens = {
-        transform: `translateX(${-currentIndex * 0}%)`,
+        transform: `translateX(${-currentIndex * 15}%)`,
     };
 
     const forSmallScreens = {
         transform: `translateX(${-currentIndex * 120}%)`,
     };
-
-    // style={{
-    //                     transform: `translateX(${-currentIndex * 16.7}%)`,
-    //                 }}
-
     return (
         <div className="bg-slate-200 h-full p-8">
             <h1 className="text-2xl lg:text-3xl font-bold font-roboto">
@@ -44,15 +39,18 @@ export default function LatestProperty() {
                     />
                 </div>
             </div>
-            <div className="w-full h-full overflow-auto p-4 my-4 ">
+            <div className="w-full h-full overflow-auto p-4 my-4 bg-black">
                 <div
-                    className="flex gap-6 h-full transition-transform justify-center"
-                    style={isLarge ? forLargeScreens : forSmallScreens}
+                    className="flex gap-6 h-full transition-transform bg-orange-800"
+                    // style={{
+                    //     transform: `translateX(${-currentIndex * 16.7}%)`,
+                    // }}
+                    // style={isLarge ? forLargeScreens : forSmallScreens}
                 >
                     {items.map((item, idx) => (
                         <div
                             key={idx}
-                            className="w-64 flex-shrink-0 h-full shadow-md rounded-md py-2"
+                            className="w-64 flex-shrink-0 h-full shadow-md rounded-md p-2 bg-lime-700"
                         >
                             <div className="relative">
                                 <Image
