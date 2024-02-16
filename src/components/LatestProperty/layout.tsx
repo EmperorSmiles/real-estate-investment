@@ -18,10 +18,13 @@ export default function LatestProperty() {
     // const CustomPrevArrow = ({ onClick }) => (
     //     <ArrowButton prevCard={prevCard} onClick={onClick} direction="prev" />
     // );
-
-    // const CustomNextArrow = ({ onClick }) => (
-    //     <ArrowButton nextCard={nextCard} onClick={onClick} direction="next" />
-    // );
+    
+    const PrevArrow = ({ props }:any  ) => (
+        <FaArrowLeft onClick={props.onClick} direction="previous" />
+    );
+    const NextArrow = ({ props }:any  ) => (
+        <FaArrowRight onClick={props.onClick} direction="next" />
+    );
 
     var settings = {
         dots: false,
@@ -30,15 +33,9 @@ export default function LatestProperty() {
         slidesToShow: 4,
         slidesToScroll: 1,
         adaptiveHeight: true,
-        draggable: true,
         autoplay: true,
         prevArrow: (
-            <button
-                className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white"
-                onClick={prevCard}
-            >
-                <FaArrowLeft />
-            </button>
+            
         ),
         nextArrow: (
             <button
