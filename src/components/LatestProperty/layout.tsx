@@ -4,6 +4,9 @@ import { useLatestProperty } from "../../app/context/Context";
 import { useEffect } from "react";
 import { items } from "@/app/utilis/constants";
 import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function LatestProperty() {
     const { currentIndex, activeImage, nextCard, prevCard } =
@@ -11,13 +14,16 @@ export default function LatestProperty() {
 
     const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
 
-    const forLargeScreens = {
-        transform: `translateX(${-currentIndex * 15}%)`,
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        autoplay: true,
     };
 
-    const forSmallScreens = {
-        transform: `translateX(${-currentIndex * 120}%)`,
-    };
     return (
         <div className="bg-slate-200 h-full p-8">
             <h1 className="text-2xl lg:text-3xl font-bold font-roboto">
@@ -40,64 +46,48 @@ export default function LatestProperty() {
                 </div>
             </div>
             <div className="w-full h-full overflow-auto p-4 my-4 bg-black">
-                <div
-                    className="flex gap-6 h-full transition-transform bg-orange-800"
-                    // style={{
-                    //     transform: `translateX(${-currentIndex * 16.7}%)`,
-                    // }}
-                    // style={isLarge ? forLargeScreens : forSmallScreens}
-                >
+                <Slider className="bg-orange-500" {...settings}>
                     {items.map((item, idx) => (
-                        <div
-                            key={idx}
-                            className="w-64 flex-shrink-0 h-full shadow-md rounded-md p-2 bg-lime-700"
-                        >
-                            <div className="relative">
+                        <div key={idx} className="w-full h-full p-1">
+                            <div className="bg-slate-200 p-2 h-84 rounded-lg shadow-xl">
                                 <Image
                                     src={item.src}
                                     alt=""
                                     priority
                                     height={700}
                                     width={500}
-                                    className="w-full h-80 object-cover"
+                                    className="w-full h-60 object-cover"
                                 />
-                                {currentIndex !== idx && (
-                                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-gray-900 opacity-70"></div>
-                                )}
-                            </div>
-                            {item && (
-                                <div className="p-2 w-full h-14 text-gray-600">
-                                    <div className="flex">
-                                        <h1 className=" font-bold pr-3">
+                                <div className="p-2 w-full text-gray-600 text-sm font-roboto">
+                                    <div className="flex items-center">
+                                        <h1 className="font-bold pr-2 text-xs">
                                             {item.city}
                                         </h1>
-                                        <p className="italic">
+                                        <h1 className="text-xs">
                                             {item.areaCode}
+                                        </h1>
+                                    </div>
+                                    <div className="flex items-center">
+                                        <p className="text-xs pr-2">
+                                            {item.desc1}
+                                        </p>
+                                        <p className="text-xs font-bold">
+                                            {item.netIncome}
                                         </p>
                                     </div>
-                                    <div className="flex justify-between text-xs">
-                                        <span className="flex pr-1">
-                                            <p className="pr-2 flex-nowrap">
-                                                {item.desc1}
-                                            </p>
-                                            <p className="font-bold">
-                                                {item.netIncome}
-                                            </p>
-                                        </span>
-                                        <span className="flex ">
-                                            <p className="pr-1 flex-nowrap text-xs">
-                                                {item.desc2}
-                                            </p>
-                                            <p className="font-bold">
-                                                {item.netYield}
-                                            </p>
-                                        </span>
+                                    <div className="flex items-center">
+                                        <p className="text-xs pr-2">
+                                            {item.desc2}
+                                        </p>
+                                        <p className="text-xs font-bold">
+                                            {item.netYield}
+                                        </p>
                                     </div>
                                 </div>
-                            )}
+                            </div>
                         </div>
                     ))}
-                </div>
+                </Slider>
             </div>
         </div>
     );
