@@ -7,6 +7,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 export default function LatestProperty() {
     const { currentIndex, activeImage, nextCard, prevCard } =
@@ -14,16 +15,65 @@ export default function LatestProperty() {
 
     const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
 
+    // const CustomPrevArrow = ({ onClick }) => (
+    //     <ArrowButton prevCard={prevCard} onClick={onClick} direction="prev" />
+    // );
+
+    // const CustomNextArrow = ({ onClick }) => (
+    //     <ArrowButton nextCard={nextCard} onClick={onClick} direction="next" />
+    // );
+
     var settings = {
         dots: false,
-        infinite: true,
+        loop: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
         adaptiveHeight: true,
         autoplay: true,
+        prevArrow: (
+            <button
+                className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white"
+                onClick={prevCard}
+            >
+                <FaArrowLeft />
+            </button>
+        ),
+        nextArrow: (
+            <button
+                className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white"
+                onClick={nextCard}
+            >
+                <FaArrowRight />
+            </button>
+        ),
+        responsive: [
+            {
+                breakpoint: 2560,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     };
-
     return (
         <div className="bg-slate-200 h-full p-8">
             <h1 className="text-2xl lg:text-3xl font-bold font-roboto">
