@@ -25,11 +25,12 @@ export default function LatestProperty() {
 
     var settings = {
         dots: false,
-        loop: true,
+        infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        draggable: true,
         autoplay: true,
         prevArrow: (
             <button
@@ -49,9 +50,9 @@ export default function LatestProperty() {
         ),
         responsive: [
             {
-                breakpoint: 2560,
+                breakpoint: 2561,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 5,
                 },
             },
             {
@@ -95,8 +96,8 @@ export default function LatestProperty() {
                     />
                 </div>
             </div>
-            <div className="w-full h-full overflow-auto p-4 my-4 bg-black">
-                <Slider className="bg-orange-500" {...settings}>
+            <div className="w-full h-full overflow-hidden p-4 my-4 bg-blacke">
+                <Slider className="bg-orange5-500" {...settings}>
                     {items.map((item, idx) => (
                         <div key={idx} className="w-full h-full p-1">
                             <div className="bg-slate-200 p-2 h-84 rounded-lg shadow-xl">
