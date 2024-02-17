@@ -23,7 +23,11 @@ export default function LatestProperty() {
         <FaArrowLeft onClick={props} direction="previous" />
     );
     const NextArrow = ({ props }: any) => (
-        <FaArrowRight onClick={props} direction="next" />
+        <FaArrowRight
+            onClick={props}
+            direction="next"
+            className="bg-black text-white"
+        />
     );
 
     var settings = {
@@ -34,8 +38,8 @@ export default function LatestProperty() {
         slidesToScroll: 1,
         adaptiveHeight: true,
         autoplay: true,
-        prevArrow: <PrevArrow />,
-        nextArrow: <NextArrow />,
+        // prevArrow: <PrevArrow />,
+        // nextArrow: <NextArrow />,
         responsive: [
             {
                 breakpoint: 2561,
@@ -46,7 +50,7 @@ export default function LatestProperty() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                 },
             },
             {
@@ -84,8 +88,8 @@ export default function LatestProperty() {
                     />
                 </div>
             </div>
-            <div className="w-full h-full overflow-hidden p-4 my-4 bg-blacke">
-                <Slider className="bg-orange5-500" {...settings}>
+            <div className="w-full h-full overflow-hidden p-4 my-4 bg-gray-700">
+                <Slider className="bg-orangre-500" {...settings}>
                     {items.map((item, idx) => (
                         <div key={idx} className="w-full h-full p-1">
                             <div className="bg-slate-200 p-2 h-84 rounded-lg shadow-xl">
