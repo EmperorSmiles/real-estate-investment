@@ -36,7 +36,7 @@ export default function LatestProperty() {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        adaptiveHeight: false,
+        adaptiveHeight: true,
         autoplay: true,
         // prevArrow: <PrevArrow />,
         // nextArrow: <NextArrow />,
