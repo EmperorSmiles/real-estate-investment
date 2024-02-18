@@ -71,29 +71,6 @@ export default function Steps() {
                     </div>
                 ))}
             </div> */}
-            <div className="w-full h-full overflow-hidden p-4 my-4 bg-gray-100 ">
-                <Slider className="bg-orangre-500">
-                    {steps.map((text, idx) => (
-                        <div key={idx} className="p-2 text-sm">
-                            <div
-                                key={idx}
-                                className="flex-col h-64 p-4 shadow-md justify-between w-80 flex-shrink-0"
-                            >
-                                <h1 className="font-bold text-lg font-montserrat pb-3">
-                                    {text.title}
-                                </h1>
-                                <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
-                                    {text.desc}
-                                </h1>
-                                <div className="flex-grow flex flex-col justify-center pb-4">
-                                    <p className="text-gray-500">{text.note}</p>
-                                </div>
-                                <p className="text-gray-500">{text.note2}</p>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
         </div>
     );
 }
