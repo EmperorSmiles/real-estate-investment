@@ -24,6 +24,44 @@ export default function Steps() {
         };
     }, [activeImage, nextStep]);
 
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        // prevArrow: <PrevArrow />,
+        // nextArrow: <NextArrow />,
+        responsive: [
+            {
+                breakpoint: 2561,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    };
+
     return (
         <div className="w-full h-full px-4 py-6 bg-gray-100 overflow-hidden">
             <h1 className="text-2xl font-bold text-gray-700 font-roboto mb-4">
@@ -44,10 +82,7 @@ export default function Steps() {
                     />
                 </div>
             </div>
-            {/* <div
-                className="flex w-full h-full"
-                style={{ transform: `translateX(${-currentStepIndex * 20}%)` }}
-            >
+            <Slider className="flex w-full h-full">
                 {steps.map((text, idx) => (
                     <div key={idx} className="p-2 text-sm">
                         <div
@@ -70,7 +105,7 @@ export default function Steps() {
                         </div>
                     </div>
                 ))}
-            </div> */}
+            </Slider>
         </div>
     );
 }
