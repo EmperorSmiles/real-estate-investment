@@ -44,13 +44,13 @@ export default function LatestProperty() {
             {
                 breakpoint: 2561,
                 settings: {
-                    slidesToShow: 5,
+                    slidesToShow: 4,
                 },
             },
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                 },
             },
             {
@@ -102,15 +102,15 @@ export default function LatestProperty() {
                                     className="w-full h-60 object-cover"
                                 />
                                 <div className="p-2 w-full text-gray-600 text-sm font-roboto">
-                                    <div className="flex items-center">
-                                        <h1 className="font-bold pr-2 text-xs">
+                                    <div className="flex items-center justify-between">
+                                        <h1 className="font-bold text-xs">
                                             {item.city}
                                         </h1>
                                         <h1 className="text-xs">
                                             {item.areaCode}
                                         </h1>
                                     </div>
-                                    <div className="flex items-center">
+                                    <div className="flex items-center justify-between">
                                         <p className="text-xs pr-2">
                                             {item.desc1}
                                         </p>
@@ -118,10 +118,8 @@ export default function LatestProperty() {
                                             {item.netIncome}
                                         </p>
                                     </div>
-                                    <div className="flex items-center">
-                                        <p className="text-xs pr-2">
-                                            {item.desc2}
-                                        </p>
+                                    <div className="flex items-center justify-between">
+                                        <p className="text-xs">{item.desc2}</p>
                                         <p className="text-xs font-bold">
                                             {item.netYield}
                                         </p>
