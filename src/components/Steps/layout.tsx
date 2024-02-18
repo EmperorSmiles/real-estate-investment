@@ -43,7 +43,7 @@ export default function Steps() {
                     />
                 </div>
             </div>
-            <div
+            {/* <div
                 className="flex w-full h-full"
                 style={{ transform: `translateX(${-currentStepIndex * 20}%)` }}
             >
@@ -69,7 +69,7 @@ export default function Steps() {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 }
