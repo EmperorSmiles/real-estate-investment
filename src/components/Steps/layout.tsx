@@ -7,22 +7,22 @@ import { useEffect } from "react";
 import Slider from "react-slick";
 
 export default function Steps() {
-    // const { activeImage, currentStepIndex, nextStep, prevStep } =
-    //     useLatestProperty();
+    const { activeImage, currentStepIndex, nextStep, prevStep } =
+        useLatestProperty();
 
-    // useEffect(() => {
-    //     let interval: NodeJS.Timeout;
+    useEffect(() => {
+        let interval: NodeJS.Timeout;
 
-    //     if (activeImage) {
-    //         interval = setInterval(() => {
-    //             nextStep();
-    //         }, 2000);
-    //     }
+        if (activeImage) {
+            interval = setInterval(() => {
+                nextStep();
+            }, 2000);
+        }
 
-    //     return () => {
-    //         clearInterval(interval);
-    //     };
-    // }, [activeImage, nextStep]);
+        return () => {
+            clearInterval(interval);
+        };
+    }, [activeImage, nextStep]);
 
     var settings = {
         dots: false,
@@ -75,22 +75,22 @@ export default function Steps() {
                     with confidence
                 </p>
                 <div className="flex h-full align-middle">
-                    {/* <ArrowButton
+                    <ArrowButton
                         nextCard={nextStep}
                         prevCard={prevStep}
                         activeImage={activeImage}
-                    /> */}
+                    />
                 </div>
             </div>
-            <Slider className="flex w-full h-full gap-4 bg-black" {...settings}>
+            <Slider className="flex w-full h-full gap-4" {...settings}>
                 {steps.map((text, idx) => (
-                    <div
-                        key={idx}
-                        className="p-2 text-sm bg-orange-600 h-full w-full"
-                    >
+                    <div key={idx} className="p-2 text-sm">
                         <div
-                            className={`flex-col h-64 bg p-6 bg-gray-200
-                            shadow-md justify-between w-96 flex-shrink-0`}
+                            className={`flex-col h-64 w-64 p-4 ${
+                                currentStepIndex !== idx
+                                    ? "bg-gray-200"
+                                    : "bg-gray-800 text-white"
+                            } shadow-md justify-between w-80 flex-shrink-0`}
                         >
                             <h1 className="font-bold text-lg font-montserrat pb-3">
                                 {text.title}
@@ -98,7 +98,7 @@ export default function Steps() {
                             <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
                                 {text.desc}
                             </h1>
-                            <div className="flex-grow flex flex-col justify-center pb-4 pr-2">
+                            <div className="flex-grow flex flex-col justify-center pb-4">
                                 <p className="text-gray-500">{text.note}</p>
                             </div>
                             <p className="text-gray-500">{text.note2}</p>
