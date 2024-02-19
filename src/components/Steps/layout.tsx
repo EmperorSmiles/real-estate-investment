@@ -82,11 +82,11 @@ export default function Steps() {
                     />
                 </div>
             </div>
-            <Slider className="flex w-full h-full">
+            <Slider className="flex w-full h-full gap-4" {...settings}>
                 {steps.map((text, idx) => (
                     <div key={idx} className="p-2 text-sm">
                         <div
-                            className={`flex-col h-64 p-4 ${
+                            className={`flex-col h-64 w-64 p-4 ${
                                 currentStepIndex !== idx
                                     ? "bg-gray-200"
                                     : "bg-gray-800 text-white"
