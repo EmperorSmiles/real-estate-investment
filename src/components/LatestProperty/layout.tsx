@@ -79,7 +79,7 @@ export default function LatestProperty() {
         ],
     };
     return (
-        <div className="bg-slate-200 h-full p-8">
+        <div className="bg-slate-200 h-full p-8 overflow-hidden">
             <h1 className="text-2xl lg:text-3xl font-bold font-roboto">
                 Latest Property
             </h1>
@@ -99,7 +99,7 @@ export default function LatestProperty() {
                     />
                 </div> */}
             </div>
-            <div className="overflow-hidden p-6">
+            <div className="p-6">
                 <Slider className="p-2" {...settings}>
                     {items.map((item, idx) => (
                         <div key={idx} className="w-full h-full p-1">
