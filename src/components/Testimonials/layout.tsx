@@ -6,31 +6,67 @@ import { useEffect, useState } from "react";
 import Slider from "react-slick";
 
 export default function TestimonialsSlider() {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    // const [currentIndex, setCurrentIndex] = useState(0);
 
-    const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
+    // const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
 
-    const forLargeScreens = {
-        transform: `translateX(${-currentIndex * 106}%)`,
+    // const forLargeScreens = {
+    //     transform: `translateX(${-currentIndex * 106}%)`,
+    // };
+
+    // const forSmallScreens = {
+    //     transform: `translateX(${-currentIndex * 120}%)`,
+    // };
+
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setCurrentIndex(
+    //             (prevIndex) => (prevIndex + 1) % testimonials.length
+    //         );
+    //     }, 2000);
+
+    //     return () => clearInterval(interval);
+    // }, []);
+
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 2561,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+            {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     };
-
-    const forSmallScreens = {
-        transform: `translateX(${-currentIndex * 120}%)`,
-    };
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex(
-                (prevIndex) => (prevIndex + 1) % testimonials.length
-            );
-        }, 2000);
-
-        return () => clearInterval(interval);
-    }, []);
 
     return (
         <div className="bg-slate-200 h-full p-8">
-            <Slider>
+            <Slider {...settings}>
                 {testimonials.map((instance, idx) => (
                     <div key={idx}>
                         <h1 className="capitalize font-roboto font-bold text-lg lg:text-3xl">
