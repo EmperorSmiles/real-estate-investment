@@ -86,7 +86,7 @@ export default function Steps() {
                 {steps.map((text, idx) => (
                     <div
                         key={idx}
-                        className="text-sm align-middle bg-black p-4"
+                        className="text-sm align-middle bg-black p-2"
                     >
                         {/* <div
                                     className={`flex-col h-64 w-64 p-4 ${
