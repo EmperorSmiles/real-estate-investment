@@ -1,9 +1,6 @@
 "use client";
 
-import ArrowButton from "../../components/ArrowButtons/layout";
 import { steps } from "@/app/utilis/constants";
-import { useLatestProperty } from "@/app/context/Context";
-import { useEffect } from "react";
 import Slider from "react-slick";
 
 export default function Steps() {
@@ -24,6 +21,28 @@ export default function Steps() {
     //     };
     // }, [activeImage, nextStep]);
 
+    function NextArrow(props: func) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "block", background: "red" }}
+                onClick={onClick}
+            />
+        );
+    }
+
+    function PrevArrow(props: func) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "block", background: "green" }}
+                onClick={onClick}
+            />
+        );
+    }
+
     var settings = {
         dots: false,
         infinite: true,
@@ -32,8 +51,8 @@ export default function Steps() {
         slidesToScroll: 1,
         adaptiveHeight: true,
         autoplay: true,
-        // prevArrow: <PrevArrow />,
-        // nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
         responsive: [
             {
                 breakpoint: 2561,
@@ -82,42 +101,44 @@ export default function Steps() {
                     />
                 </div> */}
             </div>
-            <Slider className="flex w-full h-full" {...settings}>
-                {steps.map((text, idx) => (
-                    <div key={idx} className="text-sm items-center p-2">
-                        {/* <div
-                                    className={`flex-col h-64 w-64 p-4 ${
-                                        currentStepIndex !== idx
-                                            ? "bg-gray-200"
-                                            : "bg-gray-800 text-white"
-                                    } shadow-md justify-between w-80 flex-shrink-0`}
-                                >
-                                    <h1 className="font-bold text-lg font-montserrat pb-3">
-                                        {text.title}
-                                    </h1>
-                                    <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
-                                        {text.desc}
-                                    </h1>
-                                    <div className="flex-grow flex flex-col justify-center pb-4">
-                                        <p className="text-gray-500">{text.note}</p>
-                                    </div>
-                                    <p className="text-gray-500">{text.note2}</p>
-                                </div> */}
-                        <div className="bg-gray-200 h-80 w-full p-4 flex flex-shrink-0 flex-col align-middle shadow-lg">
-                            <h1 className="font-bold text-lg font-montserrat pb-3">
-                                {text.title}
-                            </h1>
-                            <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
-                                {text.desc}
-                            </h1>
-                            <div className="flex-grow flex flex-col justify-center pb-4 text-sm">
-                                <p className="text-gray-500">{text.note}</p>
+            <div className=" p-2">
+                <Slider className="flex w-full h-full p-2" {...settings}>
+                    {steps.map((text, idx) => (
+                        <div key={idx} className="text-sm items-center p-2">
+                            {/* <div
+                                        className={`flex-col h-64 w-64 p-4 ${
+                                            currentStepIndex !== idx
+                                                ? "bg-gray-200"
+                                                : "bg-gray-800 text-white"
+                                        } shadow-md justify-between w-80 flex-shrink-0`}
+                                    >
+                                        <h1 className="font-bold text-lg font-montserrat pb-3">
+                                            {text.title}
+                                        </h1>
+                                        <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
+                                            {text.desc}
+                                        </h1>
+                                        <div className="flex-grow flex flex-col justify-center pb-4">
+                                            <p className="text-gray-500">{text.note}</p>
+                                        </div>
+                                        <p className="text-gray-500">{text.note2}</p>
+                                    </div> */}
+                            <div className="bg-gray-200 h-80 w-full p-4 flex flex-shrink-0 flex-col align-middle shadow-lg">
+                                <h1 className="font-bold text-lg font-montserrat pb-3">
+                                    {text.title}
+                                </h1>
+                                <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
+                                    {text.desc}
+                                </h1>
+                                <div className="flex-grow flex flex-col justify-center pb-4 text-sm">
+                                    <p className="text-gray-500">{text.note}</p>
+                                </div>
+                                <p className="text-gray-500">{text.note2}</p>
                             </div>
-                            <p className="text-gray-500">{text.note2}</p>
                         </div>
-                    </div>
-                ))}
-            </Slider>
+                    ))}
+                </Slider>
+            </div>
         </div>
     );
 }
