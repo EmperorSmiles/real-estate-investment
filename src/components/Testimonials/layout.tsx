@@ -76,7 +76,7 @@ export default function TestimonialsSlider() {
                             {instance.text}
                         </h1>
                         <div className="flex justify-between">
-                            <div className="flex gap-2 text-sm">
+                            <div className="flex gap-1 text-sm">
                                 <Image
                                     alt="profile"
                                     src={instance.picture}
@@ -84,16 +84,16 @@ export default function TestimonialsSlider() {
                                     height={500}
                                     className="rounded-full w-10 h-10 row-span-2"
                                 />
-                                <div>
+                                <div className="text-sm flex-col">
                                     <p className="font-bold text-gray-800">
                                         {instance.name}
                                     </p>
-                                    <p className="text-gray-600">
+                                    <p className="text-gray-600 text-xs">
                                         {instance.location}
                                     </p>
                                 </div>
                             </div>
-                            <div>{instance.rating}</div>
+                            <div className="text-xs">{instance.rating}</div>
                         </div>
                     </div>
                 ))}
