@@ -10,14 +10,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 export default function LatestProperty() {
-    const { currentIndex, activeImage, nextCard, prevCard } =
-        useLatestProperty();
-
-    const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
-
-    // const CustomPrevArrow = ({ onClick }) => (
-    //     <ArrowButton prevCard={prevCard} onClick={onClick} direction="prev" />
-    // );
 
     function NextArrow(props: any) {
         const { className, style, onClick } = props;
@@ -91,7 +83,6 @@ export default function LatestProperty() {
                     proud to offer a diverse selection of quality properties,
                     catering to various tastes and budgets
                 </p>
-                
             </div>
             <div className="p-6">
                 <Slider className="p-2" {...settings}>
