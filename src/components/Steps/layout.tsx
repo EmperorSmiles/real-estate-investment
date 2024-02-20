@@ -84,10 +84,7 @@ export default function Steps() {
             </div>
             <Slider className="flex w-full h-full" {...settings}>
                 {steps.map((text, idx) => (
-                    <div
-                        key={idx}
-                        className="text-sm align-middle bg-black p-2"
-                    >
+                    <div key={idx} className="text-sm items-center p-2">
                         {/* <div
                                     className={`flex-col h-64 w-64 p-4 ${
                                         currentStepIndex !== idx
@@ -116,7 +113,7 @@ export default function Steps() {
                             <div className="flex-grow flex flex-col justify-center pb-4 text-sm">
                                 <p className="">{text.note}</p>
                             </div>
-                            <p className="">{text.note2}</p>X
+                            <p className="">{text.note2}</p>
                         </div>
                     </div>
                 ))}
