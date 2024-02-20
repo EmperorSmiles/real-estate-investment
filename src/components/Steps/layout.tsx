@@ -28,7 +28,7 @@ export default function Steps() {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         adaptiveHeight: true,
         autoplay: true,
@@ -44,7 +44,7 @@ export default function Steps() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                 },
             },
             {
@@ -106,14 +106,14 @@ export default function Steps() {
                                     </div>
                                     <p className="text-gray-500">{text.note2}</p>
                                 </div> */}
-                        <div className="bg-gray-200 h-72 w-full p-4 flex flex-shrink-0 flex-col justify-between shadow-lg">
+                        <div className="bg-gray-200 h-80 w-full p-4 flex flex-shrink-0 flex-col align-middle shadow-lg">
                             <h1 className="font-bold text-lg font-montserrat pb-3">
                                 {text.title}
                             </h1>
                             <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
                                 {text.desc}
                             </h1>
-                            <div className="flex-grow flex flex-col justify-center pb-4">
+                            <div className="flex-grow flex flex-col justify-center pb-4 text-sm">
                                 <p className="">{text.note}</p>
                             </div>
                             <p className="">{text.note2}</p>X
