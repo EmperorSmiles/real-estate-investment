@@ -19,16 +19,27 @@ export default function LatestProperty() {
     //     <ArrowButton prevCard={prevCard} onClick={onClick} direction="prev" />
     // );
 
-    const PrevArrow = ({ props }: any) => (
-        <FaArrowLeft onClick={props} direction="previous" />
-    );
-    const NextArrow = ({ props }: any) => (
-        <FaArrowRight
-            onClick={props}
-            direction="next"
-            className="bg-black text-white"
-        />
-    );
+    function NextArrow(props: any) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "block", background: "black" }}
+                onClick={onClick}
+            />
+        );
+    }
+
+    function PrevArrow(props: any) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "block", background: "black" }}
+                onClick={onClick}
+            />
+        );
+    }
 
     var settings = {
         dots: false,
