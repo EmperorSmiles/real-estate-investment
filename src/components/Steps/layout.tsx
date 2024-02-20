@@ -9,7 +9,7 @@ export default function Steps() {
         return (
             <div
                 className={className}
-                style={{ ...style, display: "block", background: "darkgray" }}
+                style={{ ...style, display: "block", background: "black" }}
                 onClick={onClick}
             />
         );
