@@ -103,7 +103,7 @@ export default function Steps() {
                                     </div>
                                     <p className="text-gray-500">{text.note2}</p>
                                 </div> */}
-                        <div className="bg-fuchsia-700 h-72 w-64 p-4 flex flex-shrink-0 flex-col justify-between shadow-lg">
+                        <div className="bg-gray-200 h-72 w-64 p-4 flex flex-shrink-0 flex-col justify-between shadow-lg">
                             <h1 className="font-bold text-lg font-montserrat pb-3">
                                 {text.title}
                             </h1>
