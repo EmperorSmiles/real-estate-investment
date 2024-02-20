@@ -7,10 +7,8 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 export default function LatestProperty() {
-
     function NextArrow(props: any) {
         const { className, style, onClick } = props;
         return (
