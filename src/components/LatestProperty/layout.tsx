@@ -1,5 +1,4 @@
 "use client";
-import ArrowButton from "../../components/ArrowButtons/layout";
 import { items } from "@/app/utilis/constants";
 import Image from "next/image";
 import Slider from "react-slick";
