@@ -111,9 +111,9 @@ export default function Steps() {
                                 {text.desc}
                             </h1>
                             <div className="flex-grow flex flex-col justify-center pb-4 text-sm">
-                                <p className="">{text.note}</p>
+                                <p className="text-gray-500">{text.note}</p>
                             </div>
-                            <p className="">{text.note2}</p>
+                            <p className="text-gray-500">{text.note2}</p>
                         </div>
                     </div>
                 ))}
