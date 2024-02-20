@@ -91,13 +91,7 @@ export default function LatestProperty() {
                     proud to offer a diverse selection of quality properties,
                     catering to various tastes and budgets
                 </p>
-                {/* <div className="flex h-full align-middle">
-                    <ArrowButton
-                        nextCard={nextCard}
-                        prevCard={prevCard}
-                        activeImage={activeImage}
-                    />
-                </div> */}
+                
             </div>
             <div className="p-6">
                 <Slider className="p-2" {...settings}>
