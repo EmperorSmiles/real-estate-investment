@@ -101,7 +101,7 @@ export default function Steps() {
                     />
                 </div> */}
             </div>
-            <div className=" p-2">
+            <div className="p-2">
                 <Slider className="flex w-full h-full p-2" {...settings}>
                     {steps.map((text, idx) => (
                         <div key={idx} className="text-sm items-center p-2">
