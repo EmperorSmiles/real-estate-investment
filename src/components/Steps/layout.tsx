@@ -88,24 +88,6 @@ export default function Steps() {
                 <Slider className="flex w-full h-full p-2" {...settings}>
                     {steps.map((text, idx) => (
                         <div key={idx} className="text-sm items-center p-2">
-                            {/* <div
-                                        className={`flex-col h-64 w-64 p-4 ${
-                                            currentStepIndex !== idx
-                                                ? "bg-gray-200"
-                                                : "bg-gray-800 text-white"
-                                        } shadow-md justify-between w-80 flex-shrink-0`}
-                                    >
-                                        <h1 className="font-bold text-lg font-montserrat pb-3">
-                                            {text.title}
-                                        </h1>
-                                        <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
-                                            {text.desc}
-                                        </h1>
-                                        <div className="flex-grow flex flex-col justify-center pb-4">
-                                            <p className="text-gray-500">{text.note}</p>
-                                        </div>
-                                        <p className="text-gray-500">{text.note2}</p>
-                                    </div> */}
                             <div className="bg-gray-200 h-80 w-full p-4 flex flex-shrink-0 flex-col align-middle shadow-lg">
                                 <h1 className="font-bold text-lg font-montserrat pb-3">
                                     {text.title}
