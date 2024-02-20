@@ -68,7 +68,7 @@ export default function TestimonialsSlider() {
         <div className="bg-slate-200 h-full p-8">
             <Slider {...settings}>
                 {testimonials.map((instance, idx) => (
-                    <div key={idx}>
+                    <div key={idx} className="p-2">
                         <h1 className="capitalize font-roboto font-bold text-lg lg:text-3xl">
                             Our testimony
                         </h1>
