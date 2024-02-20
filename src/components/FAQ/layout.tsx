@@ -24,7 +24,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
 
     return (
         <div className="bg-gray-100 h-full p-8 grid grid-col lg:grid-cols-3">
-            <h1 className="capitalize font-roboto font-bold text-2xl p-2 w-full">
+            <h1 className="capitalize font-roboto font-bold text-2xl pb-2 w-full">
                 Top Questions Answered
             </h1>
             <div className="lg:col-span-2">
