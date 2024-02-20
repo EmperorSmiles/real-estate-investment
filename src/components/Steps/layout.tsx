@@ -28,10 +28,7 @@ export default function Steps() {
 
     var settings = {
         dots: false,
-        className: "center",
-        centerMode: true,
         infinite: true,
-        centerPadding: "60px",
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -88,7 +85,7 @@ export default function Steps() {
                 </div> */}
             </div>
             <div className="p-2">
-                <Slider {...settings}>
+                <Slider className="flex w-full h-full p-2" {...settings}>
                     {steps.map((text, idx) => (
                         <div key={idx} className="text-sm items-center p-2">
                             <div className="bg-gray-200 h-80 w-full p-4 flex flex-shrink-0 flex-col align-middle shadow-lg rounded-lg">
