@@ -7,22 +7,22 @@ import { useEffect } from "react";
 import Slider from "react-slick";
 
 export default function Steps() {
-    const { activeImage, currentStepIndex, nextStep, prevStep } =
-        useLatestProperty();
+    // const { activeImage, currentStepIndex, nextStep, prevStep } =
+    //     useLatestProperty();
 
-    useEffect(() => {
-        let interval: NodeJS.Timeout;
+    // useEffect(() => {
+    //     let interval: NodeJS.Timeout;
 
-        if (activeImage) {
-            interval = setInterval(() => {
-                nextStep();
-            }, 2000);
-        }
+    //     if (activeImage) {
+    //         interval = setInterval(() => {
+    //             nextStep();
+    //         }, 2000);
+    //     }
 
-        return () => {
-            clearInterval(interval);
-        };
-    }, [activeImage, nextStep]);
+    //     return () => {
+    //         clearInterval(interval);
+    //     };
+    // }, [activeImage, nextStep]);
 
     var settings = {
         dots: false,
@@ -74,13 +74,13 @@ export default function Steps() {
                     fundamentals steps to kickstart your investment portfolio
                     with confidence
                 </p>
-                <div className="flex h-full align-middle">
+                {/* <div className="flex h-full align-middle">
                     <ArrowButton
                         nextCard={nextStep}
                         prevCard={prevStep}
                         activeImage={activeImage}
                     />
-                </div>
+                </div> */}
             </div>
             <Slider className="flex w-full h-full" {...settings}>
                 {steps.map((text, idx) => (
