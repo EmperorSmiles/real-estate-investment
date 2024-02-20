@@ -88,7 +88,7 @@ export default function Steps() {
                 <Slider className="flex w-full h-full p-2" {...settings}>
                     {steps.map((text, idx) => (
                         <div key={idx} className="text-sm items-center p-2">
-                            <div className="bg-gray-200 h-80 w-full p-4 flex flex-shrink-0 flex-col align-middle shadow-lg">
+                            <div className="bg-gray-200 h-80 w-full p-4 flex flex-shrink-0 flex-col align-middle shadow-lg rounded-lg">
                                 <h1 className="font-bold text-lg font-montserrat pb-3">
                                     {text.title}
                                 </h1>
