@@ -4,23 +4,6 @@ import { steps } from "@/app/utilis/constants";
 import Slider from "react-slick";
 
 export default function Steps() {
-    // const { activeImage, currentStepIndex, nextStep, prevStep } =
-    //     useLatestProperty();
-
-    // useEffect(() => {
-    //     let interval: NodeJS.Timeout;
-
-    //     if (activeImage) {
-    //         interval = setInterval(() => {
-    //             nextStep();
-    //         }, 2000);
-    //     }
-
-    //     return () => {
-    //         clearInterval(interval);
-    //     };
-    // }, [activeImage, nextStep]);
-
     function NextArrow(props: any) {
         const { className, style, onClick } = props;
         return (
