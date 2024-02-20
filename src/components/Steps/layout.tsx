@@ -85,23 +85,26 @@ export default function Steps() {
             <Slider className="flex w-full h-full gap-4" {...settings}>
                 {steps.map((text, idx) => (
                     <div key={idx} className="p-2 text-sm">
-                        <div
-                            className={`flex-col h-64 w-64 p-4 ${
-                                currentStepIndex !== idx
-                                    ? "bg-gray-200"
-                                    : "bg-gray-800 text-white"
-                            } shadow-md justify-between w-80 flex-shrink-0`}
-                        >
-                            <h1 className="font-bold text-lg font-montserrat pb-3">
-                                {text.title}
-                            </h1>
-                            <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
-                                {text.desc}
-                            </h1>
-                            <div className="flex-grow flex flex-col justify-center pb-4">
-                                <p className="text-gray-500">{text.note}</p>
-                            </div>
-                            <p className="text-gray-500">{text.note2}</p>
+                        {/* <div
+                                    className={`flex-col h-64 w-64 p-4 ${
+                                        currentStepIndex !== idx
+                                            ? "bg-gray-200"
+                                            : "bg-gray-800 text-white"
+                                    } shadow-md justify-between w-80 flex-shrink-0`}
+                                >
+                                    <h1 className="font-bold text-lg font-montserrat pb-3">
+                                        {text.title}
+                                    </h1>
+                                    <h1 className="font-bold text-lg font-montserrat capitalize pb-2">
+                                        {text.desc}
+                                    </h1>
+                                    <div className="flex-grow flex flex-col justify-center pb-4">
+                                        <p className="text-gray-500">{text.note}</p>
+                                    </div>
+                                    <p className="text-gray-500">{text.note2}</p>
+                                </div> */}
+                        <div className="bg-fuchsia-700 h-full w-full">
+                            <h1>{text.title}</h1>
                         </div>
                     </div>
                 ))}
