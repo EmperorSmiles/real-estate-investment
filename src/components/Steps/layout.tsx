@@ -21,7 +21,7 @@ export default function Steps() {
     //     };
     // }, [activeImage, nextStep]);
 
-    function NextArrow(props: func) {
+    function NextArrow(props: any) {
         const { className, style, onClick } = props;
         return (
             <div
@@ -32,7 +32,7 @@ export default function Steps() {
         );
     }
 
-    function PrevArrow(props: func) {
+    function PrevArrow(props: any) {
         const { className, style, onClick } = props;
         return (
             <div
