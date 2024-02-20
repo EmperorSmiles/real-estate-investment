@@ -76,13 +76,6 @@ export default function Steps() {
                     fundamentals steps to kickstart your investment portfolio
                     with confidence
                 </p>
-                {/* <div className="flex h-full align-middle">
-                    <ArrowButton
-                        nextCard={nextStep}
-                        prevCard={prevStep}
-                        activeImage={activeImage}
-                    />
-                </div> */}
             </div>
             <div className="p-2">
                 <Slider className="flex w-full h-full p-2" {...settings}>
