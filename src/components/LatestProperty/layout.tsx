@@ -100,7 +100,7 @@ export default function LatestProperty() {
                 </div> */}
             </div>
             <div className="overflow-hidden p-6">
-                <Slider className=" w-full h-full p-2" {...settings}>
+                <Slider className=" p-2" {...settings}>
                     {items.map((item, idx) => (
                         <div key={idx} className="w-full h-full p-1">
                             <div className="bg-slate-200 p-2 h-84 rounded-lg shadow-xl">
