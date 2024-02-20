@@ -44,7 +44,7 @@ export default function Steps() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 },
             },
             {
@@ -82,9 +82,12 @@ export default function Steps() {
                     />
                 </div>
             </div>
-            <Slider className="flex w-full h-full gap-4" {...settings}>
+            <Slider className="flex w-full h-full" {...settings}>
                 {steps.map((text, idx) => (
-                    <div key={idx} className="p-2 text-sm">
+                    <div
+                        key={idx}
+                        className="text-sm align-middle bg-black p-4"
+                    >
                         {/* <div
                                     className={`flex-col h-64 w-64 p-4 ${
                                         currentStepIndex !== idx
@@ -103,7 +106,7 @@ export default function Steps() {
                                     </div>
                                     <p className="text-gray-500">{text.note2}</p>
                                 </div> */}
-                        <div className="bg-gray-200 h-72 w-64 p-4 flex flex-shrink-0 flex-col justify-between shadow-lg">
+                        <div className="bg-gray-200 h-72 w-full p-4 flex flex-shrink-0 flex-col justify-between shadow-lg">
                             <h1 className="font-bold text-lg font-montserrat pb-3">
                                 {text.title}
                             </h1>
@@ -113,7 +116,7 @@ export default function Steps() {
                             <div className="flex-grow flex flex-col justify-center pb-4">
                                 <p className="">{text.note}</p>
                             </div>
-                            <p className="">{text.note2}</p>
+                            <p className="">{text.note2}</p>X
                         </div>
                     </div>
                 ))}
