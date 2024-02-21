@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function layout() {
     return (
-        <div className="relative bg-cover bg-center h-96 flex items-center justify-center">
+        <div className="relative bg-cover bg-center h-96 flex items-center justify-center overflow-hidden">
             <Image
                 src={background}
                 alt="Hero"
@@ -27,7 +27,9 @@ export default function layout() {
                     Find Out More
                 </button>
             </div>
-            <div className="absolute bottom-0">INTELLIVEST</div>
+            <div className="absolute -bottom-2.5 -z-10 font-montserrat text-7xl bg-clip-text bg-transparent">
+                INTELLIVEST
+            </div>
         </div>
     );
 }
