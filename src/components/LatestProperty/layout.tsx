@@ -21,7 +21,7 @@ export default function LatestProperty() {
         return (
             <div
                 className={className}
-                style={{ ...style, display: "block", background: "black" }}
+                style={{ ...style, display: "none", background: "black" }}
                 onClick={onClick}
             />
         );
@@ -32,7 +32,7 @@ export default function LatestProperty() {
         return (
             <div
                 className={className}
-                style={{ ...style, display: "block", background: "black" }}
+                style={{ ...style, display: "none", background: "black" }}
                 onClick={onClick}
             />
         );
@@ -97,8 +97,8 @@ export default function LatestProperty() {
                     </button>
                 </div>
             </div>
-            <div className="p-6">
-                <Slider className="p-2" {...settings}>
+            <div>
+                <Slider className="p-2" ref={sliderRef} {...settings}>
                     {items.map((item, idx) => (
                         <div key={idx} className="w-full h-full p-1">
                             <div className="bg-slate-200 p-2 h-84 rounded-lg shadow-xl">
