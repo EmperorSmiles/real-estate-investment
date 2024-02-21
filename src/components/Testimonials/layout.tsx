@@ -8,8 +8,6 @@ import Slider from "react-slick";
 export default function TestimonialsSlider() {
     // const [currentIndex, setCurrentIndex] = useState(0);
 
-    // const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
-
     function NextArrow(props: any) {
         const {} = props;
         return <div style={{ display: "none" }} />;
