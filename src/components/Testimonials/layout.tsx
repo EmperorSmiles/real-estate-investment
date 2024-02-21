@@ -25,8 +25,6 @@ export default function TestimonialsSlider() {
     //         );
     //     }, 2000);
 
-    //     return () => clearInterval(interval);
-    // }, []);
 
     function NextArrow(props: any) {
         const {} = props;
