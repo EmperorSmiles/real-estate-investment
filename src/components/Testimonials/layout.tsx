@@ -18,12 +18,6 @@ export default function TestimonialsSlider() {
     //     transform: `translateX(${-currentIndex * 120}%)`,
     // };
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setCurrentIndex(
-    
-
-
     function NextArrow(props: any) {
         const {} = props;
         return <div style={{ display: "none" }} />;
