@@ -72,6 +72,9 @@ export default function Steps() {
                 },
             },
         ],
+        centerMode: true,
+        centerPadding: "0",
+        style: { Color: "pink" },
     };
 
     return (
@@ -86,7 +89,7 @@ export default function Steps() {
                     fundamentals steps to kickstart your investment portfolio
                     with confidence
                 </p>
-                <div>
+                <div className="flex h-full">
                     <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
                         <FaArrowLeft onClick={previous} />
                     </button>
@@ -103,7 +106,7 @@ export default function Steps() {
                 >
                     {steps.map((text, idx) => (
                         <div key={idx} className="text-sm items-center p-2">
-                            <div className="bg-gray-200 h-80 w-full p-4 flex flex-shrink-0 flex-col align-middle shadow-lg rounded-lg">
+                            <div className="bg-gray-200 h-80 w-full p-4 flex flex-shrink-0 flex-col align-middle shadow-lg rounded-lg ">
                                 <h1 className="font-bold text-lg font-montserrat pb-3">
                                     {text.title}
                                 </h1>
