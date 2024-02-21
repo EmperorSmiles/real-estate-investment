@@ -6,6 +6,14 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Slider from "react-slick";
 
 export default function Steps() {
+    let sliderRef = useRef<Slider>(null);
+    const next = () => {
+        sliderRef.current?.slickNext();
+    };
+    const previous = () => {
+        sliderRef.current?.slickPrev();
+    };
+
     function NextArrow(props: any) {
         const { className, style, onClick } = props;
         return (
@@ -27,15 +35,6 @@ export default function Steps() {
             />
         );
     }
-
-    function PreviousNextMethods() {
-  let sliderRef = useRef(null);
-  const next = () => {
-    sliderRef.slickNext();
-  };
-  const previous = () => {
-    sliderRef.slickPrev();
-  };
 
     var settings = {
         dots: false,
@@ -89,15 +88,19 @@ export default function Steps() {
                 </p>
                 <div>
                     <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
-                        <FaArrowLeft />
+                        <FaArrowLeft onClick={previous} />
                     </button>
                     <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
-                        <FaArrowRight />
+                        <FaArrowRight onClick={next} />
                     </button>
                 </div>
             </div>
             <div className="p-2">
-                <Slider className="flex w-full h-full p-2" {...settings}>
+                <Slider
+                    className="flex w-full h-full p-2"
+                    ref={sliderRef}
+                    {...settings}
+                >
                     {steps.map((text, idx) => (
                         <div key={idx} className="text-sm items-center p-2">
                             <div className="bg-gray-200 h-80 w-full p-4 flex flex-shrink-0 flex-col align-middle shadow-lg rounded-lg">
