@@ -1,6 +1,7 @@
 "use client";
 
 import { steps } from "@/app/utilis/constants";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Slider from "react-slick";
 
 export default function Steps() {
@@ -76,6 +77,14 @@ export default function Steps() {
                     fundamentals steps to kickstart your investment portfolio
                     with confidence
                 </p>
+                <div>
+                    <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
+                        <FaArrowLeft />
+                    </button>
+                    <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
+                        <FaArrowRight />
+                    </button>
+                </div>
             </div>
             <div className="p-2">
                 <Slider className="flex w-full h-full p-2" {...settings}>
