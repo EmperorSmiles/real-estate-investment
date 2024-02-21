@@ -28,6 +28,16 @@ export default function TestimonialsSlider() {
     //     return () => clearInterval(interval);
     // }, []);
 
+    function NextArrow(props: any) {
+        const {} = props;
+        return <div style={{ display: "none" }} />;
+    }
+
+    function PrevArrow(props: any) {
+        const {} = props;
+        return <div style={{ display: "none" }} />;
+    }
+
     var settings = {
         dots: false,
         infinite: true,
@@ -36,6 +46,8 @@ export default function TestimonialsSlider() {
         slidesToScroll: 1,
         adaptiveHeight: true,
         autoplay: true,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
         responsive: [
             {
                 breakpoint: 2561,
