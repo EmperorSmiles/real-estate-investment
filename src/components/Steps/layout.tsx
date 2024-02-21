@@ -1,6 +1,7 @@
 "use client";
 
 import { steps } from "@/app/utilis/constants";
+import { useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Slider from "react-slick";
 
@@ -26,6 +27,15 @@ export default function Steps() {
             />
         );
     }
+
+    function PreviousNextMethods() {
+  let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
 
     var settings = {
         dots: false,
