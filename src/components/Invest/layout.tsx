@@ -15,6 +15,9 @@ export default function layout() {
                 className="object-cover h-full w-full"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-200 opacity-80"></div>
+            <h1 className="absolute flex z-10 -bottom-2.5 font-montserrat text-7xl justify-center items-center mix-blend-normal image">
+                INTELLIVEST
+            </h1>
             <div className="absolute inset-0 top-14 left-24 flex flex-col items-center justify-center text-center px-4">
                 <p className="font-montserrat text-5xl text-center">
                     Unlock Your Dream Home Today!
@@ -26,9 +29,6 @@ export default function layout() {
                 <button className="bg-transparent rounded-xl border-2 border-gray-700 text-gray-700 text-xs lg:text-sm h-8 hover:bg-gray-800 hover:text-white lg:w-56 my-4 lg:my-8 ">
                     Find Out More
                 </button>
-            </div>
-            <div className="absolute -bottom-2.5 -z-10 font-montserrat text-7xl bg-clip-text bg-transparent">
-                INTELLIVEST
             </div>
         </div>
     );
