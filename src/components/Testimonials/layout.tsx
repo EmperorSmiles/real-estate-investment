@@ -21,9 +21,7 @@ export default function TestimonialsSlider() {
     // useEffect(() => {
     //     const interval = setInterval(() => {
     //         setCurrentIndex(
-    //             (prevIndex) => (prevIndex + 1) % testimonials.length
-    //         );
-    //     }, 2000);
+    
 
 
     function NextArrow(props: any) {
