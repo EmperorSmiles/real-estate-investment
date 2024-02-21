@@ -6,6 +6,7 @@ import Property from "@/components/LatestProperty/layout";
 import Steps from "@/components/Steps/layout";
 import Testimonials from "@/components/Testimonials/layout";
 import FAQSection from "@/components/FAQ/layout";
+import Invest from "@/components/Invest/layout";
 import { faqs } from "./utilis/constants";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
             <Steps />
             <Testimonials />
             <FAQSection faqs={faqs} />
+            <Invest />
         </div>
     );
 }
