@@ -7,23 +7,19 @@ import Example from "@/components/Example/layout";
 import Steps from "@/components/Steps/layout";
 import Testimonials from "@/components/Testimonials/layout";
 import FAQSection from "@/components/FAQ/layout";
-import { faqs, testimonials } from "./utilis/constants";
-import { ContextProvider } from "@/app/context/Context";
+import { faqs } from "./utilis/constants";
 
 export default function Home() {
     return (
         <div className="scroll-smooth">
-            <ContextProvider>
-                <NavBar />
-                <Hero />
-                <About />
-                <Body />
-                <Property />
-                {/* <Example /> */}
-                <Steps />
-                <Testimonials />
-                <FAQSection faqs={faqs} />
-            </ContextProvider>
+            <NavBar />
+            <Hero />
+            <About />
+            <Body />
+            <Property />
+            <Steps />
+            <Testimonials />
+            <FAQSection faqs={faqs} />
         </div>
     );
 }
