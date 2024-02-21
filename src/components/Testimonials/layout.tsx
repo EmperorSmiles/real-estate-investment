@@ -10,10 +10,6 @@ export default function TestimonialsSlider() {
 
     // const isLarge = typeof window !== "undefined" && window.innerWidth >= 760;
 
-    // const forLargeScreens = {
-    //     transform: `translateX(${-currentIndex * 106}%)`,
-    // };
-
     function NextArrow(props: any) {
         const {} = props;
         return <div style={{ display: "none" }} />;
