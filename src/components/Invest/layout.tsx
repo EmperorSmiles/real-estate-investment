@@ -1,5 +1,21 @@
 import React from "react";
+import background from "../../../public/BGimage.png";
+import Image from "next/image";
 
 export default function layout() {
-    return <div className="bg-black text-white">Hello!</div>;
+    return (
+        <div className="relative bg-cover bg-center h-96">
+            <Image
+                src={background}
+                alt="Hero"
+                height={900}
+                width={500}
+                quality={100}
+                priority
+                className="object-cover h-full w-full"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-white to-white opacity-70"></div>
+            ;
+        </div>
+    );
 }
