@@ -88,7 +88,7 @@ export default function LatestProperty() {
                     proud to offer a diverse selection of quality properties,
                     catering to various tastes and budgets
                 </p>
-                <div>
+                <div className="flex">
                     <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
                         <FaArrowLeft onClick={previous} />
                     </button>
