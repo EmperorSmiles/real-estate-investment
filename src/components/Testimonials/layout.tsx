@@ -6,8 +6,6 @@ import { useEffect, useState } from "react";
 import Slider from "react-slick";
 
 export default function TestimonialsSlider() {
-    // const [currentIndex, setCurrentIndex] = useState(0);
-
     function NextArrow(props: any) {
         const {} = props;
         return <div style={{ display: "none" }} />;
