@@ -4,8 +4,18 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useRef } from "react";
 
 export default function LatestProperty() {
+    let sliderRef = useRef<Slider>(null);
+    const next = () => {
+        sliderRef.current?.slickNext();
+    };
+    const previous = () => {
+        sliderRef.current?.slickPrev();
+    };
+
     function NextArrow(props: any) {
         const { className, style, onClick } = props;
         return (
@@ -78,6 +88,14 @@ export default function LatestProperty() {
                     proud to offer a diverse selection of quality properties,
                     catering to various tastes and budgets
                 </p>
+                <div>
+                    <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
+                        <FaArrowLeft onClick={previous} />
+                    </button>
+                    <button className="rounded-full border-2 border-gray-700 text-gray-700 p-2 hover:bg-gray-800 hover:text-white">
+                        <FaArrowRight onClick={next} />
+                    </button>
+                </div>
             </div>
             <div className="p-6">
                 <Slider className="p-2" {...settings}>
