@@ -14,8 +14,7 @@ export default function layout() {
                 priority
                 className="object-cover h-full w-full"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-gray-400 to-gray-400 opacity-60"></div>
-            ;
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-200 opacity-70"></div>
         </div>
     );
 }
