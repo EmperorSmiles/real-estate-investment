@@ -19,7 +19,6 @@ export default function Body() {
                     corelogic hedonic index singapore, sept 2023, October 2013 -
                     October 2023
                 </small>
-                {/* <CallToAction text="Find Out More" /> */}
                 <button className="bg-transparent rounded-xl border-2 border-gray-700 text-gray-700 text-xs lg:text-sm h-8 lg:m hover:bg-gray-800 hover:text-white w-full lg:w-96 my-4 lg:my-8">
                     Find Out More
                 </button>
