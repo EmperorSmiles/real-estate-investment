@@ -14,10 +14,6 @@ export default function TestimonialsSlider() {
     //     transform: `translateX(${-currentIndex * 106}%)`,
     // };
 
-    // const forSmallScreens = {
-    //     transform: `translateX(${-currentIndex * 120}%)`,
-    // };
-
     function NextArrow(props: any) {
         const {} = props;
         return <div style={{ display: "none" }} />;
