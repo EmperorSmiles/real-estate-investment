@@ -17,7 +17,10 @@ export default function layout() {
             <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-200 opacity-70"></div>
             <div className="absolute inset-0">
                 <p>Unlock Your Dream Home Today!</p>
-                <p>Join us on the journey to home ownership</p>
+                <p>
+                    Join us on the journey to home ownership and discover the
+                    perfect place to call your own.
+                </p>
             </div>
         </div>
     );
