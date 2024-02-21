@@ -14,12 +14,12 @@ export default function layout() {
                 priority
                 className="object-cover h-full w-full z-10"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-200 opacity-80 z-10">
-                <h1 className="absolute flex -bottom-2.5 font-montserrat text-7xl justify-center items-center mix-blend-screen bg-white z-10">
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-200 opacity-70 z-10">
+                <h1 className="absolute flex -bottom-2.5 font-montserrat text-7xl justify-center items-center mix-blend-multiply bg-white z-10 left-">
                     INTELLIVEST
                 </h1>
             </div>
-            {/* <h1 className="absolute flex z-10 -bottom-2.5 font-montserrat text-7xl justify-center items-center bg-white mix-blend-normal">
+            {/* <h1 className="absolute flex -bottom-2.5 font-montserrat text-7xl justify-center items-center bg-white mix-blend-multiply">
                 INTELLIVEST
             </h1> */}
             <div className="absolute inset-0 top-14 left-24 flex flex-col items-center justify-center text-center px-4 z-10">
