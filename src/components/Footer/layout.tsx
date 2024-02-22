@@ -11,9 +11,9 @@ export default function Footer() {
                     <li>Template</li>
                 </ul>
                 <ul>
-                    <li>FEATURES</li>
-                    <li>How it Works</li>
-                    <li>For Teams</li>
+                    <li>COMPANY</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
                     <li>Template</li>
                 </ul>
                 <ul>
