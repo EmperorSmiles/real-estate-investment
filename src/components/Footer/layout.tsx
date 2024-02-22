@@ -22,6 +22,12 @@ export default function Footer() {
                     <li>For Teams</li>
                     <li>Template</li>
                 </ul>
+                <ul>
+                    <li>FEATURES</li>
+                    <li>How it Works</li>
+                    <li>For Teams</li>
+                    <li>Template</li>
+                </ul>
             </div>
             <div className="bg-slate-200">Copyright</div>
         </div>
