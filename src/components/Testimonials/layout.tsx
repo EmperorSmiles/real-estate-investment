@@ -23,6 +23,7 @@ export default function TestimonialsSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        autoplaySpeed: 4000,
         autoplay: true,
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
