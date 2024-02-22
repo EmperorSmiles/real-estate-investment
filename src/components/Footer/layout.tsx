@@ -22,12 +22,9 @@ export default function Footer() {
                     <li className="pb-1">Help Center</li>
                     <li className="pb-1">Productivity Methods</li>
                 </ul>
-                <ul>
-                    <li>FEATURES</li>
-                    <li>How it Works</li>
-                    <li>For Teams</li>
-                    <li>Template</li>
-                </ul>
+                <div>
+                    <h1></h1>
+                </div>
             </div>
             <div className="bg-slate-200">Copyright</div>
         </div>
