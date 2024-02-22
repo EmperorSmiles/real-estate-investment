@@ -45,7 +45,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="bg-slate-200 text-center p-6">
+            <div className="bg-slate-200 text-center py-10">
                 Intellivest &copy; 2024, All rights reserved by
                 <Link
                     className="underline ml-2"
