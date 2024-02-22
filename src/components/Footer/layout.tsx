@@ -32,7 +32,7 @@ export default function Footer() {
                         name="email"
                         id=""
                         placeholder="Enter Your Email"
-                        className="bg-transparent border-2 border-gray-600"
+                        className="bg-transparent border-2 border-gray-600 w-48 h-8 p-4"
                     />
                 </div>
             </div>
