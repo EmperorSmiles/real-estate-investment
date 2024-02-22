@@ -26,7 +26,7 @@ export default function Footer() {
                     <h1 className="text-black font-bold">
                         SUBSCRIBE TO OUR NEWSLETTER
                     </h1>
-                    <p>Latest updates sent to your inbox</p>
+                    <p>Latest news updates sent to your inbox</p>
                 </div>
             </div>
             <div className="bg-slate-200">Copyright</div>
