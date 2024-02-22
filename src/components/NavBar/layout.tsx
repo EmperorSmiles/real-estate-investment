@@ -78,9 +78,7 @@ export default function NavBar() {
                         className="lg:hidden fixed inset-0 bg-gray-800 z-40"
                         initial={{ width: 1 }}
                         animate={{ width: "100%" }}
-                        exit={{
-                            x: "-100%",
-                        }}
+                        exit={{ x: "-100%" }}
                         transition={{ type: "tween", duration: 0.5 }}
                     >
                         <div className="flex justify-end p-4">
