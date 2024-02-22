@@ -8,7 +8,7 @@ export default function Body() {
                 <h2 className=" text-sm lg:text-4xl font-bold text-gray-700 ">
                     Affordable Property Investment in Singapore
                 </h2>
-                <p className="italic text-gray-500 text-xs lg:text-sm h-24 overflow-clip text-ellipsis  lg:h-full lg:w-full py-4 ">
+                <p className="italic text-gray-500 text-xs lg:text-sm h-24 overflow-clip text-ellipsis lg:h-full lg:w-full py-4 ">
                     With Singapore property prices growing over 60% within the
                     last 10 years*, the dream of owning a home continues to be a
                     dream for many. That&apos;s why we created IntelliVest. We
