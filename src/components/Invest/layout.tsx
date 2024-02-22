@@ -15,10 +15,13 @@ export default function layout() {
                 className="object-cover h-full w-full z-10"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-slate-200 to-slate-200 opacity-70 z-10">
-                <h1 className="absolute flex inset-80 -bottom-6 font-montserrat text-8xl items-center mix-blend-normal z-10 font-extrabold text-justify justify-center">
+                <h1 className="absolute flex inset-80 -bottom-6 font-montserrat text-9xl items-center mix-blend-normal z-10 font-extrabold text-justify justify-center">
                     INTELLIVEST
                 </h1>
             </div>
+            {/* <h1 className="absolute z-10 font-montserrat text-7xl bottom-1 mix-blend-hard-light bg-black text-white">
+                INTELLIVEST
+            </h1> */}
             <div className="absolute flex flex-col items-center justify-center z-10 p-2">
                 <p className="font-montserrat text-2xl md:text-4xl lg:text-5xl text-center">
                     Unlock Your Dream Home Today!
