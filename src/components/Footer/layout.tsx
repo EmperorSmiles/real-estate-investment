@@ -22,7 +22,7 @@ export default function Footer() {
                     <li className="pb-1">Help Center</li>
                     <li className="pb-1">Productivity Methods</li>
                 </ul>
-                <div>
+                <div className="pr-1">
                     <h1 className="text-black font-bold">
                         SUBSCRIBE TO OUR NEWSLETTER
                     </h1>
@@ -37,7 +37,7 @@ export default function Footer() {
                         />
                         <button
                             type="button"
-                            className="bg-gray-800 w-28 py-1.5 h text-white"
+                            className="bg-gray-800 w-32 py-1.5 h text-white text-xs lg:text-sm"
                         >
                             Subscribe
                         </button>
