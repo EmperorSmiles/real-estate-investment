@@ -14,8 +14,8 @@ export default function layout() {
                 priority
                 className="object-cover h-full w-full z-10"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-200 opacity-70 z-10">
-                <h1 className="absolute flex -bottom-2.5 font-montserrat text-7xl justify-center items-center mix-blend-color-burn bg-white z-10 left-1/2 right-1/2">
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-200 opacity-50 z-10">
+                <h1 className="absolute flex -bottom-2.5 font-montserrat text-7xl justify-center items-center mix-blend-hard-light bg-white bg-transparent z-10 left-1/2 right-1/2 font-extrabold">
                     INTELLIVEST
                 </h1>
             </div>
