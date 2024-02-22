@@ -14,23 +14,23 @@ export default function layout() {
                 priority
                 className="object-cover h-full w-full z-10"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-200 opacity-50 z-10">
-                <h1 className="absolute flex -bottom-2.5 font-montserrat text-7xl justify-center items-center mix-blend-hard-light bg-white bg-transparent z-10 left-1/2 right-1/2 font-extrabold">
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-100 opacity-70 z-10">
+                <h1 className="absolute flex inset-80 -bottom-6 font-montserrat text-8xl items-center mix-blend-normal z-10 font-extrabold text-justify justify-center">
                     INTELLIVEST
                 </h1>
             </div>
             {/* <h1 className="absolute flex -bottom-2.5 font-montserrat text-7xl justify-center items-center bg-white mix-blend-multiply">
                 INTELLIVEST
             </h1> */}
-            <div className="absolute inset-0 top-14 left-24 flex flex-col items-center justify-center text-center px-4 z-10">
-                <p className="font-montserrat text-5xl text-center">
+            <div className="absolute flex flex-col items-center justify-center z-10 p-2">
+                <p className="font-montserrat text-2xl md:text-4xl lg:text-5xl text-center">
                     Unlock Your Dream Home Today!
                 </p>
-                <p className="text-xl text-center mt-6">
+                <p className="sm:text-lg md:text-xl lg:text-xl text-center mt-6">
                     Join us on the journey to home ownership and discover the
                     perfect place to call your own.
                 </p>
-                <button className="bg-transparent rounded-xl border-2 border-gray-700 text-gray-700 text-xs lg:text-sm h-8 hover:bg-gray-800 hover:text-white lg:w-56 my-4 lg:my-8 ">
+                <button className="bg-transparent rounded-xl border-2 border-gray-700 text-gray-700 text-xs lg:text-sm h-8 w-24 hover:bg-gray-800 hover:text-white lg:w-56 my-4 lg:my-8 ">
                     Find Out More
                 </button>
             </div>
