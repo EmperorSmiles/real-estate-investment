@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -46,6 +47,12 @@ export default function Footer() {
             </div>
             <div className="bg-slate-200">
                 Intellivest &copy; 2024, All rights reserved by
+                <Link
+                    className="underline ml-2"
+                    href={"https://www.https://github.com/EmperorSmiles"}
+                >
+                    Adejoh Favour Smiles
+                </Link>
             </div>
         </div>
     );
