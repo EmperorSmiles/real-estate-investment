@@ -23,7 +23,7 @@ export default function Footer() {
                     <li className="pb-1">Productivity Methods</li>
                 </ul>
                 <div>
-                    <h1></h1>
+                    <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
                 </div>
             </div>
             <div className="bg-slate-200">Copyright</div>
