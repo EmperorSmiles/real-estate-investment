@@ -23,7 +23,9 @@ export default function Footer() {
                     <li className="pb-1">Productivity Methods</li>
                 </ul>
                 <div>
-                    <h1 className="text-black">SUBSCRIBE TO OUR NEWSLETTER</h1>
+                    <h1 className="text-black font-bold">
+                        SUBSCRIBE TO OUR NEWSLETTER
+                    </h1>
                     <p>
                         Latest news articles and investment updates sent to your
                         inbox
