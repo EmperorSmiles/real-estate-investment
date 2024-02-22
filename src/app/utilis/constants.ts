@@ -130,17 +130,17 @@ export const faqs = [
         p2: "",
     },
     {
-        topic: "Buy, Sell & Diversify",
+        topic: "How do I own Fractions of a Property and is it Safe?",
         answer: "",
         p2: "",
     },
     {
-        topic: "Buy, Sell & Diversify",
+        topic: "How do I actually make money?",
         answer: "",
         p2: "",
     },
     {
-        topic: "Buy, Sell & Diversify",
+        topic: "What's the risk involved if I invest?",
         answer: "",
         p2: "",
     },
