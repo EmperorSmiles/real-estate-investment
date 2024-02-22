@@ -11,7 +11,7 @@ export default function NavBar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 0;
+            const isScrolled = window.scrollY > 50;
             setScrolled(isScrolled);
         };
         window.addEventListener("scroll", handleScroll);
@@ -30,7 +30,7 @@ export default function NavBar() {
             // className={`bg-transparent text-gray-300 font-open_sans absolute inset-x-0 top-0 z-30`}
             className={` ${
                 scrolled
-                    ? "fixed top-0 left-0 w-full z-30 bg-black shadow-md transition-all duration-300 text-gray-300 shadow-slate-900"
+                    ? "fixed top-0 left-0 w-full z-30 bg-gray-800 shadow-md transition-all duration-500 font-open_sans text-gray-300 shadow-gray-800"
                     : "bg-transparent text-gray-300 font-open_sans absolute inset-x-0 top-0 z-30"
             }`}
         >
