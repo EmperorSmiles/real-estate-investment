@@ -14,7 +14,7 @@ export default function Footer() {
                     <li>COMPANY</li>
                     <li>About Us</li>
                     <li>Careers</li>
-                    <li>Template</li>
+                    <li>Blog</li>
                 </ul>
                 <ul>
                     <li>FEATURES</li>
