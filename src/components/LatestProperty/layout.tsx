@@ -81,7 +81,7 @@ export default function LatestProperty() {
                 Latest Property
             </h1>
             <div className="lg:flex mt-8">
-                <p className="mr-8 line-clamp-3 text-xs lg:text-sm mb-4">
+                <p className="mr-8 text-xs lg:text-sm mb-4">
                     Explore our high-end projects tailored for both investors
                     and individuals. With a deep understanding of the Luxembourg
                     market, our real estate agency has expanded its reach and is
