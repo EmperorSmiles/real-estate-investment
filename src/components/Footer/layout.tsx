@@ -2,25 +2,25 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <div className="bg-gray-100 h-full flex flex-col p-8">
-            <div className="flex justify-between">
+        <div className="bg-gray-100 h-full flex flex-col">
+            <div className="flex justify-between p-8">
                 <ul>
-                    <li className="font-bold">FEATURES</li>
-                    <li>How it Works</li>
-                    <li>For Teams</li>
-                    <li>Template</li>
+                    <li className="font-bold pb-1">FEATURES</li>
+                    <li className="pb-1">How it Works</li>
+                    <li className="pb-1">For Teams</li>
+                    <li className="pb-1">Template</li>
                 </ul>
                 <ul>
-                    <li className="font-bold">COMPANY</li>
-                    <li>About Us</li>
-                    <li>Careers</li>
-                    <li>Blog</li>
+                    <li className="font-bold pb-1">COMPANY</li>
+                    <li className="pb-1">About Us</li>
+                    <li className="pb-1">Careers</li>
+                    <li className="pb-1">Blog</li>
                 </ul>
                 <ul>
-                    <li className="font-bold">RESOURCES</li>
-                    <li>Download Apps</li>
-                    <li>Help Center</li>
-                    <li>Productivity Methods</li>
+                    <li className="font-bold pb-1">RESOURCES</li>
+                    <li className="pb-1">Download Apps</li>
+                    <li className="pb-1">Help Center</li>
+                    <li className="pb-1">Productivity Methods</li>
                 </ul>
                 <ul>
                     <li>FEATURES</li>
