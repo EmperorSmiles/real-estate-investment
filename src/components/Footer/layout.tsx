@@ -27,16 +27,21 @@ export default function Footer() {
                         SUBSCRIBE TO OUR NEWSLETTER
                     </h1>
                     <p>Latest news updates sent to your inbox</p>
-                    <input
-                        type="email"
-                        name="email"
-                        id=""
-                        placeholder="Enter Your Email"
-                        className="bg-transparent border-2 border-gray-600 w-48 h-8 p-4"
-                    />
-                    <button type="button" className="bg-gray-800 w-48 h-8 p-4">
-                        Subscribe
-                    </button>
+                    <div className="flex mt-4">
+                        <input
+                            type="email"
+                            name="email"
+                            id=""
+                            placeholder="Enter Your Email"
+                            className="bg-transparent border-2 border-gray-600 w-48 h-9 p-3"
+                        />
+                        <button
+                            type="button"
+                            className="bg-gray-800 w-28 py-1.5 h text-white"
+                        >
+                            Subscribe
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className="bg-slate-200">Copyright</div>
