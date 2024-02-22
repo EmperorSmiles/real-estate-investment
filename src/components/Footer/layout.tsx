@@ -49,7 +49,7 @@ export default function Footer() {
                 Intellivest &copy; 2024, All rights reserved by
                 <Link
                     className="underline ml-2"
-                    href={"https://www.https://github.com/EmperorSmiles"}
+                    href={"https://github.com/EmperorSmiles"}
                     target="blank"
                 >
                     Adejoh Favour Smiles
