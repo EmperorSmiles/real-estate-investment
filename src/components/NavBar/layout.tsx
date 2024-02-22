@@ -26,9 +26,9 @@ export default function NavBar() {
         setDrawerOpen(!drawerOpen);
     };
 
-    const closeDrawer = () => {
-        setDrawerOpen(false);
-    };
+    // const closeDrawer = () => {
+    //     setDrawerOpen(false);
+    // };
 
     return (
         <nav
@@ -89,7 +89,7 @@ export default function NavBar() {
                                 transition={{ duration: 0.3, delay: 0.5 }}
                             >
                                 <FaTimes
-                                    onClick={closeDrawer}
+                                    onClick={toggleDrawer}
                                     className="text-white text-2xl cursor-pointer"
                                 />
                             </motion.div>
