@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
     return (
         <div className="bg-gray-100 h-full flex flex-col">
-            <div className="flex">
+            <div className="flex justify-between">
                 <ul>
                     <li>FEATURES</li>
                     <li>How it Works</li>
