@@ -27,6 +27,7 @@ export default function Footer() {
                         SUBSCRIBE TO OUR NEWSLETTER
                     </h1>
                     <p>Latest news updates sent to your inbox</p>
+                    <input type="email" name="email" id="" placeholder="" />
                 </div>
             </div>
             <div className="bg-slate-200">Copyright</div>
