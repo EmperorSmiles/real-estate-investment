@@ -24,6 +24,10 @@ export default function Footer() {
                 </ul>
                 <div>
                     <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+                    <p>
+                        Latest news articles and investment updates sent to your
+                        inbox
+                    </p>
                 </div>
             </div>
             <div className="bg-slate-200">Copyright</div>
