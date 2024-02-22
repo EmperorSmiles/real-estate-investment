@@ -125,23 +125,23 @@ export const faqs = [
         p2: "This enables shared benefits of ownership for each investor of the property. Each Investor can earn rental income and make capital gains iin proportion to the percentage of the asset owned.",
     },
     {
-        topic: "Why does IntelliVest use BLockchain technology?",
-        answer: "",
-        p2: "",
+        topic: "Why does IntelliVest use Blockchain technology?",
+        answer: "IntelliVest utilizes Blockchain technology to provide a secure, transparent, and immutable ledger for property transactions. Blockchain ensures that ownership records are tamper-proof and accessible to all stakeholders, enhancing trust and reducing the risk of fraud or dispute.",
+        p2: "Blockchain ensures that ownership records are tamper-proof and accessible to all stakeholders, enhancing trust and reducing the risk of fraud or dispute.",
     },
     {
         topic: "How do I own Fractions of a Property and is it Safe?",
-        answer: "",
-        p2: "",
+        answer: "Owning fractions of a property through IntelliVest is safe and secure. Through our platform, investors can purchase digital tokens representing ownership stakes in specific properties. These tokens are backed by real-world assets and recorded on the Blockchain, ensuring transparency and security of ownership.",
+        p2: "Through our platform, investors can purchase digital tokens representing ownership stakes in specific properties. These tokens are backed by real-world assets and recorded on the Blockchain, ensuring transparency and security of ownership.",
     },
     {
         topic: "How do I actually make money?",
-        answer: "",
-        p2: "",
+        answer: "Investors make money through IntelliVest by earning rental income and participating in the appreciation of property values. Rental income is distributed among token holders based on their ownership percentage, while capital gains are realized when selling tokens at a higher price than the initial investment.",
+        p2: "Rental income is distributed among token holders based on their ownership percentage, while capital gains are realized when selling tokens at a higher price than the initial investment.",
     },
     {
         topic: "What's the risk involved if I invest?",
-        answer: "",
-        p2: "",
+        answer: "As with any investment, there are risks involved in fractional property ownership. These risks may include fluctuations in property values, changes in market conditions, regulatory risks, and potential liquidity constraints. However, IntelliVest implements risk mitigation strategies and provides thorough due diligence to minimize these risks for investors.",
+        p2: "These risks may include fluctuations in property values, changes in market conditions, regulatory risks, and potential liquidity constraints. However, IntelliVest implements risk mitigation strategies and provides thorough due diligence to minimize these risks for investors.",
     },
 ]
