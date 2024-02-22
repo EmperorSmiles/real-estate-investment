@@ -44,7 +44,9 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="bg-slate-200">Copyright</div>
+            <div className="bg-slate-200">
+                All rights reserved, Intellivest &copy; 2024
+            </div>
         </div>
     );
 }
