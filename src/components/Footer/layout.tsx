@@ -50,6 +50,7 @@ export default function Footer() {
                 <Link
                     className="underline ml-2"
                     href={"https://www.https://github.com/EmperorSmiles"}
+                    target="blank"
                 >
                     Adejoh Favour Smiles
                 </Link>
