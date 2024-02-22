@@ -30,7 +30,7 @@ export default function NavBar() {
             // className={`bg-transparent text-gray-300 font-open_sans absolute inset-x-0 top-0 z-30`}
             className={` ${
                 scrolled
-                    ? "fixed top-0 left-0 w-full z-20 bg-black shadow-md transition-all duration-300"
+                    ? "fixed top-0 left-0 w-full z-20 bg-black shadow-md transition-all duration-300 text-gray-300"
                     : "bg-transparent text-gray-300 font-open_sans absolute inset-x-0 top-0 z-30"
             }`}
         >
