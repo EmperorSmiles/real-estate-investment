@@ -34,6 +34,7 @@ export default function Footer() {
                         placeholder="Enter Your Email"
                         className="bg-transparent border-2 border-gray-600 w-48 h-8 p-4"
                     />
+                    <button type="button"></button>
                 </div>
             </div>
             <div className="bg-slate-200">Copyright</div>
