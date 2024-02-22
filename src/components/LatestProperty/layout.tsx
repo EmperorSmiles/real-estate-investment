@@ -46,6 +46,7 @@ export default function LatestProperty() {
         slidesToScroll: 1,
         adaptiveHeight: true,
         autoplay: true,
+        autoplaySpeed: 2000,
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         responsive: [
