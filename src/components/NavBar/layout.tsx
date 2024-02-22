@@ -11,7 +11,7 @@ export default function NavBar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 1;
+            const isScrolled = window.scrollY > 0;
             setScrolled(isScrolled);
         };
         window.addEventListener("scroll", handleScroll);
@@ -20,12 +20,20 @@ export default function NavBar() {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
     const toggleDrawer = () => {
         setDrawerOpen(!drawerOpen);
     };
 
     return (
-        <nav className="bg-transparent text-gray-300 font-open_sans absolute inset-x-0 top-0 z-30">
+        <nav
+            // className={`bg-transparent text-gray-300 font-open_sans absolute inset-x-0 top-0 z-30`}
+            className={` ${
+                scrolled
+                    ? "fixed top-0 left-0 w-full bg-white shadow-md transition-all duration-300"
+                    : ""
+            }`}
+        >
             <div className="flex justify-between lg:justify-around p-3 items-center ">
                 <h1 className="text-lg font-bold">
                     Intelli
