@@ -26,10 +26,6 @@ export default function NavBar() {
         setDrawerOpen(!drawerOpen);
     };
 
-    // const closeDrawer = () => {
-    //     setDrawerOpen(false);
-    // };
-
     return (
         <nav
             className={` ${
