@@ -8,7 +8,7 @@ export default function About() {
     return (
         <>
             <div className="bg-slate-200 min-h-56 flex items-center justify-between p-4">
-                <h1 className="sm:text-sm lg:text-4xl text-slate-900 text-center w-full">
+                <h1 className="sm:text-sm lg:text-4xl text-slate-900 text-center w-full items-start ">
                     Why Us
                 </h1>
                 <div className="flex flex-col">
