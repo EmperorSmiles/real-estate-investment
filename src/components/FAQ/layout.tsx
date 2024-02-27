@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { faqs } from "@/app/utilis/constants";
+// import { faqs } from "@/app/utilis/constants";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
 interface FAQ {
