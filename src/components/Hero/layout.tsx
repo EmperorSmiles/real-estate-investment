@@ -45,9 +45,9 @@ export default function Hero() {
                 <div className="">
                     <div className="absolute inset-0 flex items-center sm:px-2 lg:px-10 justify-between">
                         <h1 className="text-gray-300 text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold flex flex-col">
-                            <span className="px-14">SMART </span>{" "}
+                            <span className="px-14">SMART </span>
                             <span className="px-8">HOMES, </span>
-                            <span className="px-20">SMARTER</span>{" "}
+                            <span className="px-20">SMARTER</span>
                             <span className="px-12">INVESTMENTS</span>
                         </h1>
                         <div className="relative inset-0 flex flex-col py-10 text-gray-300 pr-4">
@@ -73,18 +73,18 @@ export default function Hero() {
             <div className="bg-slate-200 p-6 lg:flex justify-between">
                 <div className="flex justify-between mb-6">
                     <div className="pr-6">
-                        <GoGraph className="text-xl lg:text-4xl mr-4" />{" "}
+                        <GoGraph className="text-xl lg:text-4xl mr-4" />
                         <p className="text-sm lg:text-lg">
                             Invest in full or fractional property ownership and
                             earn real-time rental income from multiple listings
                         </p>
                     </div>
                     <div className="pr-6">
-                        <MdAttachMoney className="text-xl lg:text-4xl mr-4" />{" "}
+                        <MdAttachMoney className="text-xl lg:text-4xl mr-4" />
                         <p className="text-sm lg:text-lg">
                             Receive your portion of rental income from your
                             properties hassle-free with no property management
-                            worries{" "}
+                            worries
                         </p>
                     </div>
                 </div>
