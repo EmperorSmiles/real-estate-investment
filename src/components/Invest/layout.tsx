@@ -19,9 +19,6 @@ export default function layout() {
                     INTELLIVEST
                 </h1>
             </div>
-            {/* <h1 className="absolute z-10 font-montserrat text-7xl bottom-1 mix-blend-hard-light bg-black text-white">
-                INTELLIVEST
-            </h1> */}
             <div className="absolute flex flex-col items-center justify-center z-10 p-2">
                 <p className="font-montserrat text-2xl md:text-4xl lg:text-5xl text-center">
                     Unlock Your Dream Home Today!
