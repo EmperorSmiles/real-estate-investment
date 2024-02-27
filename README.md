@@ -1,4 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Thanks for checking out this project.
+
+Intellivest is a Portfolio project built by [me] (https://github.com/EmperorSmiles).
+
+Intellivest is a fictional Real Estate investment company that allows individuals to achieve their dream of home ownership as well as provides a vehicle to invest in booming Real Estate markets globally through shared ownership.
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) written in [TypeScript](https://www.typescriptlang.org/) and styled with [Tailwind CSS](https://tailwindcss.com/)
+
+Other dependencies used include:
+=> [Framer Motion](https://www.framer.com/motion/)
+=> [React Slick](https://react-slick.neostack.com/) and,
+=> [React Icons](https://www.npmjs.com/package/react-icons)
 
 ## Getting Started
 
@@ -24,8 +35,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+-   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
