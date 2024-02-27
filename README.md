@@ -1,6 +1,6 @@
 Thanks for checking out this project.
 
-Intellivest is a Portfolio project built by [me] (https://github.com/EmperorSmiles).
+Intellivest is a Portfolio project built by [me](https://github.com/EmperorSmiles).
 
 Intellivest is a fictional Real Estate investment company that allows individuals to achieve their dream of home ownership as well as provides a vehicle to invest in booming Real Estate markets globally through shared ownership.
 
