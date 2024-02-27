@@ -8,7 +8,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Other dependencies used include:
 
-[Framer Motion](https://www.framer.com/motion/)
+[Framer Motion](https://www.framer.com/motion/),
 [React Slick](https://react-slick.neostack.com/) and,
 [React Icons](https://www.npmjs.com/package/react-icons)
 
