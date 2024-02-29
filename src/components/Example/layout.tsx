@@ -125,7 +125,7 @@ button {
 //   transition: ease-in-out 0.6s background-position;
 }
 
-button:hover {
+// button:hover {
 //   background-position: right;
 //   cursor: pointer
-}
+// }
