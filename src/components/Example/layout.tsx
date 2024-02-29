@@ -117,7 +117,7 @@ button {
 //   width: 300px;
 //   height: 50px;
 //   border-radius: 20px;
-  border: none;
+//   border: none;
   outline: none;
   background-image: linear-gradient(to right,#1D2671,#C33764,#8E2DE2 100%);
   background-size: 200%;
