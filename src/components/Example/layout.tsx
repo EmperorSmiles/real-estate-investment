@@ -108,9 +108,9 @@
 //     return orderSummary;
 // };
 
-.container {
-  width: 300px;
-}
+// .container {
+//   width: 300px;
+// }
 
 // button {
 //   margin: 50px;
