@@ -113,7 +113,7 @@
 }
 
 button {
-  margin: 50px;
+//   margin: 50px;
   width: 300px;
   height: 50px;
   border-radius: 20px;
