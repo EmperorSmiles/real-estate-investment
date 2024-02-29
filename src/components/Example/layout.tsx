@@ -126,6 +126,6 @@ button {
 }
 
 button:hover {
-  background-position: right;
+//   background-position: right;
   cursor: pointer
 }
