@@ -127,5 +127,5 @@ button {
 
 button:hover {
 //   background-position: right;
-  cursor: pointer
+//   cursor: pointer
 }
