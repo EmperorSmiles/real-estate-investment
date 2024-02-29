@@ -120,7 +120,7 @@ button {
 //   border: none;
 //   outline: none;
 //   background-image: linear-gradient(to right,#1D2671,#C33764,#8E2DE2 100%);
-  background-size: 200%;
+//   background-size: 200%;
   background-position: left;
   transition: ease-in-out 0.6s background-position;
 }
